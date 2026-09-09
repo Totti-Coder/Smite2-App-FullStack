@@ -1,0 +1,41 @@
+{
+  "name": "smite2-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "seed:gods": "tsx --env-file=.env.local scripts/seed-gods.ts",
+    "seed:abilities": "node --env-file=.env.local scripts/seed-abilities.mjs",
+    "build:icon-hashes": "tsx scripts/build-icon-hashes.ts",
+    "check": "tsx scripts/check-sanitize.ts && tsx scripts/check-image-sniff.ts && tsx scripts/check-auth-errors.ts && tsx scripts/check-password-policy.ts && tsx scripts/check-safe-next.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@supabase/ssr": "^0.12.4",
+    "@supabase/supabase-js": "^2.112.0",
+    "motion": "^13.1.1",
+    "next": "16.3.0",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "recharts": "^3.10.1",
+    "tesseract.js": "^7.0.0",
+    "three": "^0.185.1",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@types/three": "^0.185.4",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.0",
+    "sharp": "^0.35.4",
+    "tailwindcss": "^4",
+    "tsx": "^4.23.5",
+    "typescript": "^5"
+  }
+}

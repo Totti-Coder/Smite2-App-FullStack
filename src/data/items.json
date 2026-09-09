@@ -1,0 +1,3526 @@
+[
+  {
+    "id": "adamantine_sickle",
+    "name": "Adamantine Sickle",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T2/Icon_T2_AdamantineSickle.png",
+    "tier": "T2",
+    "cost": 1200,
+    "stats": {
+      "LifeStealPercent": 4,
+      "PhysicalPower": 10
+    },
+    "passive": "While Below 50% Health: +10 Strength.",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "adroit_ring",
+    "name": "Adroit Ring",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T2/Icon_T2_AdroitRing.png",
+    "tier": "T2",
+    "cost": 650,
+    "stats": {
+      "CooldownReductionPercent": 10
+    },
+    "passive": null,
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "aegis_of_acceleration",
+    "name": "Aegis of Acceleration",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_Relic_AegisOfAcceleration.png",
+    "tier": "Relic",
+    "cost": 0,
+    "stats": null,
+    "passive": null,
+    "active": "On Use: Become Immune (to damage and healing) for 1.5s.\n• Can only Move\n• On god Damage prevented: +7% Movement Speed for 6s (Max 3x)\n\nCooldown: 140s",
+    "owner_god": null
+  },
+  {
+    "id": "agility_greaves",
+    "name": "Agility Greaves",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_Relic_AgilityGreaves.png",
+    "tier": "Relic",
+    "cost": 2500,
+    "stats": {
+      "BasicAttackProjectileSpeedModifierPercent": 40,
+      "MovementSpeed": 5
+    },
+    "passive": null,
+    "active": "+7.5% of all Stats from Items.\n\nOn Use: Dash in the direction you are currently moving\n\nRanged Gods: +40% Attack projectile speed. +80% for 3s after using this active.\n\nMelee Gods: -15% Attack movement penalty. -30% for 3s after using this active.\n\nCooldown: 20s",
+    "owner_god": null
+  },
+  {
+    "id": "agility_relic",
+    "name": "Agility Relic",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_Relic_AgilityRelic.png",
+    "tier": "Relic",
+    "cost": 0,
+    "stats": {
+      "BasicAttackProjectileSpeedModifierPercent": 40
+    },
+    "passive": null,
+    "active": "On Use: Dash in the direction you are currently moving\n\nRanged Gods: +40% Attack projectile speed\n\nMelee Gods: -15% Attack movement penalty\n\nCooldown: 20s",
+    "owner_god": null
+  },
+  {
+    "id": "alchemist_coat",
+    "name": "Alchemist Coat",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_AlchemistCoat.png",
+    "tier": "T3",
+    "cost": 2350,
+    "stats": {
+      "Dampening": 15,
+      "MagicalPower": 30,
+      "MaxHealth": 250,
+      "ManaPerTime": 2.5
+    },
+    "passive": "Use a Consumable: Gain 10 Dampening for 8s.\n\n• Open inventory slot: Gain a Multi Potion once every 60s",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "alternator_mod",
+    "name": "Alternator Mod",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Gods/Vulcan/Abilities/Items/t_Item_Vulcan_Alternater.png",
+    "tier": "GodSpecific",
+    "cost": 0,
+    "stats": null,
+    "passive": "Gain access to the Thumper Turret by alternating between an Inferno Cannon and Thumper each ability activation.\nThumper pulses out an attack around it every 1s that deals 20/30/40/50/60 + 8% INT Magical Damage to all enemies in the area.\nThumper's Rank will match Inferno Cannon's. Cooldown 6s.\n\nSet 1 - You can only have one Mod from each set.\nCan be built at level 1",
+    "active": null,
+    "owner_god": "Vulcan"
+  },
+  {
+    "id": "amanita_charm",
+    "name": "Amanita Charm",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_RestorativeAmanita.png",
+    "tier": "T3",
+    "cost": 2350,
+    "stats": {
+      "MaxHealth": 300,
+      "PhysicalProtection": 25,
+      "MagicalProtection": 25,
+      "HealthPerTime": 4
+    },
+    "passive": null,
+    "active": "On Use: Create a Healing Mushroom (6.4m radius) for 4.5s.\n• +3% Health Heal every 1.5s\n• +1 Stack of Damage Reduction per Heal\n• 10% Attack and Ability Damage Reduction per Stack\n• 5% Ultimate Damage Reduction per Stack\n• All Stacks removed after triggering\n\nCooldown: 60s",
+    "owner_god": null
+  },
+  {
+    "id": "ancient_signet",
+    "name": "Ancient Signet",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_AncientSignet.png",
+    "tier": "T3",
+    "cost": 2600,
+    "stats": {
+      "MagicalPower": 90,
+      "MaxMana": 250
+    },
+    "passive": "Ability Hit: +20 (+12 per Level) bonus Magical Damage\n\nKill or Assist a Minion:\n• -2s Cooldown\n\nCooldown: 15s",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "ancile",
+    "name": "Ancile",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_AncileShield.png",
+    "tier": "T3",
+    "cost": 2500,
+    "stats": {
+      "MaxHealth": 300,
+      "MagicalProtection": 55
+    },
+    "passive": null,
+    "active": "On Use: Your next Ability that damages a god Silences them for 1.5s\n\nCooldown: 70s",
+    "owner_god": null
+  },
+  {
+    "id": "archmages_gem",
+    "name": "Archmage's Gem",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/AspectsInfluences/Icon_Aspect_Arcanist.png",
+    "tier": "Starter",
+    "cost": 2150,
+    "stats": {
+      "MaxMana": 150,
+      "ManaPerTime": 4
+    },
+    "passive": "Adaptive Stat: +60 Strength or +90 Intelligence (based on highest item stat).\n\nAbility Hit a God: Deal bonus Magical Damage.\n• Damage = 40% of your Intelligence & 50% of your Strength\n\nCooldown: 20s\n\nRequires Level 20.",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "arondight",
+    "name": "Arondight",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icons_T3_Arondight.png",
+    "tier": "T3",
+    "cost": 2650,
+    "stats": {
+      "PhysicalPower": 55,
+      "CooldownReductionPercent": 15
+    },
+    "passive": null,
+    "active": "On Use: Reveal enemy Gods within 17.6m for 6s.\n• Reveal persists through Stealth\n• If any God is revealed, +25% Movement Speed for 6s\n• First time you damage a revealed God:\n• +50 (+50% Strength) Physical Damage\n\nCooldown: 60s",
+    "owner_god": null
+  },
+  {
+    "id": "ashwhorl_acorn",
+    "name": "Ashwhorl Acorn",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/Ratatoskrs_Acorns/Acorn_T3_Thickbark.png",
+    "tier": "T3",
+    "cost": 2000,
+    "stats": {
+      "PhysicalPower": 45,
+      "AttackSpeedPercent": 15
+    },
+    "passive": "Non-Aspect:\n+45 Strength\n+15% Attack Speed\n\nFlurry fires out multiple Acorn projectiles that return back at max range, dealing damage and granting Movement Speed. Each enemy god hit provides Attack Speed.\n\nAspect:\n+400 Health\n+15 Tenacity\n\nFlurry has 2 charges, Heals and provides Protections.",
+    "active": null,
+    "owner_god": "Ratatoskr"
+  },
+  {
+    "id": "avatars_parashu",
+    "name": "Avatar's Parashu",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_Parashu.png",
+    "tier": "T3",
+    "cost": 3700,
+    "stats": {
+      "PhysicalPower": 90,
+      "PhysicalPenetrationPercent": 10,
+      "MagicalPenetrationPercent": 10
+    },
+    "passive": null,
+    "active": "On Use: +25% Strength and Immune to Displacement for 10s.\n\nCooldown: 120s",
+    "owner_god": null
+  },
+  {
+    "id": "avenging_blade",
+    "name": "Avenging Blade",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_AvengingBlade.png",
+    "tier": "T3",
+    "cost": 2650,
+    "stats": {
+      "PhysicalPower": 60,
+      "MaxHealth": 200
+    },
+    "passive": "Attack hit a God: Debuff that God.\n• -3.5% Protections\n\nWhen Debuffed God Is in Jungle OR Heals 5% of their Health:\n• Stacks become twice as effective.\n\nDebuff lasts 4s, Stacks up to 3 times.",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "axe",
+    "name": "Axe",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T1/Icon_T1_Axe.png",
+    "tier": "T1",
+    "cost": 450,
+    "stats": {
+      "PhysicalPower": 5
+    },
+    "passive": null,
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "bancrofts_talon",
+    "name": "Bancroft's Talon",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_BancroftsTalon.png",
+    "tier": "T3",
+    "cost": 2300,
+    "stats": {
+      "MagicalPower": 55,
+      "ManaPerTime": 2,
+      "MaxMana": 150,
+      "LifeStealPercent": 7.5
+    },
+    "passive": "Gain bonus Intelligence and Lifesteal scaled from missing Health.\n• Caps at +60 Intelligence and +10% Lifesteal at 40% Health",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "barbed_carver",
+    "name": "Barbed Carver",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_BarbedCarver.png",
+    "tier": "T3",
+    "cost": 2500,
+    "stats": {
+      "PhysicalPower": 40,
+      "LifeStealPercent": 7.5
+    },
+    "passive": "Ability Hit: Target gains +1 Stack of Jagged Wounds for 5s (max 3)\n• Triggers once per Ability, per target\n\nEach Stack: +8% (+1% per 10% Lifesteal) Attack and Ability Damage as Physical Damage.",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "barons_brew",
+    "name": "Baron's Brew",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Gods/BaronSamedi/Abilities/BaronsBrew_THROW.png",
+    "tier": "Consumable",
+    "cost": 100,
+    "stats": null,
+    "passive": null,
+    "active": "On Use:\n• +18 Heal per second for 14s\n• +18 Mana per second for 14s\n• Empty the Brew\n\nOn Use of Empty Brew: Throw a Projectile:\n• Deals 40 (+13 per Level) Magic Damage\n• Applies 30 Hysteria\n\nBaron's Brew is refilled when you return to base.",
+    "owner_god": "Baron Samedi"
+  },
+  {
+    "id": "battle_axe",
+    "name": "Battle Axe",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T2/Icon_T2_BattleAxe.png",
+    "tier": "T2",
+    "cost": 900,
+    "stats": {
+      "PhysicalPower": 15,
+      "MaxHealth": 100
+    },
+    "passive": null,
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "battle_cry",
+    "name": "Battle Cry",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/InGameAssets/BuffsAndDebuffs/Icon_Buff_BattleCry.png",
+    "tier": "Curio",
+    "cost": 0,
+    "stats": null,
+    "passive": null,
+    "active": "On God Kill or Death: Gain 1 Stack (Max 5)\n\nOn Use: Consume all Stacks\n• Per Stack: +3% of all Stats from Items & +3% Movement Speed\n\nBuff lasts 6s. Stacks fall off one at a time.",
+    "owner_god": null
+  },
+  {
+    "id": "berserkers_shield",
+    "name": "Berserker's Shield",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icons_T3_Berserker.png",
+    "tier": "T3",
+    "cost": 2400,
+    "stats": {
+      "PhysicalProtection": 50,
+      "MaxHealth": 200,
+      "HealthPerTime": 4,
+      "AttackSpeedPercent": 20
+    },
+    "passive": "When falling below 60% Health: Become Berserk for 8s.\n\nWhile Berserk:\n• +15 of Physical and Magical Protections\n• +25% Attack Speed",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "bifrost_shard",
+    "name": "Bifrost Shard",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icons_Curios_BifrostShard.png",
+    "tier": "Curio",
+    "cost": 0,
+    "stats": null,
+    "passive": null,
+    "active": "On Use: Place a Ward.\n• Reveals enemies within 7.2m\n• Lasts 90s or until destroyed\n\nCooldown: 90s\n\n(Max 2 Wards can be Placed)",
+    "owner_god": null
+  },
+  {
+    "id": "blink_rune",
+    "name": "Blink Rune",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/Utility/t_Blink_128.png",
+    "tier": "Relic",
+    "cost": 0,
+    "stats": null,
+    "passive": null,
+    "active": "On Use: Teleport up to 5.6m.\n\nCannot be used for 3s after dealing or taking God damage. Can be used while casting.\n\nDamage or Kill a God within 4s of use: -30s Cooldown.\n\nCooldown: 170s",
+    "owner_god": null
+  },
+  {
+    "id": "blinking_abyss",
+    "name": "Blinking Abyss",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/Utility/t_BlinkAbyss_128.png",
+    "tier": "Relic",
+    "cost": 2600,
+    "stats": null,
+    "passive": null,
+    "active": "Adaptive Stat: +20 Strength or +35 Intelligence (based on highest item stat).\n\n+5% of all Stats from Items.\n\nOn Use: Teleport up to 5.6m. Can be used in combat, but not while firing an ability.\n\n1s after Teleport: Deal 25 (+10% Strength & Intelligence) Magical Damage in a 3.2m radius. If this damages a god, reduce cooldown by -65s.\n\nCooldown: 200s",
+    "owner_god": null
+  },
+  {
+    "id": "blood_bound_book",
+    "name": "Blood-Bound Book",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_Blood-BoundBook.png",
+    "tier": "T3",
+    "cost": 2250,
+    "stats": {
+      "MagicalPower": 80,
+      "LifeStealPercent": 7.5
+    },
+    "passive": null,
+    "active": "On Use: + Health Shield for 6s.\n• Shield = 7.5% Max Health & 75% Intelligence from Items\n• While Shielded: +10% Lifesteal\n\nKill a God: -25% Cooldown.\n\nCooldown: 80s",
+    "owner_god": null
+  },
+  {
+    "id": "blood_soaked_shroud",
+    "name": "Blood-soaked Shroud",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/AspectsInfluences/Icon_BloodsoakedShroud.png",
+    "tier": "Starter",
+    "cost": 2100,
+    "stats": {
+      "MaxHealth": 350,
+      "LifeStealPercent": 8
+    },
+    "passive": "Adaptive Stat: +40 Strength or +70 Intelligence (based on highest item stat).\n\nAbility Hit:\n• +1% Max Health Heal\n• +1% Max Mana Recovery\n\nRequires Level 20.",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "bloodforge",
+    "name": "Bloodforge",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_BloodForgedBlade.png",
+    "tier": "T3",
+    "cost": 2550,
+    "stats": {
+      "PhysicalPower": 45,
+      "LifeStealPercent": 7.5
+    },
+    "passive": null,
+    "active": "On Use: + Health Shield for 6s.\n• Shield = 10% Max Health & 150% Strength from Items\n• While Shielded: +10% Lifesteal\n\nKill a God: -25% Cooldown.\n\nCooldown: 80s",
+    "owner_god": null
+  },
+  {
+    "id": "bluestone_brooch",
+    "name": "Bluestone Brooch",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/AspectsInfluences/Icon_Starter_BluestoneBrooch.png",
+    "tier": "Starter",
+    "cost": 2100,
+    "stats": {
+      "HealthPerTime": 4,
+      "ManaPerTime": 2.5,
+      "MaxHealth": 200
+    },
+    "passive": "Adaptive Stat: +30 Strength or +50 Intelligence (based on highest item stat).\n\nAbility Hit: +100 Physical Damage over 2s\n• Gods take additional damage = 7.5% of their current Health\n• Subsequent hits on the same target: 50% bonus damage for 3s\n\nRequires Level 20.",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "bluestone_pendant",
+    "name": "Bluestone Pendant",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/AspectsInfluences/Icon_Starter_BluestonePendant.png",
+    "tier": "Starter",
+    "cost": 600,
+    "stats": {
+      "HealthPerTime": 1,
+      "ManaPerTime": 1.5
+    },
+    "passive": "Adaptive Stat: +15 Strength or +25 Intelligence (based on highest item stat).\n\nAbility Hit: +32 Physical Damage over 2s.\n• Subsequent hits on the same target: 50% bonus damage for 3s\n\nRequires Level 20 to upgrade.",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "book_of_thoth",
+    "name": "Book of Thoth",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_BookofThroth_Evolved.png",
+    "tier": "T3",
+    "cost": 2300,
+    "stats": {
+      "MagicalPower": 30,
+      "MaxMana": 350,
+      "ManaPerTime": 4
+    },
+    "passive": "+Intelligence equal to 5% of Mana from Items.\n\nDeal 900 Damage to Minions or Jungle Monsters:\n+1 Evolve Stack\n+1 Mana Infusion Stack (Max 50 Stacks)\n• Damage dealt to Gods counts double\n\nPer Mana Infusion Stack: +10 Mana.\n\nAt 50 Evolve Stacks, Item evolves and gains:\n• Additional +Intelligence equal to 2% of Mana from Items\n• +5 Penetration\n• +100 Mana",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "bow",
+    "name": "Bow",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T1/Icon_T1_Bow.png",
+    "tier": "T1",
+    "cost": 300,
+    "stats": {
+      "AttackSpeedPercent": 5
+    },
+    "passive": null,
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "bowl_drum",
+    "name": "Bowl Drum",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T2/Icon_T2_BowlDrum.png",
+    "tier": "T2",
+    "cost": 750,
+    "stats": {
+      "EchoItem": 10
+    },
+    "passive": null,
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "bracer_of_the_abyss",
+    "name": "Bracer of The Abyss",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_HandOfTheAbyss.png",
+    "tier": "T3",
+    "cost": 2500,
+    "stats": {
+      "MagicalPower": 60,
+      "AttackSpeedPercent": 30
+    },
+    "passive": "Hit enemy Gods or Jungle Bosses: +8 Attack Damage for 10s.\n\nStacks up to 8 times.",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "bragis_harp",
+    "name": "Bragi's Harp",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_BragisHarp.png",
+    "tier": "T3",
+    "cost": 2550,
+    "stats": {
+      "PhysicalPower": 35,
+      "MagicalPower": 25,
+      "AttackSpeedPercent": 10
+    },
+    "passive": "Attack Hit: +10 (+3 per Level) bonus Magical Damage.\n\nStructures and Bosses take half damage from Bragi's Harp",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "brawlers_beat_stick",
+    "name": "Brawler's Beat Stick",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_BrawlersRuin.png",
+    "tier": "T3",
+    "cost": 2550,
+    "stats": {
+      "PhysicalProtection": 15,
+      "MagicalProtection": 15
+    },
+    "passive": "Adaptive Stat: +30 Strength or +45 Intelligence (based on highest item stat).\n\nOn God Damage Dealt: Apply 25% Healing Reduction for 5s\n\nWhile in Combat: +2% Strength, +2% Intelligence, and +2% Protections every 1.5s. Stacks up to 5 times.\n\nWhile Out of Combat: -1 stack every 0.5s\n\nHealing Reduction does not stack with other similar effects. Combat lasts for 6s upon dealing or taking damage.",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "breastplate_of_valor",
+    "name": "Breastplate of Valor",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_BreastplateOfValor.png",
+    "tier": "T3",
+    "cost": 2400,
+    "stats": {
+      "PhysicalProtection": 45,
+      "CooldownReductionPercent": 20,
+      "MaxMana": 200,
+      "ManaPerTime": 2
+    },
+    "passive": "On 500 (+25 per Level) Health lost: -1s Ability Cooldowns.",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "briskberry_acorn",
+    "name": "Briskberry Acorn",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/Ratatoskrs_Acorns/Acorn_T3_Bristlebush.png",
+    "tier": "T3",
+    "cost": 2000,
+    "stats": {
+      "PhysicalPower": 45,
+      "PathfindingItem": 8
+    },
+    "passive": "Non-Aspect:\n+45 Strength\n+8 Pathfinding\n\nDart becomes wider and passes through enemy gods. Its Cooldown is reset on enemy god hit. It cannot be reset more than twice.\n\nAspect:\n+400 Health\n+4 Health Regen\n+2 Mana Regen\n\nAfter hitting an enemy god with Dart, they are knocked back and explode after a delay.",
+    "active": null,
+    "owner_god": "Ratatoskr"
+  },
+  {
+    "id": "bumbas_cudgel",
+    "name": "Bumba's Cudgel",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/AspectsInfluences/Icon_Starter_BumbasCudgel.png",
+    "tier": "Starter",
+    "cost": 650,
+    "stats": {
+      "MaxMana": 50,
+      "MaxHealth": 75
+    },
+    "passive": "Adaptive Stat: +15 Strength or +25 Intelligence (based on highest item stat).\n\nAbility Used: Buff next Attack within 8s.\n• +20 True Damage (+1 Per Level) to enemies within 1.92m of the target\n• Hit this Attack: -0.33s Cooldowns\n\nRequires Level 20 to upgrade.",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "bumbas_golden_dagger",
+    "name": "Bumba's Golden Dagger",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/AspectsInfluences/Icon_Bumbas_Dagger.png",
+    "tier": "Starter",
+    "cost": 650,
+    "stats": {
+      "MaxHealth": 50,
+      "AttackSpeedPercent": 10
+    },
+    "passive": "Adaptive Stat: +15 Strength or +25 Intelligence (based on highest item stat).\n\nOn Attack Hit: 10% bonus Physical Damage to enemies within 1.92m of the target\n\nRequires Level 20 to upgrade.",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "bumbas_hammer",
+    "name": "Bumba's Hammer",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/AspectsInfluences/Icon_Starter_BumbasHammer.png",
+    "tier": "Starter",
+    "cost": 2150,
+    "stats": {
+      "MaxHealth": 200,
+      "CooldownReductionPercent": 10
+    },
+    "passive": "Adaptive Stat: +35 Strength or +60 Intelligence (based on highest item stat).\n\nAbility Used:\n• Next Attack deals +60 True Damage to enemies within 1.92m of the target\n• Hit this Attack: -.66s Cooldowns, +60 Heal\n\nRequires Level 20.",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "bumbas_spear",
+    "name": "Bumba's Spear",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/AspectsInfluences/Icon_Bumbas_Spear.png",
+    "tier": "Starter",
+    "cost": 2150,
+    "stats": {
+      "MaxHealth": 200,
+      "AttackSpeedPercent": 30
+    },
+    "passive": "Adaptive Stat: +35 Strength or +60 Intelligence (based on highest item stat).\n\nOn Attack Hit: 25% bonus Physical Damage to Enemies within 1.92m of the target\n\nRequires Level 20.",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "caestus",
+    "name": "Caestus",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T2/Icon_T2_Caestus.png",
+    "tier": "T2",
+    "cost": 1000,
+    "stats": {
+      "PhysicalPower": 10,
+      "CooldownReductionPercent": 10
+    },
+    "passive": "When Hard Crowd Controlled: +15 Physical and Magical Protection for 4s.",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "captains_ring",
+    "name": "Captain's Ring",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T2/Icon_T2_CaptainsRing.png",
+    "tier": "GodSpecific",
+    "cost": 800,
+    "stats": {
+      "PhysicalProtection": 10,
+      "CooldownReductionPercent": 10
+    },
+    "passive": null,
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "chandras_grace",
+    "name": "Chandra's Grace",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icons_T3_ChandrasGrace.png",
+    "tier": "T3",
+    "cost": 2300,
+    "stats": {
+      "MaxHealth": 350,
+      "CooldownReductionPercent": 20,
+      "Plating": 5
+    },
+    "passive": "Every 30s: Lowest Health ally within 8.8m gain:\n• +20 Health Regen\n• +20 Mana Regen\n• 0.2s off Cooldowns, every 0.2s for 3s\n\nBuff lasts 3s.\n\nDuring Moonlight Phase: On trigger:\n• You also gain the Buff",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "chronos_pendant",
+    "name": "Chronos' Pendant",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_ChronosPendant.png",
+    "tier": "T3",
+    "cost": 2400,
+    "stats": {
+      "MagicalPower": 55,
+      "CooldownReductionPercent": 25
+    },
+    "passive": "Every 10s: -1s Ability Cooldowns.",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "circes_hexstone",
+    "name": "Circe's Hexstone",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_CircesHexstone.png",
+    "tier": "T3",
+    "cost": 2750,
+    "stats": {
+      "MaxHealth": 250,
+      "HealthPerTime": 4,
+      "CooldownReductionPercent": 10
+    },
+    "passive": null,
+    "active": "On Use:\n• Become Polymorphed\n• Dash Forward, dealing 50 Physical Damage\n• +CC Immune\n• +60 Physical and Magical Protection\n\nOn Enemy God Hit:\n• Knock Up\n• Bonus Damage equal to 10% of Current Health\n• -40s Cooldown\n\nCooldown: 120s",
+    "owner_god": null
+  },
+  {
+    "id": "circle_of_protection",
+    "name": "Circle of Protection",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T2/Icon_T2_Zisurru.png",
+    "tier": "T2",
+    "cost": 750,
+    "stats": {
+      "MagicalProtection": 22
+    },
+    "passive": null,
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "circlet",
+    "name": "Circlet",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T1/Icon_T1_Circlet.png",
+    "tier": "T1",
+    "cost": 300,
+    "stats": {
+      "MaxMana": 150
+    },
+    "passive": null,
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "clerics_cloak",
+    "name": "Cleric's Cloak",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T2/Icon_T2_ClericsCloak.png",
+    "tier": "T2",
+    "cost": 800,
+    "stats": {
+      "Tenacity": 5
+    },
+    "passive": null,
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "combat_boots",
+    "name": "Combat Boots",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T2/Icon_T2_CombatBoots.png",
+    "tier": "T2",
+    "cost": 900,
+    "stats": {
+      "PathfindingItem": 8
+    },
+    "passive": null,
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "conduit_gem",
+    "name": "Conduit Gem",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/AspectsInfluences/Icon_Starter_ConduitGem.png",
+    "tier": "Starter",
+    "cost": 650,
+    "stats": {
+      "MaxMana": 100,
+      "ManaPerTime": 1
+    },
+    "passive": "Adaptive Stat: +15 Strength or +30 Intelligence (based on highest item stat).\n\nEvery 0.5s: Gain 1 Stack (max 20).\n\nDamaging Abilities deals 3 True Damage per Stack (half vs Gods), then remove all Stacks.\n\nRequires Level 20 to upgrade.",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "contagion",
+    "name": "Contagion",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_Contagion.png",
+    "tier": "T3",
+    "cost": 2400,
+    "stats": {
+      "MaxHealth": 425,
+      "HealthPerTime": 6
+    },
+    "passive": "Damaged by an Attack or Ability: Apply +1 Stack of Contagion (1 per hit)\n• If an enemy Lifesteals 100 Health from you: Apply +5 Stacks\n\nAttack or Hard Crowd Control an afflicted enemy:\n• Deal Magical Damage = 1% Max Health per stack in a 4m radius\n• Remove the Stacks",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "cursed_sickle",
+    "name": "Cursed Sickle",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T2/Icon_T2_CursedSickle.png",
+    "tier": "T2",
+    "cost": 850,
+    "stats": {
+      "LifeStealPercent": 7.5
+    },
+    "passive": null,
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "dagger_of_frenzy",
+    "name": "Dagger of Frenzy",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_DaggerOfFrenzy.png",
+    "tier": "T3",
+    "cost": 2500,
+    "stats": {
+      "InhandPower": 25,
+      "AttackSpeedPercent": 25
+    },
+    "passive": null,
+    "active": "On Use:\n• +10 (+4 per Level) Attack Damage\n• +20% (+1% per Level) Attack Speed\nBuff lasts 6 Attacks.\n\nKilling a God refreshes Cooldown.\n\nCooldown: 15s",
+    "owner_god": null
+  },
+  {
+    "id": "damaru",
+    "name": "Damaru",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_Damaru.png",
+    "tier": "T3",
+    "cost": 2750,
+    "stats": {
+      "CritChance": 20,
+      "EchoItem": 20,
+      "PhysicalPower": 35
+    },
+    "passive": "Critically Strike: +8% Ability Damage for 5s. Max 3 stacks.\n\nEcho: +8% Attack Damage for 5s. Max 3 stacks.",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "daybreak_gavel",
+    "name": "Daybreak Gavel",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_DaybreakGavel.png",
+    "tier": "T3",
+    "cost": 2500,
+    "stats": {
+      "MaxHealth": 300
+    },
+    "passive": "Adaptive Stat: +60 Strength or +80 Intelligence (based on highest item stat).\n\nEach unique god Healed by a Healing Ability: +1 Stack (max 4)\n\nNon-Healing Ability Use: Consume all Stacks, +13 Strength or +16 Intelligence (based on highest item stat) for 8s per Stack (max 4)",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "death_metal",
+    "name": "Death Metal",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_DeathMetal.png",
+    "tier": "T3",
+    "cost": 2600,
+    "stats": {
+      "PhysicalPower": 35,
+      "MagicalPower": 40,
+      "CritChance": 20
+    },
+    "passive": null,
+    "active": "On Use:\n• Lose all Intelligence. Gain 66% of it as Strength.\n• +25% Crit Chance\n\nBuff lasts 6s.\n\nCooldown: 45s",
+    "owner_god": null
+  },
+  {
+    "id": "deaths_embrace",
+    "name": "Death's Embrace",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/AspectsInfluences/Icon_Starter_DeathsTollUpgrade.png",
+    "tier": "Starter",
+    "cost": 2150,
+    "stats": {
+      "MaxHealth": 150,
+      "LifeStealPercent": 5
+    },
+    "passive": "Adaptive Stat: +40 Strength or +70 Intelligence (based on highest item stat).\n\nAttack Hit:\n• +1% Max Health Heal\n• +2% Max Mana Restore\n• -0.33s Non Ultimate Cooldowns\n\nRequires Level 20.",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "deaths_toll",
+    "name": "Death's Toll",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/AspectsInfluences/Icon_Starter_DeathsToll.png",
+    "tier": "Starter",
+    "cost": 650,
+    "stats": {
+      "MaxHealth": 100
+    },
+    "passive": "Adaptive Stat: +15 Strength or +25 Intelligence (based on highest item stat).\n\nAttack Hit:\n• +2 (+0.3% Max Health) Heal\n• +1 (+0.1% Max Mana) Restore\n\nRequires Level 20 to upgrade.",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "deathbringer",
+    "name": "Deathbringer",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_Deathbringer.png",
+    "tier": "T3",
+    "cost": 2900,
+    "stats": {
+      "PhysicalPower": 45,
+      "CritChance": 20
+    },
+    "passive": "+35% Critical Strike Damage.",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "demon_blade",
+    "name": "Demon Blade",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_BanefulRapier.png",
+    "tier": "T3",
+    "cost": 2750,
+    "stats": {
+      "CritChance": 15,
+      "PhysicalPower": 30,
+      "AttackSpeedPercent": 15
+    },
+    "passive": "Critically Strike: +30% Attack Speed for 3s.",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "devourers_gauntlet",
+    "name": "Devourer's Gauntlet",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_DevoursGloves.png",
+    "tier": "T3",
+    "cost": 2500,
+    "stats": {
+      "PhysicalPower": 35,
+      "LifeStealPercent": 5
+    },
+    "passive": "Kill Minion or Jungle Monsters: +1 Stack.\n\nEach Stack grants:\n• +.4 Strength\n• +0.05% Lifesteal\n\nAt 75 Stacks, gain:\n• +10 Strength\n• +3% Lifesteal\n• Continue to stack more Slowly; 10 Minion Kills: +1 Stack, Jungle Boss Kill or Assist: +4 Stacks",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "divine_ruin",
+    "name": "Divine Ruin",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_DivineRuin.png",
+    "tier": "T3",
+    "cost": 2500,
+    "stats": {
+      "MagicalPower": 85
+    },
+    "passive": "On God Damaged: Apply 25% Healing Reduction for 5s and trigger Chain Lighting when off cooldown\n\nChain Lighting:\n• Magical Damage = 40 + 20% Intelligence\n• Hits enemy and up to 4 nearby enemies within 4.8m\n• Can hit the same target more than once and applies the 25% Healing Reduction\n\nCooldown: 15s. Healing Reduction does not stack with other similar effects.",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "dominance",
+    "name": "Dominance",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_Dominance.png",
+    "tier": "T3",
+    "cost": 2600,
+    "stats": {
+      "PhysicalPower": 40,
+      "MaxMana": 150,
+      "ManaPerTime": 4,
+      "AttackSpeedPercent": 15
+    },
+    "passive": "Basic Attacks gain an additional +20% Penetration\n• This effect ignores the Penetration cap",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "doom_orb",
+    "name": "Doom Orb",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_DoomOrb.png",
+    "tier": "T3",
+    "cost": 2700,
+    "stats": {
+      "MagicalPower": 70,
+      "ManaPerTime": 2,
+      "MaxMana": 200,
+      "PhysicalPenetrationFlat": 10,
+      "MagicalPenetrationFlat": 10
+    },
+    "passive": "Kill or Assist a Minion: +1 Stack.\n\nKill or Assist a God: +5 Stacks.\n\nPer Stack: +8 Intelligence\n\nMax 5 Stacks.\n\nStacks last 10s. Stacks fall off one at a time",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "doublet_of_binding",
+    "name": "Doublet of Binding",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icons_T3_DoubletOfBinding.png",
+    "tier": "T3",
+    "cost": 2700,
+    "stats": {
+      "Dampening": 5,
+      "MaxHealth": 400,
+      "MagicalProtection": 50
+    },
+    "passive": null,
+    "active": "On Use: Gain Protective Link to a target.\n\nProtective Link redirects 20% of Damage they take, up to 600 Health. This Damage is mitigated by your Dampening.\n\nCooldown: 45s",
+    "owner_god": null
+  },
+  {
+    "id": "draconic_scale",
+    "name": "Draconic Scale",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icons_T3_DraconicScales.png",
+    "tier": "T3",
+    "cost": 2700,
+    "stats": {
+      "MaxHealth": 300,
+      "PhysicalProtection": 30,
+      "MagicalProtection": 30
+    },
+    "passive": "Damaged by a God:\n• Gain 4 Protections against that God's damage type\n• Stacks last 1.5s (max 7)\n• Stacks decay 1 at a time",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "dreamers_idol",
+    "name": "Dreamer's Idol",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_DreamersIdol.png",
+    "tier": "T3",
+    "cost": 3500,
+    "stats": {
+      "MagicalPower": 130,
+      "PhysicalPenetrationPercent": 10,
+      "MagicalPenetrationPercent": 10
+    },
+    "passive": null,
+    "active": "On Use:\n• +25% Intelligence\n• Become Immune to Displacement\n\nBuff lasts 10s.\n\nCooldown: 120s",
+    "owner_god": null
+  },
+  {
+    "id": "dual_mod",
+    "name": "Dual Mod",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Gods/Vulcan/Abilities/Items/t_Item_Vulcan_Dual.png",
+    "tier": "Consumable",
+    "cost": 0,
+    "stats": null,
+    "passive": null,
+    "active": "Gain access to the Thumper Turret in your first consumable slot. This will occupy this slot for the entire game.\nThumper pulses out an attack around it every 1s that deals 20/30/40/50/60 + 8% INT Magical Damage to all enemies in the area.\nThumper's Rank will match Inferno Cannon's. Cooldown 20s.\n\nSet 1 - You can only have one Mod from each set\nCan be built at level 1",
+    "owner_god": "Vulcan"
+  },
+  {
+    "id": "dwarven_plate",
+    "name": "Dwarven Plate",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_DwarfForgedPlate_Physical.png",
+    "tier": "T3",
+    "cost": 2800,
+    "stats": {
+      "PhysicalProtection": 85,
+      "MagicalProtection": 85
+    },
+    "passive": null,
+    "active": "+15 bonus Physical Protections from items\n+35 bonus Magical Protections from items\n\nOn Use: Switch which Protection is increased more.\n\nCooldown: 30s",
+    "owner_god": null
+  },
+  {
+    "id": "efficiency_mod",
+    "name": "Efficiency Mod",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Gods/Vulcan/Abilities/Items/t_Item_Vulcan_Efficiency.png",
+    "tier": "GodSpecific",
+    "cost": 0,
+    "stats": null,
+    "passive": "Do not gain access to the Thumper ability, instead your passive grants 20 CDR and 5 Intelligence + 1 Per Level, in addition to the other effects when triggered.\n\nSet 1 - You can only have one Mod from each set.\nCan be built at level 1",
+    "active": null,
+    "owner_god": "Vulcan"
+  },
+  {
+    "id": "elixir_of_intelligence",
+    "name": "Elixir of Intelligence",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/Consumables/Icon_Consumable_ElixirOfIntelligence.png",
+    "tier": "Consumable",
+    "cost": 3000,
+    "stats": null,
+    "passive": null,
+    "active": "Consume: +80 Intelligence for 360s.",
+    "owner_god": null
+  },
+  {
+    "id": "elixir_of_strength",
+    "name": "Elixir of Strength",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/Consumables/Icon_Consumable_ElixirOfStrength.png",
+    "tier": "Consumable",
+    "cost": 3000,
+    "stats": null,
+    "passive": null,
+    "active": "Consume: +50 Strength for 360s.",
+    "owner_god": null
+  },
+  {
+    "id": "enchanted_bracelet",
+    "name": "Enchanted Bracelet",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T2/Icon_T2_EnchantedBracelet.png",
+    "tier": "T2",
+    "cost": 900,
+    "stats": {
+      "MagicalPower": 20,
+      "AttackSpeedPercent": 8
+    },
+    "passive": null,
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "engraved_guard",
+    "name": "Engraved Guard",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T2/Icon_T2_EngravedGuard.png",
+    "tier": "T2",
+    "cost": 800,
+    "stats": {
+      "PhysicalProtection": 10,
+      "MagicalProtection": 10
+    },
+    "passive": null,
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "eros_bow",
+    "name": "Eros' Bow",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/DesignTemp/erosbow.png",
+    "tier": "T3",
+    "cost": 2300,
+    "stats": {
+      "MaxHealth": 300,
+      "AttackSpeedPercent": 30
+    },
+    "passive": null,
+    "active": "On Use: Mark an ally god\n• Only one ally may be Marked at a time\n• Mark breaks if ally is more than 20m away\n\nOn Attack Hit:\n• Heal the Marked ally for +2% of your Max Health\n\nCooldown: 1s",
+    "owner_god": null
+  },
+  {
+    "id": "erosion",
+    "name": "Erosion",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_Erosion.png",
+    "tier": "T3",
+    "cost": 2400,
+    "stats": {
+      "MaxHealth": 250,
+      "PhysicalProtection": 30,
+      "MagicalProtection": 20
+    },
+    "passive": "-30% Shields applied to enemy Gods within 11.2m.\n\nWhen this occurs: +10% of your Physical and Magical Protections for 6s.\n• Can stack up to 2 times",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "ethereal_staff",
+    "name": "Ethereal Staff",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_EtherealStaff.png",
+    "tier": "T3",
+    "cost": 2550,
+    "stats": {
+      "MagicalPower": 60,
+      "MaxHealth": 250,
+      "Tenacity": 15
+    },
+    "passive": "Ability Hit a God: Steal 6% Max Health and Mana from a single target\n• Triggers once per Ability\n• Stacks last 60s\n• Stacks decay 1 at a time",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "evil_eye",
+    "name": "Evil Eye",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T2/Icon_T2_EvilEye.png",
+    "tier": "T2",
+    "cost": 1200,
+    "stats": {
+      "MagicalPower": 45
+    },
+    "passive": null,
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "eye_of_erebus",
+    "name": "Eye of Erebus",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_EyeOfErebus.png",
+    "tier": "T3",
+    "cost": 2600,
+    "stats": {
+      "CooldownReductionPercent": 15,
+      "MaxHealth": 350
+    },
+    "passive": null,
+    "active": "Adaptive Stat: +35 Strength or +50 Intelligence (based on highest item stat).\n\nOn Use: Spawn a Watchful Eye that lasts 40s\n• Enemy enters range: Fires a seeking projectile:\n• Magical Damage equal to 15% of Enemy Max Health\n• Reveal and +25% Slow for 2.5s\n\nCooldown: 40s\n\nDuring Moonlight Phase:\n• Each time you deal damage to a god: -2s Cooldown of this item (Once per target, per Attack or Ability).",
+    "owner_god": null
+  },
+  {
+    "id": "eye_of_providence",
+    "name": "Eye of Providence",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_EyeOfProvidence.png",
+    "tier": "T3",
+    "cost": 2300,
+    "stats": {
+      "MaxHealth": 250,
+      "PhysicalProtection": 30,
+      "MagicalProtection": 30
+    },
+    "passive": "Destroy a Ward: +50 Gold\n\nOpen Consumable Slot: Gain a Sentry Ward once every 120s\n• If there is no open consumable slot, gain a Sentry Ward and restart timer the next time one is open.\n\n(Max 2 Wards can be Placed)",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "eye_of_the_storm",
+    "name": "Eye of the Storm",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_EyeOfTheStorm.png",
+    "tier": "T3",
+    "cost": 2500,
+    "stats": {
+      "PhysicalPower": 25,
+      "MagicalProtection": 35,
+      "MaxHealth": 200
+    },
+    "passive": null,
+    "active": "On Use: Toggle Vortex around you.\n• Pulls enemies toward you\n• Deals 6% of your Max Health to yourself per second as Magical Damage\n• Automatically deactivates at 200 Health",
+    "owner_god": null
+  },
+  {
+    "id": "flaming_pearl",
+    "name": "Flaming Pearl",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T2/Icon_T2_FlamingPearl.png",
+    "tier": "T2",
+    "cost": 950,
+    "stats": {
+      "MagicalPower": 25,
+      "MaxHealth": 100
+    },
+    "passive": null,
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "freyas_tears",
+    "name": "Freya's Tears",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_FreyasTears.png",
+    "tier": "T3",
+    "cost": 2600,
+    "stats": {
+      "PhysicalProtection": 30,
+      "MagicalProtection": 35,
+      "CooldownReductionPercent": 20
+    },
+    "passive": "On 25% of your Health Lost:\n• +15 Physical and Magical Protections for 5s\n• Can stack up to 2 times",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "gauntlet_of_thebes",
+    "name": "Gauntlet of Thebes",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_GauntletOfThebes_Evolved.png",
+    "tier": "T3",
+    "cost": 2200,
+    "stats": {
+      "MaxHealth": 200,
+      "MaxMana": 150
+    },
+    "passive": "Assist a Minion: +1 Stack.\n\nGod Kill or Assist: +5 Stacks.\n\nStacks grants +15 Max Health (max 40 Stacks).\n\nAt 40 Stacks, Item evolves and gains:\n• +100 Max Health\n• +10 Physical and Magical Protection",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "gem",
+    "name": "Gem",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T1/Icon_T1_Gem.png",
+    "tier": "T1",
+    "cost": 450,
+    "stats": {
+      "MagicalPower": 15
+    },
+    "passive": null,
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "gem_of_focus",
+    "name": "Gem of Focus",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_GemOfFocus.png",
+    "tier": "T3",
+    "cost": 2550,
+    "stats": {
+      "MagicalPower": 65,
+      "CooldownReductionPercent": 20
+    },
+    "passive": "Ability Used: Gain a stack of Momentum.\n\nMomentum grants +7% Pathfinding for 8s. Stacks up to 3 times.",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "gem_of_isolation",
+    "name": "Gem of Isolation",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_GemOfIsolation.png",
+    "tier": "T3",
+    "cost": 2500,
+    "stats": {
+      "MaxHealth": 250,
+      "MagicalPower": 50
+    },
+    "passive": "Damaging Ability Hit: 15% Slow.\n\nThe Slow lasts for 2s.",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "genies_lamp",
+    "name": "Genie's Lamp",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Gods/Aladdin/Abilities/t_Item_Aladdin_Lamp.png",
+    "tier": "GodSpecific",
+    "cost": 0,
+    "stats": null,
+    "passive": null,
+    "active": "+0.6% (per Level) of all Stats from Items.\n\nOn Use: Access 3 Wishes\n• Wealth (+250 Gold. +10% Gold Gains & God Kills/Assists grant +33 Gold for 3m)\n• Immortality (While dead, instantly revive; Gain 75% Movement Speed for 10s)\n• Power (Reset ability and item cooldowns; Gain 1 charge of Genie's Strength)\n\nEach Wish may be used once per match.",
+    "owner_god": "Aladdin"
+  },
+  {
+    "id": "genjis_guard",
+    "name": "Genji's Guard",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_GenjisGuard.png",
+    "tier": "T3",
+    "cost": 2350,
+    "stats": {
+      "MagicalProtection": 55,
+      "CooldownReductionPercent": 15,
+      "MaxMana": 200,
+      "ManaPerTime": 5
+    },
+    "passive": "Hit by Magical Ability Damage: -3s Cooldowns.\n\nCooldown: 20s",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "gilded_arrow",
+    "name": "Gilded Arrow",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/AspectsInfluences/Icon_Starter_Arrow.png",
+    "tier": "Starter",
+    "cost": 650,
+    "stats": {
+      "InhandPower": 20,
+      "AttackSpeedPercent": 10
+    },
+    "passive": "Every 10s: Mark the highest Health enemy minion or jungle monster within 12.8m.\n• If you land the killing blow:\n• +3 Bonus Gold\n• +15% Attack Speed for 8s\n• +30 Mana\n\nRequires Level 20 to upgrade.",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "gjallarflare",
+    "name": "Gjallarflare",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icons_Curios_Gjallarflare.png",
+    "tier": "Curio",
+    "cost": 0,
+    "stats": null,
+    "passive": null,
+    "active": "On Use: Fire a traveling flare\n• Reveals enemies within 8.8m\n• Travels for 5s up to 44m\n\nOn Refire/Expire: Detonate Flare\n• Reveals enemies within 13.2m for 6s\n\nCooldown: 120s",
+    "owner_god": null
+  },
+  {
+    "id": "gladiators_shield",
+    "name": "Gladiator's Shield",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_LorgMor.png",
+    "tier": "T3",
+    "cost": 2450,
+    "stats": {
+      "CooldownReductionPercent": 10,
+      "PhysicalProtection": 25,
+      "MaxHealth": 200
+    },
+    "passive": "Abilities deal bonus Physical Damage.\n• Damage = +10 + 40% of your Item Protections\nTriggers once per Ability, per god.",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "glorious_pridwen",
+    "name": "Glorious Pridwen",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_Glorious_Pridwen.png",
+    "tier": "T3",
+    "cost": 2550,
+    "stats": {
+      "PhysicalProtection": 20,
+      "MagicalProtection": 20,
+      "CooldownReductionPercent": 12
+    },
+    "passive": null,
+    "active": "On Use:\n• Explode (4.8m radius):\n• Deal Magical Damage (40% of Protections)\n• Gain a Shield (125% of Protections) for 5s.\n• When the Shield expires or breaks: Explode again: Deal Magic Damage (70% of your Protections).\n\nCooldown: 45s",
+    "owner_god": null
+  },
+  {
+    "id": "gluttonous_grimoire",
+    "name": "Gluttonous Grimoire",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_GluttonousGrimoire.png",
+    "tier": "T3",
+    "cost": 2600,
+    "stats": {
+      "MagicalPower": 55,
+      "MaxHealth": 150,
+      "LifeStealPercent": 7.5,
+      "PhysicalPenetrationPercent": 10,
+      "MagicalPenetrationPercent": 10
+    },
+    "passive": "Store 25% of your Lifesteal healing as bonus Magical Damage on your next Attack.\n• If at full Health: Store 40% instead\n• Stored damage is capped to 33% of your Max Health",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "golden_blade",
+    "name": "Golden Blade",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_GoldenBlade.png",
+    "tier": "T3",
+    "cost": 2450,
+    "stats": {
+      "InhandPower": 20,
+      "PhysicalPower": 15,
+      "MaxHealth": 200,
+      "AttackSpeedPercent": 20
+    },
+    "passive": "Attacks deal bonus Physical Damage.\n• Damage = +10 + 20% of your Item Protections\n• Damages all Enemies within 2.5m",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "hastened_fatalis",
+    "name": "Hastened Fatalis",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_HastenedFatalis.png",
+    "tier": "T3",
+    "cost": 2650,
+    "stats": {
+      "InhandPower": 25,
+      "AttackSpeedPercent": 25
+    },
+    "passive": "Attack Hits a God: -12.5% Attack Movement Penalty.\n\nMelee hits grant 2 Stacks.\nStacks up to 4 times.\n\nBuff lasts 2s.",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "health_chalice",
+    "name": "Health Chalice",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icons_T3_Container_ChaliceofHealing.png",
+    "tier": "Consumable",
+    "cost": 300,
+    "stats": null,
+    "passive": null,
+    "active": "Consume charge: +10 Heal per second for 22s.\n\nStarts with 3 charges. Refilled when returning to base.",
+    "owner_god": null
+  },
+  {
+    "id": "health_potion",
+    "name": "Health Potion",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/Consumables/Icon_Consumable_HealthPotion.png",
+    "tier": "Consumable",
+    "cost": 50,
+    "stats": null,
+    "passive": null,
+    "active": "Consume: +10 Heal per second for 22s.\n\nCan carry up to 3.",
+    "owner_god": null
+  },
+  {
+    "id": "heartseeker",
+    "name": "Heartseeker",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_Heartseeker.png",
+    "tier": "T3",
+    "cost": 3000,
+    "stats": {
+      "PhysicalPower": 45,
+      "MaxMana": 250,
+      "ManaPerTime": 2,
+      "PhysicalPenetrationPercent": 10,
+      "MagicalPenetrationPercent": 10
+    },
+    "passive": "Ability Hit: +%Health Physical Damage.\n• Damage = 2% of your Strength, as a % of the target's Max Health.",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "heartwood_charm",
+    "name": "Heartwood Charm",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_HeartwoodCHarm.png",
+    "tier": "T3",
+    "cost": 2650,
+    "stats": {
+      "MaxHealth": 400,
+      "MaxMana": 250,
+      "CooldownReductionPercent": 10
+    },
+    "passive": null,
+    "active": "-20% Cooldowns for your Healing Abilities.\n\nPassive: When you heal with abilities, store 20% of that healing.\n\nOn Use: Heal all allies within 6.4m for the amount of healing stored.\n\nCooldown: 120s",
+    "owner_god": null
+  },
+  {
+    "id": "heimdallrs_sight",
+    "name": "Heimdallr's Sight",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icons_Curios_HeimdallrsSight.png",
+    "tier": "Curio",
+    "cost": 0,
+    "stats": null,
+    "passive": null,
+    "active": "On Use: Pulse a reveal area 4 times over 4s\n• Reveals enemies within 8.8m\n• Reveals Stealthed enemies and Wards\n\nCooldown: 90s",
+    "owner_god": null
+  },
+  {
+    "id": "helm_of_darkness",
+    "name": "Helm of Darkness",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_HelmOfDarkness.png",
+    "tier": "T3",
+    "cost": 2700,
+    "stats": {
+      "MagicalPower": 40,
+      "PhysicalProtection": 20,
+      "MagicalProtection": 25
+    },
+    "passive": null,
+    "active": "On Use: Become Stealthed and pass through players and walls for 6s.\n\nCannot use while Casting.\n\nCooldown: 90s\n\nDuring Moonlight Phase:\n• While Stealthed: +15% Movement Speed\n• Pass through an enemy god:\n• Physical Damage equal to 15% of your Max Health",
+    "owner_god": null
+  },
+  {
+    "id": "helm_of_radiance",
+    "name": "Helm of Radiance",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_HelmOfRadiance.png",
+    "tier": "T3",
+    "cost": 2500,
+    "stats": {
+      "MagicalPower": 65,
+      "PhysicalProtection": 35
+    },
+    "passive": "Take Physical Damage: +7 Physical Protection for 6s.\n\nStacks up to 4 times.",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "heroism",
+    "name": "Heroism",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/AspectsInfluences/Icon_Starter_Heroism.png",
+    "tier": "Starter",
+    "cost": 1800,
+    "stats": {
+      "MaxHealth": 250,
+      "PhysicalProtection": 45,
+      "MagicalProtection": 45,
+      "GoldPerTime": 1
+    },
+    "passive": "+1 Gold per second.\n\nWhen an ally within 8.8m is hit by Hard Crowd Control:\n• Give them a Shield equal to 50 +10% of your Max Health\n\nCooldown: 15s\n\nRequires Level 20.",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "hide_of_the_nemean_lion",
+    "name": "Hide of the Nemean Lion",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_HideoftheNemeanLion.png",
+    "tier": "T3",
+    "cost": 2550,
+    "stats": {
+      "MaxHealth": 350,
+      "PhysicalProtection": 35,
+      "HealthPerTime": 4
+    },
+    "passive": null,
+    "active": "On Use: Reflect:\n• 40% of pre-mitigated Attack Damage\n• 20% of pre-mitigated Ability Damage\n• Damage is Reflected as Physical Damage\n\nBuff lasts 4s.\n\nCooldown: 60s",
+    "owner_god": null
+  },
+  {
+    "id": "hooked_sword",
+    "name": "Hooked Sword",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T2/Icon_T2_HookedSword.png",
+    "tier": "T2",
+    "cost": 1000,
+    "stats": {
+      "CritChance": 15
+    },
+    "passive": null,
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "hunters_bow",
+    "name": "Hunter's Bow",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T2/Icon_T2_HuntersBow.png",
+    "tier": "T2",
+    "cost": 750,
+    "stats": {
+      "AttackSpeedPercent": 15
+    },
+    "passive": null,
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "hunters_cowl",
+    "name": "Hunter's Cowl",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/AspectsInfluences/Icon_Starter_HuntersCowl.png",
+    "tier": "Starter",
+    "cost": 2100,
+    "stats": {
+      "LifeStealPercent": 5,
+      "ManaPerTime": 2.5
+    },
+    "passive": "Adaptive Stat: +55 Strength or +80 Intelligence (based on highest item stat).\n\nWithin 8.8m of a God: +30% Attack Speed, +5% Lifesteal and +15% Movement Speed.\n\nAlone: +10% Movement Speed, +15% Attack Speed and +2.5% Lifesteal.\n\nRequires Level 20.",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "hussars_wings",
+    "name": "Hussar's Wings",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_HussarsWings.png",
+    "tier": "T3",
+    "cost": 3500,
+    "stats": {
+      "PhysicalProtection": 35,
+      "MagicalProtection": 35,
+      "MaxHealth": 500
+    },
+    "passive": "You are Immune to Slows.",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "hydras_lament",
+    "name": "Hydra's Lament",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_HydrasLament.png",
+    "tier": "T3",
+    "cost": 2450,
+    "stats": {
+      "PhysicalPower": 45,
+      "MaxMana": 200,
+      "ManaPerTime": 4,
+      "CooldownReductionPercent": 10
+    },
+    "passive": "Ability Used: Bonus Damage on your next successful Attack.\n• +30% for Melee or +20% for Ranged\n\nBuff lasts 8s.",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "infused_axe",
+    "name": "Infused Axe",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T2/Icon_T2_InfusedAxe.png",
+    "tier": "T2",
+    "cost": 1050,
+    "stats": {
+      "PhysicalPower": 15,
+      "ManaPerTime": 1,
+      "MaxMana": 150
+    },
+    "passive": "Kill or Assist a God: +25% Mana.",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "jade_scepter",
+    "name": "Jade Scepter",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_JadeScepter.png",
+    "tier": "T3",
+    "cost": 2750,
+    "stats": {
+      "MagicalPower": 100,
+      "MaxHealth": 250
+    },
+    "passive": null,
+    "active": "On Use: Place a jade current at a target location.\n• After 1s it erupts, knocking away all gods. Enemies are knocked towards the caster.\n\nCooldown: 60s",
+    "owner_god": null
+  },
+  {
+    "id": "jotunns_revenge",
+    "name": "Jotunn's Revenge",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_JotunnsRevenge.png",
+    "tier": "T3",
+    "cost": 2400,
+    "stats": {
+      "PhysicalPower": 35,
+      "CooldownReductionPercent": 25,
+      "MaxMana": 250,
+      "PhysicalPenetrationFlat": 5,
+      "MagicalPenetrationFlat": 5
+    },
+    "passive": "God Kill or Assist:\n• -1s Cooldown for Non-Ultimate Abilities\n• -5s Cooldown for Ultimate Abilities",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "killing_stone",
+    "name": "Killing Stone",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T2/Icon_T2_KillingStone.png",
+    "tier": "T2",
+    "cost": 900,
+    "stats": {
+      "MagicalPower": 35
+    },
+    "passive": null,
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "kinetic_cuirass",
+    "name": "Kinetic Cuirass",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_KineticCuirass.png",
+    "tier": "T3",
+    "cost": 2400,
+    "stats": {
+      "Plating": 5,
+      "MaxHealth": 300,
+      "PhysicalProtection": 25,
+      "MagicalProtection": 25
+    },
+    "passive": "Damaged by 3 Attacks from gods: Gain Kinetic. Stacks up to 2 times.\n\nKinetic makes your next Attack unleash a shockwave, even if it misses, dealing 40 (+4% of your Health) Physical Damage.",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "kopesh",
+    "name": "Kopesh",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T2/Icon_T2_Kopesh.png",
+    "tier": "T2",
+    "cost": 1250,
+    "stats": {
+      "CritChance": 10,
+      "PhysicalPower": 10
+    },
+    "passive": "Critically Strike a God: +5% Movement Speed for 4s.",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "leather_cowl",
+    "name": "Leather Cowl",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/AspectsInfluences/Icon_Starter_LeatherCowl.png",
+    "tier": "Starter",
+    "cost": 600,
+    "stats": {
+      "LifeStealPercent": 4,
+      "ManaPerTime": 1.5
+    },
+    "passive": "Adaptive Stat: +15 Strength or +25 Intelligence (based on highest item stat).\n\nWithin 8.8m of a God: +15% Attack Speed and +2.5% Movement Speed.\n\nAlone: +5% Movement Speed and +7.5% Attack Speed.\n\nRequires Level 20 to upgrade.",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "legionnaire_armor",
+    "name": "Legionnaire Armor",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T2/Icon_T2_LegionnaireArmor.png",
+    "tier": "T2",
+    "cost": 750,
+    "stats": {
+      "PhysicalProtection": 18
+    },
+    "passive": null,
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "lernaean_bow",
+    "name": "Lernaean Bow",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/DesignTemp/Icon_T3_LernaeanBow.png",
+    "tier": "T3",
+    "cost": 2500,
+    "stats": {
+      "PhysicalPower": 40,
+      "AttackSpeedPercent": 30
+    },
+    "passive": null,
+    "active": "On Use: Fire 3 arrows that pierce enemies in a 10.5m line.\n• Deals 40% of your Attack Damage as Physical Damage\n• -50% Shield\n• Can Critically Strike\n\nCooldown: 30s",
+    "owner_god": null
+  },
+  {
+    "id": "leviathans_hide",
+    "name": "Leviathan's Hide",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_LevianthansHide.png",
+    "tier": "T3",
+    "cost": 2500,
+    "stats": {
+      "Plating": 5,
+      "MaxHealth": 300,
+      "PhysicalProtection": 45
+    },
+    "passive": "Damaged by God Attack: That God is -10% Strength & Attack Damage for 4s.\n\nAttack an Enemy God: +8 Max Health Permanently.\n\nDamaged by an Enemy God: -0.5s once per Ability Cast or Attack.\n\nCooldown: 10s",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "lifebinder",
+    "name": "Lifebinder",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_Lifebinder.png",
+    "tier": "T3",
+    "cost": 2400,
+    "stats": {
+      "MagicalPower": 40,
+      "MaxHealth": 300,
+      "HealthPerTime": 3
+    },
+    "passive": null,
+    "active": "On Use: Fire a projectile that deals 60 (+8 per Level) Magic Damage.\n• Marks enemy Gods for 6s\n• First ally to damage a Marked target:\n• +60 (+8 per Level) Heal\n• +60 (+8 per Level) Shield\n• Consumes the Mark\n\nCooldown: 20s",
+    "owner_god": null
+  },
+  {
+    "id": "lively_acorn",
+    "name": "Lively Acorn",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/Ratatoskrs_Acorns/Acorn_T2_LivelyAcorn.png",
+    "tier": "T2",
+    "cost": 600,
+    "stats": {
+      "PhysicalPower": 15
+    },
+    "passive": "Non-Aspect:\n+15 Strength\n\nAspect:\n+175 Health",
+    "active": null,
+    "owner_god": "Ratatoskr"
+  },
+  {
+    "id": "lucerne_hammer",
+    "name": "Lucerne Hammer",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T2/Icon_T2_LucerneHammer.png",
+    "tier": "T2",
+    "cost": 1250,
+    "stats": {
+      "PhysicalPower": 20
+    },
+    "passive": null,
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "magis_cloak",
+    "name": "Magi's Cloak",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/magisshelter.png",
+    "tier": "T3",
+    "cost": 2400,
+    "stats": {
+      "PhysicalProtection": 35,
+      "MagicalProtection": 35
+    },
+    "passive": "Every 90s: Gain a Hard Crowd Control protective bubble.\n• When triggered, gain Crowd Control Immunity for 1.5s.",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "magic_acorn",
+    "name": "Magic Acorn",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/Ratatoskrs_Acorns/Acorn_T1_MagicAcorn.png",
+    "tier": "T1",
+    "cost": 0,
+    "stats": {
+      "PhysicalPower": 5
+    },
+    "passive": "Non-Aspect:\n+5 Strength\n\nAspect:\n+50 Health",
+    "active": null,
+    "owner_god": "Ratatoskr"
+  },
+  {
+    "id": "mana_potion",
+    "name": "Mana Potion",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/Consumables/Icon_Consumable_ManaPotion.png",
+    "tier": "Consumable",
+    "cost": 50,
+    "stats": null,
+    "passive": null,
+    "active": "Consume: +12 Mana per second for 14s.\n\nCan carry up to 3.",
+    "owner_god": null
+  },
+  {
+    "id": "mana_tome",
+    "name": "Mana Tome",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T2/Icon_T2_ManaTome.png",
+    "tier": "T2",
+    "cost": 500,
+    "stats": {
+      "ManaPerTime": 2,
+      "MaxMana": 250
+    },
+    "passive": null,
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "manchu_bow",
+    "name": "Manchu Bow",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T2/Icon_T2_ManchuBow.png",
+    "tier": "T2",
+    "cost": 950,
+    "stats": {
+      "InhandPower": 10,
+      "AttackSpeedPercent": 8
+    },
+    "passive": "Attacks deal +10 Physical Damage.",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "mantle_of_discord",
+    "name": "Mantle of Discord",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_MantleOfDiscord.png",
+    "tier": "T3",
+    "cost": 2600,
+    "stats": {
+      "PhysicalProtection": 35,
+      "MagicalProtection": 35,
+      "Tenacity": 15
+    },
+    "passive": "Damaged while below 40% Health:\n• Stuns enemies within 3.2m for 1s\n• +Crowd Control Immunity for 1s\n• +15 Dampening for 6s\n\nCooldown: 110s",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "masterwork_mod",
+    "name": "Masterwork Mod",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Gods/Vulcan/Abilities/Items/t_Item_Vulcan_Masterwork.png",
+    "tier": "GodSpecific",
+    "cost": 0,
+    "stats": null,
+    "passive": "Thumper gains 300 increased HP and applies a 10/15/20/25/30 Physical and Magical Protection buff to allied gods hit for 3s.\n\nSet 3 - You can only have one Mod from each set.\nRequires level 14.",
+    "active": null,
+    "owner_god": "Vulcan"
+  },
+  {
+    "id": "medal_of_defense",
+    "name": "Medal of Defense",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T2/Icon_T2_MedalOfDefense.png",
+    "tier": "T2",
+    "cost": 850,
+    "stats": {
+      "PhysicalProtection": 10,
+      "MaxHealth": 125
+    },
+    "passive": null,
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "medal_of_disruption",
+    "name": "Medal of Disruption",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T2/Icon_T2_MedalOfDisruption.png",
+    "tier": "T2",
+    "cost": 850,
+    "stats": {
+      "MagicalProtection": 12,
+      "MaxHealth": 150
+    },
+    "passive": null,
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "medallion",
+    "name": "Medallion",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T1/Icon_T1_Medallion.png",
+    "tier": "T1",
+    "cost": 300,
+    "stats": {
+      "MaxHealth": 75
+    },
+    "passive": null,
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "meditation",
+    "name": "Meditation",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/Utility/Icon_Utility_Meditation.png",
+    "tier": "Curio",
+    "cost": 0,
+    "stats": null,
+    "passive": null,
+    "active": "You and allies within 6.4m gain:\n• +10 (+2.5% missing Health) Heal per second for 4s\n• +10 (+3% missing Mana) Mana per second for 4s\n\nCooldown: 150s",
+    "owner_god": null
+  },
+  {
+    "id": "mercurys_talaria",
+    "name": "Mercury's Talaria",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icons_T3_MercurysTalaria.png",
+    "tier": "T3",
+    "cost": 2500,
+    "stats": {
+      "PathfindingItem": 12
+    },
+    "passive": "Adaptive Stat: +40 Strength or +70 Intelligence (based on highest item stat).\n\nWhile out of combat: Store energy as you move. Your next non-Ultimate Ability deals up to 8% more Damage based on stored energy.\n\n• Movement Ability deals up to 10% more Damage instead",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "midgardian_mail",
+    "name": "Midgardian Mail",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icons_T3_MidgardianMail.png",
+    "tier": "T3",
+    "cost": 2400,
+    "stats": {
+      "MaxHealth": 250,
+      "PhysicalProtection": 50
+    },
+    "passive": "Hit by a basic attack: the enemy has their Attack Speed reduced by 8% for 3s. Stacks up to 4 times.",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "mote_of_chaos",
+    "name": "Mote of Chaos",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_SoulLocket.png",
+    "tier": "T2",
+    "cost": 1250,
+    "stats": null,
+    "passive": "+5% of all Stats from Items.",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "multi_potion",
+    "name": "Multi Potion",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/Consumables/Icon_Consumable_MultiPotion.png",
+    "tier": "Consumable",
+    "cost": 50,
+    "stats": null,
+    "passive": null,
+    "active": "Consume:\n• +5 Heal per second for 22s\n• +5 Mana per second for 22s\n\nCan carry up to 3.",
+    "owner_god": null
+  },
+  {
+    "id": "musashis_dual_swords",
+    "name": "Musashi's Dual Swords",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_MusashisDualSwords.png",
+    "tier": "T3",
+    "cost": 2700,
+    "stats": {
+      "CritChance": 30,
+      "PhysicalPower": 35
+    },
+    "passive": "Critically Strike: +15% Movement Speed for 5s.",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "mystical_mail",
+    "name": "Mystical Mail",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icons_T3_MysticalMail.png",
+    "tier": "T3",
+    "cost": 2550,
+    "stats": {
+      "MaxHealth": 300,
+      "PhysicalProtection": 40
+    },
+    "passive": "Enemies Within 4m: 15 (+1 per Level) Magical Damage and lose 25% of Health Shield per 1s.\n\nRange Scaling Damage:\n• +50% at Close Range\n• -50% at Maximum Range",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "necronomicon",
+    "name": "Necronomicon",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_Necronomicon.png",
+    "tier": "T3",
+    "cost": 2550,
+    "stats": {
+      "MagicalPower": 50,
+      "MaxMana": 300,
+      "ManaPerTime": 5
+    },
+    "passive": "God Kill or Assist: +1 Stack of:\n• +30 Intelligence\n\nStacks up to 6 times.\n\nOn Death: Lose 4 Stacks.",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "nimble_ring",
+    "name": "Nimble Ring",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_NimbleRing.png",
+    "tier": "T3",
+    "cost": 2500,
+    "stats": {
+      "MagicalPower": 35,
+      "LifeStealPercent": 7.5,
+      "AttackSpeedPercent": 20
+    },
+    "passive": "For every 10 Intelligence:\n• +1 Attack Damage\n• +1% Attack Speed",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "oath_sworn_spear",
+    "name": "Oath-Sworn Spear",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_SerpentSpear.png",
+    "tier": "T3",
+    "cost": 2550,
+    "stats": {
+      "PhysicalPower": 50
+    },
+    "passive": "Ability Hit: Target's Physical Protection is reduced by 5 for 4s.\n• On God Kill or Assist: This effect increases by 1 Physical Protection.\n• This effect caps at 15 total Physical Protection reduction.",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "obsidian_shard",
+    "name": "Obsidian Shard",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_BalorsEye.png",
+    "tier": "T3",
+    "cost": 3050,
+    "stats": {
+      "MagicalPower": 70,
+      "PhysicalPenetrationPercent": 20,
+      "MagicalPenetrationPercent": 20
+    },
+    "passive": "Gain the Shattering effect:\nFirst Ability Cast: Gains +20% Penetration\n• This effect ignores the Penetration cap\n• Shattering does not Stack with itself.\n\nCooldown: 10s",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "odigba",
+    "name": "Odigba",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T2/Icon_T2_IlekeNecklace.png",
+    "tier": "T2",
+    "cost": 800,
+    "stats": {
+      "MaxHealth": 125,
+      "MaxMana": 150
+    },
+    "passive": "God Kill or Assist: Heal +5% Max Health over 6s.",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "odysseus_bow",
+    "name": "Odysseus' Bow",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_OdysseusBow.png",
+    "tier": "T3",
+    "cost": 2450,
+    "stats": {
+      "AttackSpeedPercent": 45
+    },
+    "passive": "Every fourth Attack Hit: Trigger Chain Lightning.\n• Damage = 15 (+60% Attack Damage) Physical Damage\n• Hits target and up to 4 nearby enemies\n• Bounce Range: 4.8m\n• Can hit the same target more than once",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "olmec_blue",
+    "name": "Olmec Blue",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T2/Icon_T2_OlmecBlue.png",
+    "tier": "T2",
+    "cost": 700,
+    "stats": {
+      "MaxHealth": 185,
+      "HealthPerTime": 2
+    },
+    "passive": null,
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "omen_drum",
+    "name": "Omen Drum",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Items_T3_OmenDrum.png",
+    "tier": "T3",
+    "cost": 2800,
+    "stats": {
+      "EchoItem": 30
+    },
+    "passive": null,
+    "active": "Adaptive Stat: +55 Strength or +90 Intelligence (based on highest item stat).\n\nOn Use: For 5s, all enemy gods and jungle monsters you hit with an Ability are marked. After the duration expires, 15% of all Ability Damage you dealt to marked targets is echoed to all marked targets.\n\nCooldown: 90s",
+    "owner_god": null
+  },
+  {
+    "id": "oni_hunters_garb",
+    "name": "Oni Hunter's Garb",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icons_T3_OniHuntersGarb.png",
+    "tier": "T3",
+    "cost": 2500,
+    "stats": {
+      "MagicalProtection": 50,
+      "ManaPerTime": 8,
+      "MaxHealth": 150,
+      "MaxMana": 200
+    },
+    "passive": "For each enemy god within 8.8m: +4% Damage Mitigation\n• Max 3 stacks",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "oracle_staff",
+    "name": "Oracle Staff",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T2/Icon_T2_OracleStaff.png",
+    "tier": "T2",
+    "cost": 950,
+    "stats": {
+      "MagicalPower": 20,
+      "ManaPerTime": 1,
+      "MaxMana": 150
+    },
+    "passive": "Kill or Assist a God: +25% Mana.",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "pendulum_blade",
+    "name": "Pendulum Blade",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_PendulumBlade.png",
+    "tier": "T3",
+    "cost": 2750,
+    "stats": {
+      "PhysicalPower": 30,
+      "CooldownReductionPercent": 10,
+      "PhysicalPenetrationPercent": 10,
+      "MagicalPenetrationPercent": 10
+    },
+    "passive": null,
+    "active": "On Use: -4s Ability Cooldowns.\n\nCooldown: 40s",
+    "owner_god": null
+  },
+  {
+    "id": "pendulum_of_the_ages",
+    "name": "Pendulum of The Ages",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/AspectsInfluences/Icon_Starter_SandsOfTimeUpgrade.png",
+    "tier": "Starter",
+    "cost": 2150,
+    "stats": {
+      "CooldownReductionPercent": 20,
+      "ManaPerTime": 44
+    },
+    "passive": "Adaptive Stat: +45 Strength or +70 Intelligence (based on highest item stat).\n\n+4 Mana per second per 10% of missing Mana.\n\n+3 Strength or +7 Intelligence (based on highest item stat) per 10% of available Mana.",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "phantom_shell",
+    "name": "Phantom Shell",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_Relic_PhantomShell.png",
+    "tier": "Relic",
+    "cost": 0,
+    "stats": null,
+    "passive": null,
+    "active": "On Use: +100 (+10 per Level) Shield yourself and allies within 5.6m for 3s.\n\nAffected Gods:\n• Take 20% (+1% per Level) reduced Attack Damage\n• Can pass through players and player-made walls\n\nCooldown: 120s",
+    "owner_god": null
+  },
+  {
+    "id": "pharaohs_curse",
+    "name": "Pharaoh's Curse",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_PharaohsCurse.png",
+    "tier": "T3",
+    "cost": 2450,
+    "stats": {
+      "Plating": 5,
+      "MaxHealth": 250,
+      "MagicalProtection": 30,
+      "AttackSpeedPercent": 20
+    },
+    "passive": null,
+    "active": "On Use: Enemies within 5.6m:\n• -50% Shields\n• -20% Movement Speed\n• -40% Attack Speed\n\nDebuff lasts 4s.\n\nCooldown: 45s",
+    "owner_god": null
+  },
+  {
+    "id": "phoenix_feather",
+    "name": "Phoenix Feather",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_PhoenixAmulet.png",
+    "tier": "T3",
+    "cost": 2400,
+    "stats": {
+      "MaxHealth": 300,
+      "MagicalProtection": 35,
+      "Dampening": 5
+    },
+    "passive": null,
+    "active": "On Use: Fire 3 Pulses that Heal you and True Damage enemies within 3.2m.\n• Heal = +75 Health +7.5% Missing Health\n• True Damage = +3% Max Health from Items\n\nCooldown: 120s",
+    "owner_god": null
+  },
+  {
+    "id": "plated_metal",
+    "name": "Plated Metal",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T2/Icon_T2_PlatedArmor.png",
+    "tier": "T2",
+    "cost": 900,
+    "stats": {
+      "Plating": 9
+    },
+    "passive": null,
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "polynomicon",
+    "name": "Polynomicon",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_Polynomicon.png",
+    "tier": "T3",
+    "cost": 2550,
+    "stats": {
+      "MagicalPower": 75,
+      "ManaPerTime": 3,
+      "MaxMana": 200
+    },
+    "passive": "Ability Used: Your next Attack deals bonus Magical Damage\n• Damage = 80% of your Intelligence\n\nCooldown: 2s",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "prophetic_cloak",
+    "name": "Prophetic Cloak",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_Prophetic_Cloak_Evolution.png",
+    "tier": "T3",
+    "cost": 2400,
+    "stats": {
+      "PhysicalProtection": 22,
+      "MagicalProtection": 22,
+      "CooldownReductionPercent": 10
+    },
+    "passive": "Damage a God: +1 Protection Stack against the damage type they deal. Cooldown: 5s.\n\nAt +15 of each Protection Stack, item evolves:\n• +10 Physical Protection and Magical Protection\n• +6% Damage Mitigation (or +12% if total Protections > 300)",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "purification_beads",
+    "name": "Purification Beads",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/Utility/T_Icon_Utility_PurificationBeads.png",
+    "tier": "Relic",
+    "cost": 0,
+    "stats": null,
+    "passive": null,
+    "active": "On Use: Immune to Crowd Control for 2s.\n\nCooldown: 150s",
+    "owner_god": null
+  },
+  {
+    "id": "qins_blade",
+    "name": "Qin's Blade",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_QinsBlade.png",
+    "tier": "T3",
+    "cost": 2600,
+    "stats": {
+      "InhandPower": 30,
+      "AttackSpeedPercent": 25
+    },
+    "passive": "Attack Hit: +Bonus Physical Damage.\n\nBonus Damage = +2% Target Base Health & +5% Target Item Health",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "radiant_bulwark",
+    "name": "Radiant Bulwark",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icons_T3_RadiantBulwark.png",
+    "tier": "T3",
+    "cost": 2750,
+    "stats": {
+      "Plating": 15,
+      "PhysicalProtection": 20,
+      "MagicalProtection": 20
+    },
+    "passive": null,
+    "active": "On Use: Create a wall of light that protects allies behind you for 6s. Grants them all your Plating, Dampening, and half of your Protections from enemies on the other side and yourself 20% Damage Mitigation.\n\n• You are Silenced, Disarmed, and cannot turn while channeling\n\nCooldown: 100s",
+    "owner_god": null
+  },
+  {
+    "id": "rage",
+    "name": "Rage",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_Rage.png",
+    "tier": "T3",
+    "cost": 2450,
+    "stats": {
+      "PhysicalPower": 30,
+      "CritChance": 20
+    },
+    "passive": "God Kill or Assist:\n• +4% Critical Strike Chance (Max 20%)\n\nAfter 5 God Kills or Assists:\n• +10% additional Critical Strike Chance",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "ragnaroks_wake",
+    "name": "Ragnarok's Wake",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icons_RagnaroksWake.png",
+    "tier": "T3",
+    "cost": 2600,
+    "stats": {
+      "MaxHealth": 250,
+      "PhysicalProtection": 45
+    },
+    "passive": null,
+    "active": "On Use: Buildup for 2s before flying for 2.5s to your target location as a meteor of Ragnarok. Can travel up to 30m.\n• Enemies near where you land take Deal 600 Magical Damage and are knocked straight up.\n\nCooldown: 140s",
+    "owner_god": null
+  },
+  {
+    "id": "regrowth_striders",
+    "name": "Regrowth Striders",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_RegrowthStriders.png",
+    "tier": "T3",
+    "cost": 2550,
+    "stats": {
+      "PhysicalProtection": 35,
+      "ManaPerTime": 3,
+      "CooldownReductionPercent": 10
+    },
+    "passive": "Heal yourself with an Ability:\n• +25% Movement Speed (decays to 0%) for 4s\n• Cooldown: 10s\n\nGain any Movement Speed buff:\n• +5% Health Heal over 10s",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "reliquary",
+    "name": "Reliquary",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T1/Icon_T1_Reliquary.png",
+    "tier": "T1",
+    "cost": 300,
+    "stats": {
+      "ManaPerTime": 2
+    },
+    "passive": null,
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "resolute_mantle",
+    "name": "Resolute Mantle",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icons_T3_ResoluteMantle.png",
+    "tier": "T3",
+    "cost": 2750,
+    "stats": {
+      "MaxHealth": 550,
+      "Tenacity": 10
+    },
+    "passive": "When Hard Crowd Controlled by an Ability:\n• +25 Health Regen and +5 Tenacity for 4s\n• This effect can stack\n\n• When stacks fall off, gain 0.5 Health Regen and 1 Tenacity permanently\n• Stacks up to 20 times",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "resonator_mod",
+    "name": "Resonator Mod",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Gods/Vulcan/Abilities/Items/t_Item_Vulcan_Resonator.png",
+    "tier": "GodSpecific",
+    "cost": 0,
+    "stats": null,
+    "passive": "Thumper gains 150 increased HP and applies an 10/15/20/25/30% Attack Speed debuff for 3s on hit.\n\nSet 2 - You can only have one Mod from each set.\nRequires level 7.",
+    "active": null,
+    "owner_god": "Vulcan"
+  },
+  {
+    "id": "ring",
+    "name": "Ring",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T1/Icon_T1_Ring.png",
+    "tier": "T1",
+    "cost": 400,
+    "stats": {
+      "CooldownReductionPercent": 5
+    },
+    "passive": null,
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "ring_of_dispel",
+    "name": "Ring of Dispel",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T2/Icon_T2_RingOfDispel.png",
+    "tier": "T2",
+    "cost": 950,
+    "stats": {
+      "MagicalPower": 20,
+      "CooldownReductionPercent": 10
+    },
+    "passive": "Hard Crowd Control a God: Target is -10 Strength and -16 Intelligence for 4s.",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "riptalon",
+    "name": "Riptalon",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icons_T3_Riptalon.png",
+    "tier": "T3",
+    "cost": 2700,
+    "stats": {
+      "LifeStealPercent": 7.5,
+      "InhandPower": 20,
+      "PhysicalPenetrationPercent": 10,
+      "MagicalPenetrationPercent": 10,
+      "AttackSpeedPercent": 20
+    },
+    "passive": "While Above 50% Health: +10% Attack Damage\n\nWhile Below 50% Health:\n• +25% Attack Damage\n• +7.5% Lifesteal",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "rod_of_asclepius",
+    "name": "Rod of Asclepius",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/DesignTemp/RodofAscelpius_T3.png",
+    "tier": "T3",
+    "cost": 2350,
+    "stats": {
+      "MagicalPower": 65,
+      "HealthPerTime": 3,
+      "MaxHealth": 225
+    },
+    "passive": null,
+    "active": "On Use: Heal all allies within 8.8m.\n• +10% Health Heal over 10s\n• Counts as Ability healing\n\nIf target has 6 debuffs:\n• +10% Health Heal instantly\n• Grants all non-damage immunities for 1s\n\nCosts 15% Mana.\n\nCooldown: 90s",
+    "owner_god": null
+  },
+  {
+    "id": "rod_of_tahuti",
+    "name": "Rod of Tahuti",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_EldritchOrb.png",
+    "tier": "T3",
+    "cost": 3000,
+    "stats": {
+      "MagicalPower": 85,
+      "MaxMana": 250,
+      "ManaPerTime": 2,
+      "MagicalPenetrationPercent": 5,
+      "PhysicalPenetrationPercent": 5
+    },
+    "passive": "+Intelligence equal to 25% of your Intelligence from items.",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "rune",
+    "name": "Rune",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T1/Icon_T1_Rune.png",
+    "tier": "T1",
+    "cost": 300,
+    "stats": {
+      "MagicalProtection": 7
+    },
+    "passive": null,
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "runeforged_hammer",
+    "name": "Runeforged Hammer",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_RuneforgedHammer.png",
+    "tier": "T3",
+    "cost": 2550,
+    "stats": {
+      "MaxHealth": 350,
+      "PhysicalPower": 45,
+      "HealthPerTime": 3
+    },
+    "passive": "Hard Crowd Control a God:\n• Mark them with a Rune for 5s\n• Attack to forge the Rune, dealing +50 (+65% of your Item Protections) as Magical Damage\n\nHard Crowd Control a God: -6s Item Cooldown.\n\nCooldown: 30s",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "runic_hide",
+    "name": "Runic Hide",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T2/Icon_T2_RunicHide.png",
+    "tier": "T2",
+    "cost": 850,
+    "stats": {
+      "Dampening": 10
+    },
+    "passive": null,
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "sabre",
+    "name": "Sabre",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T1/Icon_T1_Sabre.png",
+    "tier": "T1",
+    "cost": 550,
+    "stats": {
+      "CritChance": 7
+    },
+    "passive": null,
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "sages_ring",
+    "name": "Sage's Ring",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T2/Icon_T2_SagesRing.png",
+    "tier": "T2",
+    "cost": 800,
+    "stats": {
+      "MagicalProtection": 12,
+      "CooldownReductionPercent": 10
+    },
+    "passive": null,
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "sands_of_time",
+    "name": "Sands of Time",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/AspectsInfluences/Icon_Starter_SandsOfTime.png",
+    "tier": "Starter",
+    "cost": 650,
+    "stats": {
+      "CooldownReductionPercent": 10,
+      "ManaPerTime": 2
+    },
+    "passive": "Adaptive Stat: +15 Strength or +25 Intelligence (based on highest item stat).\n\n+0.4 Mana per second per 10% of missing Mana.\n\nRequires Level 20 to upgrade.",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "sanguine_lash",
+    "name": "Sanguine Lash",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_SanguineLash.png",
+    "tier": "T3",
+    "cost": 2650,
+    "stats": {
+      "PhysicalPower": 25,
+      "MagicalProtection": 30,
+      "LifeStealPercent": 5
+    },
+    "passive": null,
+    "active": "Enemy gods Within 4m: -0.75% Health (max 200) as Physical Damage per 1s.\n• +1% for every 10% Lifesteal\n\nOn Use:\n• Now damages every 0.33s for 4s.\n• Cooldown: 60s",
+    "owner_god": null
+  },
+  {
+    "id": "sash",
+    "name": "Sash",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T1/Icon_T1_Sash.png",
+    "tier": "T1",
+    "cost": 300,
+    "stats": {
+      "HealthPerTime": 2
+    },
+    "passive": null,
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "scepter_of_dominion",
+    "name": "Scepter of Dominion",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_ScepterofDominion.png",
+    "tier": "T3",
+    "cost": 2400,
+    "stats": {
+      "MagicalPower": 30,
+      "MaxHealth": 150,
+      "MaxMana": 200,
+      "ManaPerTime": 3
+    },
+    "passive": null,
+    "active": "On Use: Create a zone that puts gods into Stasis.\n• The Zone appears after 1s\n• The Stasis lasts 2s\n\nCooldown: 90s",
+    "owner_god": null
+  },
+  {
+    "id": "screeching_gargoyle",
+    "name": "Screeching Gargoyle",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_ScreechingGargoyle.png",
+    "tier": "GodSpecific",
+    "cost": 2400,
+    "stats": {
+      "MagicalProtection": 50,
+      "CooldownReductionPercent": 15
+    },
+    "passive": null,
+    "active": "On Use: Enemies in front of you:\n• Silenced for 1s\n• -10% Protections for 4s\n\nCooldown: 90s\n\nDuring Moonlight Phase:\n• Hits enemies around you\n• Silence lasts 1.5s\n• -15% Protections",
+    "owner_god": null
+  },
+  {
+    "id": "scythe",
+    "name": "Scythe",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T1/Icon_T1_Scythe.png",
+    "tier": "T1",
+    "cost": 550,
+    "stats": {
+      "LifeStealPercent": 3
+    },
+    "passive": null,
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "seismic_mod",
+    "name": "Seismic Mod",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Gods/Vulcan/Abilities/Items/t_Item_Vulcan_Seismic.png",
+    "tier": "GodSpecific",
+    "cost": 0,
+    "stats": null,
+    "passive": "Earthshaker Knocks Up and Trembles enemies it hits for 2s.\n\nSet 3 - You can only have one Mod from each set.\nRequires level 14.",
+    "active": null,
+    "owner_god": "Vulcan"
+  },
+  {
+    "id": "selflessness",
+    "name": "Selflessness",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/AspectsInfluences/Icon_Starter_Selflessness.png",
+    "tier": "Starter",
+    "cost": 550,
+    "stats": {
+      "MaxHealth": 100,
+      "PhysicalProtection": 10,
+      "MagicalProtection": 10
+    },
+    "passive": "Ally god within 8.8m is hit by Hard CC:\n• Shield them for 25+5% of your Max Health\n• Cooldown: 20s\n\nRequires Level 20 to upgrade.",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "sentry_ward",
+    "name": "Sentry Ward",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/Utility/Icon_Utility_SentryWard.png",
+    "tier": "Consumable",
+    "cost": 120,
+    "stats": null,
+    "passive": null,
+    "active": "Consume: Place a Ward.\n• Reveals enemies and enemy wards within 7.2m\n• Lasts 120s or until destroyed\n\nCan carry up to 1.\n\n(Max 2 Wards can be Placed)",
+    "owner_god": null
+  },
+  {
+    "id": "sharpshooters_arrow",
+    "name": "Sharpshooter's Arrow",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/AspectsInfluences/Icon_Aspect_Ranger.png",
+    "tier": "Starter",
+    "cost": 2150,
+    "stats": {
+      "InhandPower": 60,
+      "CritChance": 15,
+      "AttackSpeedPercent": 25
+    },
+    "passive": "+5% Gold Gain from Kills and Assists.\nIncreased Attack damage to enemy gods farther away, capping at +10% at 6m.\n\nRequires Level 20.",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "shell_of_rebuke",
+    "name": "Shell of Rebuke",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_Relic_ShellOfRebuke.png",
+    "tier": "Relic",
+    "cost": 2500,
+    "stats": {
+      "PhysicalProtection": 20,
+      "MagicalProtection": 20
+    },
+    "passive": null,
+    "active": "+7.5% of all Stats from Items.\n\nOn Use: Create a field of rebuke for allies that mitigates 35% Damage, up to 400 (+50 Per Level).\n\nUpon Entering Field:\n• +100 (+10 per Level) Shield for 3s. While it holds gain player and player-made wall passthrough.\n\nCooldown: 120s",
+    "owner_god": null
+  },
+  {
+    "id": "shield",
+    "name": "Shield",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T1/Icon_T1_Shield.png",
+    "tier": "T1",
+    "cost": 300,
+    "stats": {
+      "PhysicalProtection": 6
+    },
+    "passive": null,
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "shield_of_the_phoenix",
+    "name": "Shield of the Phoenix",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_ShieldOfThePhoenix.png",
+    "tier": "T3",
+    "cost": 2400,
+    "stats": {
+      "PhysicalProtection": 35,
+      "MaxHealth": 225,
+      "CooldownReductionPercent": 10,
+      "Plating": 5
+    },
+    "passive": "Ability Hit a God:\n• +1.5% Health Heal\n• +2% Mana Restore\n\nTriggers once per Ability, per god.",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "shield_splitter",
+    "name": "Shield Splitter",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/DesignTemp/shieldsplitter.png",
+    "tier": "T3",
+    "cost": 2400,
+    "stats": {
+      "PhysicalPower": 40,
+      "PhysicalProtection": 15,
+      "MagicalProtection": 15
+    },
+    "passive": null,
+    "active": "On Use: Fire a projectile 11.2m forward.\n• +40 (+5 per Level) True Damage\n• If an enemy is Shielded:\n• -70% Shield\n• You gain a Shield equal to the amount of Shield reduced\n\nCooldown: 15s",
+    "owner_god": null
+  },
+  {
+    "id": "shifters_shield",
+    "name": "Shifter's Shield",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_ShapeShifterShield.png",
+    "tier": "T3",
+    "cost": 2650,
+    "stats": {
+      "MaxHealth": 300,
+      "PhysicalProtection": 25,
+      "MagicalProtection": 25,
+      "HealthPerTime": 4
+    },
+    "passive": "Over 75% Health: +30 Strength or +40 Intelligence (whichever is higher).\n\nUnder 75% Health: +20 Physical and Magical Protection.",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "shoguns_ofuda",
+    "name": "Shogun's Ofuda",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_ShogunsOfuda.png",
+    "tier": "T3",
+    "cost": 2500,
+    "stats": {
+      "Dampening": 5,
+      "MaxHealth": 200,
+      "MagicalProtection": 40,
+      "AttackSpeedPercent": 15
+    },
+    "passive": "+20% Attack Speed for you and allies within 8.8m.",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "shrapnel_mod",
+    "name": "Shrapnel Mod",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Gods/Vulcan/Abilities/Items/t_Item_Vulcan_Shrapnel.png",
+    "tier": "GodSpecific",
+    "cost": 0,
+    "stats": null,
+    "passive": "Inferno Cannon applies additional damage over time on hit. Hits 6 times over 3s for 2/4/6/8/10 + 2% INT per hit.\n\nSet 2 - You can only have one Mod from each set.\nRequires level 7.",
+    "active": null,
+    "owner_god": "Vulcan"
+  },
+  {
+    "id": "shroud_of_vengeance",
+    "name": "Shroud Of Vengeance",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icons_T3_ShroudOfVengeance.png",
+    "tier": "T3",
+    "cost": 2500,
+    "stats": {
+      "PhysicalProtection": 20,
+      "MagicalProtection": 20,
+      "Tenacity": 15
+    },
+    "passive": "When Hard Crowd Controlled: Release a shockwave around yourself, dealing 50 (+40% of your Protections, up to 650) Physical Damage.",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "silverbranch_bow",
+    "name": "Silverbranch Bow",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_SilverbranchBow.png",
+    "tier": "T3",
+    "cost": 2700,
+    "stats": {
+      "InhandPower": 25,
+      "PhysicalPenetrationPercent": 10,
+      "MagicalPenetrationPercent": 10,
+      "AttackSpeedPercent": 30
+    },
+    "passive": "Every third Attack Hit: Fire a homing Silver Arrow at your target.\n• Damage = 25% of your Basic Attack Damage as Physical Damage\n• Fire 1 arrow for every 1 Attack Speed you have.",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "skeggox",
+    "name": "Skeggox",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T2/Icon_T2_Skeggox.png",
+    "tier": "T2",
+    "cost": 1000,
+    "stats": {
+      "PhysicalPower": 15
+    },
+    "passive": null,
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "soul_gem",
+    "name": "Soul Gem",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icons_T3_SoulGem.png",
+    "tier": "T3",
+    "cost": 2500,
+    "stats": {
+      "MagicalPower": 60,
+      "CooldownReductionPercent": 10,
+      "LifeStealPercent": 7.5,
+      "PhysicalPenetrationFlat": 5,
+      "MagicalPenetrationFlat": 5
+    },
+    "passive": "Ability Hit: +1 Stack.\n\nThree Stacks: Next Ability Hit:\n• Deals Bonus Damage (40% Intelligence)\n• +20(+6 per Level) Heal you and allies within 3.2m\n• Removes the Stacks",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "soul_reaver",
+    "name": "Soul Reaver",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_SoulDevourer.png",
+    "tier": "T3",
+    "cost": 2950,
+    "stats": {
+      "MagicalPower": 85,
+      "MaxMana": 250,
+      "ManaPerTime": 5
+    },
+    "passive": "Ability Hit: +Bonus Magical Damage.\n\nBonus Damage = +1.2% Target Base Health & +3% Target Item Health, dealt 4 times over 2s.\n\nTriggers once per Ability, per god.",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "soul_reliquary",
+    "name": "Soul Reliquary",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T2/Icon_T2_SoulReliquary.png",
+    "tier": "T2",
+    "cost": 900,
+    "stats": {
+      "ManaPerTime": 4,
+      "MagicalPower": 20
+    },
+    "passive": null,
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "spear_of_desolation",
+    "name": "Spear of Desolation",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_SpearofDesolation.png",
+    "tier": "T3",
+    "cost": 2650,
+    "stats": {
+      "MagicalPower": 75,
+      "CooldownReductionPercent": 10,
+      "PhysicalPenetrationFlat": 10,
+      "MagicalPenetrationFlat": 10
+    },
+    "passive": "God Kill:\n• -3s Non Ultimate Cooldowns\n• -10s Ultimate Cooldowns\n\nGod Assist:\n• -1.5s Non Ultimate Cooldowns\n• -5s Ultimate Cooldowns",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "spear_of_the_magus",
+    "name": "Spear Of The Magus",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icons_T3_SpearoftheMagus.png",
+    "tier": "T3",
+    "cost": 2700,
+    "stats": {
+      "MagicalPower": 75,
+      "MagicalPenetrationPercent": 10,
+      "PhysicalPenetrationPercent": 10
+    },
+    "passive": "Ability Hit a God: That God is marked for 8s. Marked Gods take 5% increased damage from all sources.",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "spectral_armor",
+    "name": "Spectral Armor",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_SpectralArmor.png",
+    "tier": "T3",
+    "cost": 2300,
+    "stats": {
+      "Plating": 10,
+      "MaxHealth": 450,
+      "PhysicalProtection": 20
+    },
+    "passive": "You take -30% Damage from Critical Strikes. Ability Critical Strikes are mitigated by your Plating.\n\nAllies within 8.8m: Take -15% Damage from Critical Strikes.",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "sphere_of_negation",
+    "name": "Sphere of Negation",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_SphereOfNegation.png",
+    "tier": "T3",
+    "cost": 2750,
+    "stats": {
+      "MagicalPower": 40,
+      "MagicalProtection": 50
+    },
+    "passive": "Passive: Gain +2% Max Health Magical Shield every 3s, up to a maximum of +14% Max Health.",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "spirit_robe",
+    "name": "Spirit Robe",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_SpiritRobe.png",
+    "tier": "T3",
+    "cost": 2500,
+    "stats": {
+      "PhysicalProtection": 20,
+      "MagicalProtection": 20,
+      "Tenacity": 15
+    },
+    "passive": "Hit by Hard Crowd Control:\n• +40 Physical Protection\n• +40 Magical Protection\n• +4% Health Heal over time\n\nBuff lasts 6s.",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "staff_of_myrddin",
+    "name": "Staff of Myrddin",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_StaffOfMyrddin.png",
+    "tier": "T3",
+    "cost": 2900,
+    "stats": {
+      "MagicalPower": 75,
+      "CooldownReductionPercent": 10
+    },
+    "passive": null,
+    "active": "On Use: Next non-Ultimate Ability used will have no cooldown.\n\nCooldown: 80s",
+    "owner_god": null
+  },
+  {
+    "id": "stalwart_sigil",
+    "name": "Stalwart Sigil",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T2/Icon_T2_Sigil.png",
+    "tier": "T2",
+    "cost": 1150,
+    "stats": {
+      "PhysicalProtection": 15,
+      "MagicalProtection": 15
+    },
+    "passive": null,
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "stampede",
+    "name": "Stampede",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_Stampede.png",
+    "tier": "T3",
+    "cost": 2400,
+    "stats": {
+      "MaxHealth": 250,
+      "PhysicalProtection": 30,
+      "HealthPerTime": 5
+    },
+    "passive": null,
+    "active": "On Use: You and allies within 6.4m gain:\n• Slow Immunity\n• +60% Movement Speed that decays to +20% over 4s\n\nCooldown: 90s",
+    "owner_god": null
+  },
+  {
+    "id": "stone_of_binding",
+    "name": "Stone of Binding",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_BindingsOfLyngvi.png",
+    "tier": "T3",
+    "cost": 2550,
+    "stats": {
+      "PhysicalProtection": 35,
+      "MagicalProtection": 35,
+      "Dampening": 5
+    },
+    "passive": "Hard Crowd Control an Enemy: Apply -7 Physical and Magical Protection for 6s.\n\nStacks up to 3 times. Stacks fall off one at a time.",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "stygian_anchor",
+    "name": "Stygian Anchor",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icons_T3_StygianAnchor.png",
+    "tier": "T3",
+    "cost": 2550,
+    "stats": {
+      "PhysicalProtection": 35,
+      "MagicalProtection": 30
+    },
+    "passive": "On God Damage Dealt: Apply 25% Healing Reduction for 5s & Apply 1 Stack of Stygian Sludge for 1.25s. (Max 5) Stacks fall off one at a time.\n• Triggers once per Ability, per god.\n\nPer Stack:\n• -3% Attack Speed\n• 5% of their Healing Echoed to you\n\nHealing Reduction does not stack with other similar effects.",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "sun_beam_bow",
+    "name": "Sun Beam Bow",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icons_DesignTemp_T3_NewSunBeamBow.png",
+    "tier": "T3",
+    "cost": 2400,
+    "stats": {
+      "InhandPower": 20,
+      "AttackSpeedPercent": 10
+    },
+    "passive": null,
+    "active": "Adaptive Stat: +20 Strength or +40 Intelligence (based on highest item stat).\n\nOn Use: Fire +2 Projectiles per Attack\n• Deals 10 +30% Attack Damage as Magical Damage\n• 8.8m Range\n• Toggleable\n• -5% Max Mana per second while active.\n\nStructures and Bosses take 25% damage from Sun Beam Bow.",
+    "owner_god": null
+  },
+  {
+    "id": "sundering_arc",
+    "name": "Sundering Arc",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/AspectsInfluences/Icons_Influences_Sunder.png",
+    "tier": "Relic",
+    "cost": 0,
+    "stats": null,
+    "passive": null,
+    "active": "On Use:\n• Bleed enemies, dealing 25 (+4 per Level) True Damage 3 times over 2s. Jungle Monsters and Bosses take 50 (+8 per Level) instead.\n\nCooldown: 120s. -30s Cooldown if only used on Jungle Monsters/Bosses.",
+    "owner_god": null
+  },
+  {
+    "id": "sundering_axe",
+    "name": "Sundering Axe",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/AspectsInfluences/Icon_Starter_SunderingAxeUpgrade.png",
+    "tier": "Starter",
+    "cost": 2150,
+    "stats": {
+      "PhysicalProtection": 30,
+      "MagicalProtection": 30
+    },
+    "passive": "Adaptive Stat: +30 Strength or +50 Intelligence (based on highest item stat).\n\nDamage a God:\n• +150 (+10% of your Item Protections) Bonus True Damage\n• +125 Heal\n\nHits only one God per activation\n\nRequires Level 20.\n\nCooldown: 8s",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "sundering_echo",
+    "name": "Sundering Echo",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/AspectsInfluences/Icons_Influences_SunderingEcho.png",
+    "tier": "Relic",
+    "cost": 2500,
+    "stats": null,
+    "passive": null,
+    "active": "Adaptive Stat: +25 Strength or +45 Intelligence (based on highest item stat).\n\n+7.5% of all Stats from Items.\n\nOn Use:\n• Bleed enemies, dealing 25 (+4 per Level) True Damage 5 times over 4s. Jungle Monsters and Bosses take 50 (+8 per Level) instead.\n• Enemies who die while bleeding explode, applying the bleed to nearby enemies.\n\n-30s Cooldown if only used on Jungle Monsters/Bosses.\n\nCooldown: 120s",
+    "owner_god": null
+  },
+  {
+    "id": "surplus_mod",
+    "name": "Surplus Mod",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Gods/Vulcan/Abilities/Items/t_Item_Vulcan_Surplus.png",
+    "tier": "GodSpecific",
+    "cost": 0,
+    "stats": null,
+    "passive": "You can have 2 Inferno Cannons deployed at the same time.\n\nSet 3 - You can only have one Mod from each set.\nRequires level 14.",
+    "active": null,
+    "owner_god": "Vulcan"
+  },
+  {
+    "id": "survivors_sash",
+    "name": "Survivor's Sash",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T2/Icon_T2_SurvivorsSash.png",
+    "tier": "T2",
+    "cost": 1000,
+    "stats": null,
+    "passive": "Adaptive Stat: +25 Strength or +35 Intelligence (based on highest item stat).",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "talisman_of_purification",
+    "name": "Talisman of Purification",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_TalismanOfPurification.png",
+    "tier": "Relic",
+    "cost": 2500,
+    "stats": {
+      "CooldownReductionPercent": 20
+    },
+    "passive": null,
+    "active": "+7.5% of all Stats from Items.\n\nOn Use: You and Allies within 6.4m:\n• Are Cleansed of all Crowd Control\n• Gain Crowd Control Immunity for 1s\n\nCooldown: 140s",
+    "owner_god": null
+  },
+  {
+    "id": "tekko_kagi",
+    "name": "Tekko-Kagi",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_TekkoKagi.png",
+    "tier": "T3",
+    "cost": 2700,
+    "stats": {
+      "PhysicalPower": 35,
+      "PhysicalPenetrationFlat": 10,
+      "MagicalPenetrationFlat": 10,
+      "AttackSpeedPercent": 20
+    },
+    "passive": "Ability Used: Gain a stack of Momentum.\n\nMomentum grants +7% Pathfinding for 8s. Stacks up to 3 times.",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "the_cosmic_horror",
+    "name": "The Cosmic Horror",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_StaffOfCosmicHorror.png",
+    "tier": "T3",
+    "cost": 2650,
+    "stats": {
+      "MagicalPower": 55,
+      "EchoItem": 20,
+      "PhysicalPenetrationFlat": 10,
+      "MagicalPenetrationFlat": 10
+    },
+    "passive": "Echo > Cooldown Rate: +20% Echo Damage\n\nEcho +35 Intelligence\n\nEcho = Cooldown Rate: +20% Echo Damage & +35 Intelligence",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "the_crusher",
+    "name": "The Crusher",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_Crusher.png",
+    "tier": "T3",
+    "cost": 2800,
+    "stats": {
+      "PhysicalPower": 45,
+      "EchoItem": 25,
+      "PhysicalPenetrationFlat": 10,
+      "MagicalPenetrationFlat": 10
+    },
+    "passive": "Ability Hit: +Physical Damage.\n• Damage = 35% of your Strength\n• Damage is dealt over 1s\n• Subsequent hits on the same target deal 33% bonus Damage, over 3s.",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "the_executioner",
+    "name": "The Executioner",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_TheExecutioner.png",
+    "tier": "T3",
+    "cost": 2550,
+    "stats": {
+      "AttackSpeedPercent": 20
+    },
+    "passive": "Adaptive Stat: +30 Strength or +55 Intelligence (based on highest item stat).\n\nAttack a God or Boss: Apply 1 Stack of Piercing.\nPiercing reduces 7% Protections for 4s. Stacks up to 4 times.",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "the_reaper",
+    "name": "The Reaper",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_TheReaper.png",
+    "tier": "T3",
+    "cost": 2600,
+    "stats": {
+      "LifeStealPercent": 7.5,
+      "PhysicalPower": 45,
+      "PhysicalPenetrationFlat": 10,
+      "MagicalPenetrationFlat": 10
+    },
+    "passive": "Kill a God:\n• Heal +15% of Slain God's Max Health\n• Assist a God: Heal +7.5% of Slain God's Max Health.\n\nDuring Moonlight Phase:\n• Heal +15% of Slain God's Max Health, on Kill or Assist",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "the_world_stone",
+    "name": "The World Stone",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_TheWorldStone.png",
+    "tier": "T3",
+    "cost": 2800,
+    "stats": {
+      "MagicalPower": 70,
+      "MaxMana": 250,
+      "ManaPerTime": 3,
+      "PhysicalPenetrationFlat": 10,
+      "MagicalPenetrationFlat": 10
+    },
+    "passive": "-30% Cooldown for your Ultimate Ability.",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "thermal_mod",
+    "name": "Thermal Mod",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Gods/Vulcan/Abilities/Items/t_Item_Vulcan_Thermal.png",
+    "tier": "GodSpecific",
+    "cost": 0,
+    "stats": null,
+    "passive": "Backfire and Magma Bomb deal 30 + 15% INT Bonus Magical Damage.\n\nSet 2 - You can only have one Mod from each set.\nRequires level 7.",
+    "active": null,
+    "owner_god": "Vulcan"
+  },
+  {
+    "id": "thistlethorn_acorn",
+    "name": "Thistlethorn Acorn",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/Ratatoskrs_Acorns/Acorn_T3_Thistlethorn.png",
+    "tier": "T3",
+    "cost": 2000,
+    "stats": {
+      "PhysicalPower": 45,
+      "LifeStealPercent": 5
+    },
+    "passive": "Non-Aspect:\n+45 Strength\n+5% Lifesteal\n\nAcorn Blast attaches to enemy gods, or stops at max range, and explodes after a delay.\n\nAspect:\n+400 Health\n+10 Cooldown Rate\n\nAcorn Blast fires 5 projectiles and debuffs enemies hit, causing them to take more damage from you.",
+    "active": null,
+    "owner_god": "Ratatoskr"
+  },
+  {
+    "id": "time_lock_aegis",
+    "name": "Time-lock Aegis",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_Relic_TimeLockAegis.png",
+    "tier": "Relic",
+    "cost": 2500,
+    "stats": {
+      "PhysicalProtection": 15,
+      "MagicalProtection": 15
+    },
+    "passive": null,
+    "active": "+6% of all Stats from Items.\n\nOn Use: Become time-locked, unable to move and act. You are Immune (to damage and healing) for 2.25s.\n• While Time-Locked, rapidly restore 15s worth of Regen and 7.5s of Cooldowns.\n• Reactivate to exit early.\n\nCooldown: 140s",
+    "owner_god": null
+  },
+  {
+    "id": "titans_bane",
+    "name": "Titan's Bane",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_ObsidianMacuahuitl.png",
+    "tier": "T3",
+    "cost": 3100,
+    "stats": {
+      "PhysicalPower": 40,
+      "PhysicalPenetrationPercent": 20,
+      "MagicalPenetrationPercent": 20
+    },
+    "passive": "Gain the Shattering effect:\nFirst Ability Cast: Gains +20% Penetration\n• This effect ignores the Penetration cap\n• Shattering does not stack with itself.\n\nCooldown: 10s",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "totem_of_death",
+    "name": "Totem of Death",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_TotemOfDeath.png",
+    "tier": "T3",
+    "cost": 2800,
+    "stats": {
+      "MagicalPower": 60,
+      "CooldownReductionPercent": 15
+    },
+    "passive": "Ability Hit a God or Boss: Apply 1 Stack of Piercing\n\nPiercing reduces 6% Protections for 4s. Stacks up to 5 times.",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "toxic_blade",
+    "name": "Toxic Blade",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icons_T3_ToxicBlade.png",
+    "tier": "T3",
+    "cost": 2700,
+    "stats": {
+      "InhandPower": 25,
+      "PhysicalPenetrationFlat": 10,
+      "MagicalPenetrationFlat": 10,
+      "MaxHealth": 100,
+      "AttackSpeedPercent": 20
+    },
+    "passive": "Hit a God with an Attack: Apply 25% Healing Reduction and 7% Attack Speed reduction for 5s. Gain 7% Attack Speed for 5s.\n• Attack Speed Buff and Debuff can stack up to 3 times.",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "transcendence",
+    "name": "Transcendence",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_Transcendence.png",
+    "tier": "T3",
+    "cost": 2400,
+    "stats": {
+      "PhysicalPower": 35,
+      "MaxMana": 250,
+      "ManaPerTime": 4
+    },
+    "passive": "+Strength equal to 3% of Mana from Items.\n\nDeal 700 Damage to Minions or Jungle Monsters:\n+1 Evolve Stack\n+1 Mana Infusion Stack (Max 50 Stacks)\n• Damage dealt to Gods counts double\n\nPer Mana Infusion Stack: +10 Mana.\n\nAt 50 Evolve Stacks, item evolves and gains:\n• +10 Penetration\n• +100 Mana",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "tritons_conch",
+    "name": "Triton's Conch",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_TritonsConch.png",
+    "tier": "T3",
+    "cost": 2700,
+    "stats": {
+      "MagicalPower": 40,
+      "MaxHealth": 250,
+      "PhysicalPower": 25
+    },
+    "passive": "You and allies within 8.8m:\n• +5 (+0.5 per Level) Strength\n• +5 (+1 per Level) Intelligence",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "typhons_heart",
+    "name": "Typhon's Heart",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_TyphonsHeart.png",
+    "tier": "T3",
+    "cost": 2600,
+    "stats": {
+      "MagicalPower": 80,
+      "LifeStealPercent": 7.5
+    },
+    "passive": "On Minion or Jungle Kill: +1 Stack\nOn God Kill: +30 Stacks\nOn Assist: +15 Stacks\n\nAt 30 Stacks: Summon a Monster of Typhon\n• Health = 200 (+55 per Level)\n• Damage = 300% of your Lifesteal and 30% of your Intelligence\n• Your Lifesteal heals the monster\n\nIf another would be summoned:\n• Fully Heal current monster\n• Buff it with +25% Health, Attack Speed, and Movement Speed (Stacks up to 5x)",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "tyrfing",
+    "name": "Tyrfing",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_Tyrfing.png",
+    "tier": "T3",
+    "cost": 2400,
+    "stats": {
+      "PhysicalPower": 25,
+      "InhandPower": 25,
+      "AttackSpeedPercent": 10
+    },
+    "passive": "Attacks deal +15 bonus Physical Damage.\n\nOn God hit:\n• Increase bonus Damage by +15 for 4s\n• Stacks once, +1 Stack per 4 Levels (Max 6 Stacks)",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "umbral_link",
+    "name": "Umbral Link",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_UmbralLink.png",
+    "tier": "T3",
+    "cost": 2500,
+    "stats": {
+      "PhysicalProtection": 40,
+      "LifeStealPercent": 10
+    },
+    "passive": "Above 50% Health: Split your Lifesteal Healing with allies within 11.2m.\n• +10 Physical and Magical Protections for 8s per unique ally Healed",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "vampiric_shroud",
+    "name": "Vampiric Shroud",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/AspectsInfluences/Icon_VampiricCloak.png",
+    "tier": "Starter",
+    "cost": 600,
+    "stats": {
+      "MaxHealth": 100,
+      "LifeStealPercent": 4
+    },
+    "passive": "Adaptive Stat: +10 Strength or +20 Intelligence (based on highest item stat).\n\nAbility Hit:\n• +4 Health Heal\n• +4 Mana Recovery\n\nOnce per target, per Ability.\n\nRequires Level 20 to upgrade.",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "veve_charm",
+    "name": "Veve Charm",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T2/Icon_T2_VeveCharm.png",
+    "tier": "T2",
+    "cost": 800,
+    "stats": {
+      "MaxHealth": 240
+    },
+    "passive": null,
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "vision_ward",
+    "name": "Vision Ward",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/Utility/Icon_Utility_Ward.png",
+    "tier": "Consumable",
+    "cost": 50,
+    "stats": null,
+    "passive": null,
+    "active": "Consume: Place a Ward.\n• Reveals enemies within 7.2m\n• Lasts 120s or until destroyed\n\nCan carry up to 2.\n\n(Max 2 Wards can be Placed)",
+    "owner_god": null
+  },
+  {
+    "id": "vital_amplifier",
+    "name": "Vital Amplifier",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_VitalAmplifier.png",
+    "tier": "T3",
+    "cost": 2500,
+    "stats": {
+      "MaxHealth": 200,
+      "HealthPerTime": 3,
+      "AttackSpeedPercent": 10
+    },
+    "passive": "Adaptive Stat: +30 Strength or +45 Intelligence (based on highest item stat).\n\nHeal yourself or an ally with an Ability:\n• +7.5% Attack Speed\n• +5% Attack Damage\n• Buff lasts 6s, Stacks up to 3x",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "void_shard",
+    "name": "Void Shard",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T2/Icon_T2_VoidShard.png",
+    "tier": "T2",
+    "cost": 900,
+    "stats": {
+      "MagicalPenetrationPercent": 10,
+      "PhysicalPenetrationPercent": 10
+    },
+    "passive": null,
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "void_shield",
+    "name": "Void Shield",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_VoidShield.png",
+    "tier": "T3",
+    "cost": 2550,
+    "stats": {
+      "MaxHealth": 150,
+      "PhysicalProtection": 55
+    },
+    "passive": "Enemies Within 8.8m: -10% Physical Protection.\n\nRange Scaling Debuff:\n• +50% at Close Range\n• -50% at Maximum Range",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "void_stone",
+    "name": "Void Stone",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_VoidStone.png",
+    "tier": "T3",
+    "cost": 2550,
+    "stats": {
+      "MaxHealth": 150,
+      "MagicalProtection": 60
+    },
+    "passive": "Enemies Within 8.8m: -10% Magical Protection.\n\nRange Scaling Debuff:\n• +50% at Close Range\n• -50% at Maximum Range",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "war_banner",
+    "name": "War Banner",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/AspectsInfluences/Icon_Starter_WarBanner.png",
+    "tier": "Starter",
+    "cost": 1850,
+    "stats": {
+      "PhysicalProtection": 30,
+      "MagicalProtection": 30,
+      "AttackSpeedPercent": 30
+    },
+    "passive": "Kill or Assist Minion or Jungle Monster: You and allies within 8.8m gain:\n• +1% Health Heal\n• +1.25% Mana Restore\n• +3.5% Movement Speed\n• +6.5% Attack Speed\n\nMovement and Attack Speed Buff lasts 10s, Stacks up to 6 times.\n\nRequires Level 20.",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "war_flag",
+    "name": "War Flag",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/AspectsInfluences/Icon_Starter_WarFlag.png",
+    "tier": "Starter",
+    "cost": 600,
+    "stats": {
+      "PhysicalProtection": 10,
+      "MagicalProtection": 10,
+      "AttackSpeedPercent": 10
+    },
+    "passive": "Kill or Assist Minion or Jungle Monster; You and Allied Gods within 8.8m gain:\n• +0.5% Movement Speed\n• +1% Attack Speed\n• Buff lasts 10s, Stacks up to 6 times\nAssist Minion or Jungle Monster; You and Allied Gods within 8.8m:\n• Heal 7 Health\n\nRequires Level 20 to upgrade.",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "warding_chalice",
+    "name": "Warding Chalice",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icons_T3_Container_ChaliceoftheOracle.png",
+    "tier": "Consumable",
+    "cost": 400,
+    "stats": null,
+    "passive": null,
+    "active": "Consume charge: Place a Ward.\n• Reveals enemies within 7.2m\n• Lasts 120s or until destroyed\n\nStarts with 2 charges. Refilled when returning to base.\n\n(Max 2 Wards can be Placed)",
+    "owner_god": null
+  },
+  {
+    "id": "warriors_axe",
+    "name": "Warrior's Axe",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/AspectsInfluences/Icon_Aspect_Barbarian.png",
+    "tier": "Starter",
+    "cost": 650,
+    "stats": {
+      "PhysicalProtection": 10,
+      "MagicalProtection": 10
+    },
+    "passive": "Adaptive Stat: +10 Strength or +20 Intelligence (based on highest item stat).\n\nDamage a God:\n• +20 (+2 per Level) Bonus True Damage\n• +40 (+1 per Level) Heal\n\nHits only one God per activation\n\nRequires Level 20 to upgrade.\n\nCooldown: 8s",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "wish_granting_pearl",
+    "name": "Wish-Granting Pearl",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_Wish-GrantingPearl.png",
+    "tier": "T3",
+    "cost": 3550,
+    "stats": {
+      "MagicalPower": 120,
+      "MaxHealth": 425,
+      "MaxMana": 200
+    },
+    "passive": null,
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "wyrmskin_hide",
+    "name": "Wyrmskin Hide",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icons_T3_WyrmskinHide.png",
+    "tier": "T3",
+    "cost": 2600,
+    "stats": {
+      "PhysicalPower": 20,
+      "Dampening": 5,
+      "MaxHealth": 300,
+      "MagicalProtection": 15
+    },
+    "passive": "Hit a God (once every 8s): Gain 1 Dampening per level against them.",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "xibalban_effigy",
+    "name": "Xibalban Effigy",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icons_T3_XibalbanEffigyNew.png",
+    "tier": "T3",
+    "cost": 2750,
+    "stats": {
+      "PhysicalProtection": 30,
+      "MagicalProtection": 30,
+      "MaxMana": 300,
+      "ManaPerTime": 4
+    },
+    "passive": null,
+    "active": "On Use: Take 50% Damage for 4s.\n• After: Take Physical Damage equal to mitigated Damage\n• Cannot drop below 5% Health\n\nCooldown: 90s\n\nDuring Moonlight Phase:\n• Only 50% of the mitigated Damage is dealt back",
+    "owner_god": null
+  },
+  {
+    "id": "yogis_necklace",
+    "name": "Yogi's Necklace",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_YogisNecklace.png",
+    "tier": "T3",
+    "cost": 2250,
+    "stats": {
+      "MaxHealth": 325,
+      "MaxMana": 250,
+      "HealthPerTime": 6,
+      "ManaPerTime": 6
+    },
+    "passive": "Heal +0.5% of Max Health per second.",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "zither",
+    "name": "Zither",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T2/Icon_T2_Zither.png",
+    "tier": "T2",
+    "cost": 1100,
+    "stats": {
+      "PhysicalPower": 12,
+      "MagicalPower": 20
+    },
+    "passive": null,
+    "active": null,
+    "owner_god": null
+  }
+]

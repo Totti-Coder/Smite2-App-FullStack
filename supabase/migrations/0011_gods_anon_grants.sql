@@ -1,0 +1,26 @@
+-- Defensive, NOT a confirmed bug fix - read this before assuming it is one.
+--
+-- Every other publicly-readable table in this project carries an explicit
+-- GRANT (god_abilities in 0004, tier_lists in 0010) because these tables do
+-- not inherit default privileges - 0008 and 0009 were both written to repair
+-- exactly that omission. `gods` has an RLS policy ("gods_select_all", 0001)
+-- but no GRANT at all, so `anon` may well be blocked at the privilege layer,
+-- before RLS is ever evaluated.
+--
+-- This was NOT verified against the live database: at the time of writing,
+-- neither the dev server nor the shell could resolve the Supabase hostname
+-- (getaddrinfo / ERR_NAME_NOT_RESOLVED), so the "0 dioses" symptom that
+-- prompted this had a sufficient explanation of its own and the grant
+-- hypothesis could not be tested.
+--
+-- Running it is safe and correct regardless: `gods` is static, public
+-- reference data seeded from src/data/gods.json, and read-only for everyone
+-- but service_role. `authenticated` is listed explicitly because it currently
+-- works by accident of how this table was first created.
+--
+-- Note that /gods and /gods/[godId] no longer read this table at all - they
+-- read gods.json directly, since that file is the source of truth the seed
+-- script loads FROM. The table still exists as the FK target for
+-- matches.god_id.
+grant select on public.gods to anon, authenticated;
+grant insert, update, delete on public.gods to service_role;

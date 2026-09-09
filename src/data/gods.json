@@ -1,0 +1,706 @@
+[
+  {
+    "id": "achilles",
+    "name": "Achilles",
+    "pantheon": "Greek",
+    "primary_role": "solo",
+    "damage_type": "strength",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Achilles/Default/t_GodPortrait_Achilles.png"
+  },
+  {
+    "id": "agni",
+    "name": "Agni",
+    "pantheon": "Hindu",
+    "primary_role": "mid",
+    "damage_type": "intelligence",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Agni/Default/t_GodPortrait_Agni.png"
+  },
+  {
+    "id": "ah_puch",
+    "name": "Ah Puch",
+    "pantheon": "Maya",
+    "primary_role": "mid",
+    "damage_type": "intelligence",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/AhPuch/Default/t_GodPortrait_AhPuch.png"
+  },
+  {
+    "id": "aladdin",
+    "name": "Aladdin",
+    "pantheon": "Tales of Arabia",
+    "primary_role": "jungle",
+    "damage_type": "intelligence",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Aladdin/Default/t_GodPortrait_Aladdin.png"
+  },
+  {
+    "id": "amaterasu",
+    "name": "Amaterasu",
+    "pantheon": "Japanese",
+    "primary_role": "solo",
+    "damage_type": "strength",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Amaterasu/Default/t_GodPortrait_Amaterasu.png"
+  },
+  {
+    "id": "anhur",
+    "name": "Anhur",
+    "pantheon": "Egyptian",
+    "primary_role": "adc",
+    "damage_type": "strength",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Anhur/Default/t_GodPortrait_Anhur.png"
+  },
+  {
+    "id": "anubis",
+    "name": "Anubis",
+    "pantheon": "Egyptian",
+    "primary_role": "mid",
+    "damage_type": "intelligence",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Anubis/Default/t_GodPortrait_Anubis.png"
+  },
+  {
+    "id": "aphrodite",
+    "name": "Aphrodite",
+    "pantheon": "Greek",
+    "primary_role": "mid",
+    "damage_type": "intelligence",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Aphrodite/Default/t_GodPortrait_Aphrodite.png"
+  },
+  {
+    "id": "apollo",
+    "name": "Apollo",
+    "pantheon": "Greek",
+    "primary_role": "adc",
+    "damage_type": "strength",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Apollo/Default/t_GodPortrait_Apollo.png"
+  },
+  {
+    "id": "ares",
+    "name": "Ares",
+    "pantheon": "Greek",
+    "primary_role": "support",
+    "damage_type": "intelligence",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Ares/Default/t_GodPortrait_Ares.png"
+  },
+  {
+    "id": "artemis",
+    "name": "Artemis",
+    "pantheon": "Greek",
+    "primary_role": "adc",
+    "damage_type": "strength",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Artemis/Default/t_GodPortrait_Artemis.png"
+  },
+  {
+    "id": "artio",
+    "name": "Artio",
+    "pantheon": "Celtic",
+    "primary_role": "solo",
+    "damage_type": "intelligence",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Artio/Default/t_GodPortrait_Artio.png"
+  },
+  {
+    "id": "athena",
+    "name": "Athena",
+    "pantheon": "Greek",
+    "primary_role": "support",
+    "damage_type": "intelligence",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Athena/Default/t_GodPortrait_Athena.png"
+  },
+  {
+    "id": "atlas",
+    "name": "Atlas",
+    "pantheon": "Greek",
+    "primary_role": "support",
+    "damage_type": "intelligence",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Atlas/Default/t_GodPortrait_Atlas.png"
+  },
+  {
+    "id": "awilix",
+    "name": "Awilix",
+    "pantheon": "Maya",
+    "primary_role": "jungle",
+    "damage_type": "strength",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Awilix/Default/t_GodPortrait_Awilix.png"
+  },
+  {
+    "id": "bacchus",
+    "name": "Bacchus",
+    "pantheon": "Roman",
+    "primary_role": "support",
+    "damage_type": "intelligence",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Bacchus/Default/t_GodPortrait_Bacchus.png"
+  },
+  {
+    "id": "baron_samedi",
+    "name": "Baron Samedi",
+    "pantheon": "Voodoo",
+    "primary_role": "support",
+    "damage_type": "intelligence",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/BaronSamedi/Default/t_GodPortrait_BaronSamedi.png"
+  },
+  {
+    "id": "bastet",
+    "name": "Bastet",
+    "pantheon": "Egyptian",
+    "primary_role": "jungle",
+    "damage_type": "strength",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Bastet/Default/t_GodPortrait_Bastet.png"
+  },
+  {
+    "id": "bellona",
+    "name": "Bellona",
+    "pantheon": "Roman",
+    "primary_role": "solo",
+    "damage_type": "strength",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Bellona/Default/t_GodPortrait_Bellona.png"
+  },
+  {
+    "id": "cabrakan",
+    "name": "Cabrakan",
+    "pantheon": "Maya",
+    "primary_role": "solo",
+    "damage_type": "intelligence",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Cabrakan/Default/t_GodPortrait_Cabrakan.png"
+  },
+  {
+    "id": "cerberus",
+    "name": "Cerberus",
+    "pantheon": "Greek",
+    "primary_role": "solo",
+    "damage_type": "intelligence",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Cerberus/Default/t_GodPortrait_Cerberus.png"
+  },
+  {
+    "id": "cernunnos",
+    "name": "Cernunnos",
+    "pantheon": "Celtic",
+    "primary_role": "adc",
+    "damage_type": "strength",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Cernunnos/Default/t_GodPortrait_Cernunnos.png"
+  },
+  {
+    "id": "chaac",
+    "name": "Chaac",
+    "pantheon": "Maya",
+    "primary_role": "solo",
+    "damage_type": "strength",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Chaac/Default/t_GodPortrait_Chaac.png"
+  },
+  {
+    "id": "charon",
+    "name": "Charon",
+    "pantheon": "Greek",
+    "primary_role": "support",
+    "damage_type": "intelligence",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Charon/Default/t_GodPortrait_Charon.png"
+  },
+  {
+    "id": "chiron",
+    "name": "Chiron",
+    "pantheon": "Greek",
+    "primary_role": "adc",
+    "damage_type": "strength",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Chiron/Default/t_GodPortrait_Chiron.png"
+  },
+  {
+    "id": "chronos",
+    "name": "Chronos",
+    "pantheon": "Greek",
+    "primary_role": "mid",
+    "damage_type": "intelligence",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Chronos/Default/t_GodPortrait_Chronos.png"
+  },
+  {
+    "id": "cu_chulainn",
+    "name": "Cu Chulainn",
+    "pantheon": "Celtic",
+    "primary_role": "solo",
+    "damage_type": "strength",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/CuChulainn/Default/t_GodPortrait_CuChulainn.png"
+  },
+  {
+    "id": "cupid",
+    "name": "Cupid",
+    "pantheon": "Roman",
+    "primary_role": "adc",
+    "damage_type": "strength",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Cupid/Default/t_GodPortrait_Cupid.png"
+  },
+  {
+    "id": "da_ji",
+    "name": "Da Ji",
+    "pantheon": "Chinese",
+    "primary_role": "jungle",
+    "damage_type": "strength",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Daji/Default/t_GodPortrait_Daji.png"
+  },
+  {
+    "id": "danzaburou",
+    "name": "Danzaburou",
+    "pantheon": "Japanese",
+    "primary_role": "adc",
+    "damage_type": "strength",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Danzaburou/Default/t_GodPortrait_Danzaburou.png"
+  },
+  {
+    "id": "discordia",
+    "name": "Discordia",
+    "pantheon": "Roman",
+    "primary_role": "mid",
+    "damage_type": "intelligence",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Discordia/Default/t_GodPortrait_Discordia.png"
+  },
+  {
+    "id": "eset",
+    "name": "Eset",
+    "pantheon": "Egyptian",
+    "primary_role": "mid",
+    "damage_type": "intelligence",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Eset/Default/t_GodPortrait_Eset.png"
+  },
+  {
+    "id": "fenrir",
+    "name": "Fenrir",
+    "pantheon": "Norse",
+    "primary_role": "jungle",
+    "damage_type": "strength",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Fenrir/Default/t_GodPortrait_Fenrir.png"
+  },
+  {
+    "id": "ganesha",
+    "name": "Ganesha",
+    "pantheon": "Hindu",
+    "primary_role": "support",
+    "damage_type": "intelligence",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Ganesha/Default/t_GodPortrait_Ganesha.png"
+  },
+  {
+    "id": "geb",
+    "name": "Geb",
+    "pantheon": "Egyptian",
+    "primary_role": "support",
+    "damage_type": "intelligence",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Geb/Default/t_GodPortrait_Geb.png"
+  },
+  {
+    "id": "gilgamesh",
+    "name": "Gilgamesh",
+    "pantheon": "Babylonian",
+    "primary_role": "solo",
+    "damage_type": "strength",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Gilgamesh/Default/t_GodPortrait_Gilgamesh.png"
+  },
+  {
+    "id": "guan_yu",
+    "name": "Guan Yu",
+    "pantheon": "Chinese",
+    "primary_role": "solo",
+    "damage_type": "strength",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Guan_Yu/Default/t_GodPortrait_Guan_Yu.png"
+  },
+  {
+    "id": "hades",
+    "name": "Hades",
+    "pantheon": "Greek",
+    "primary_role": "solo",
+    "damage_type": "intelligence",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Hades/Default/t_GodPortrait_Hades.png"
+  },
+  {
+    "id": "hecate",
+    "name": "Hecate",
+    "pantheon": "Greek",
+    "primary_role": "mid",
+    "damage_type": "intelligence",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Hecate/Default/t_GodPortrait_Hecate.png"
+  },
+  {
+    "id": "hercules",
+    "name": "Hercules",
+    "pantheon": "Roman",
+    "primary_role": "solo",
+    "damage_type": "strength",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Hercules/Default/t_GodPortrait_Hercules.png"
+  },
+  {
+    "id": "horus",
+    "name": "Horus",
+    "pantheon": "Egyptian",
+    "primary_role": "support",
+    "damage_type": "strength",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Horus/Default/t_GodPortrait_Horus.png"
+  },
+  {
+    "id": "hou_yi",
+    "name": "Hou Yi",
+    "pantheon": "Chinese",
+    "primary_role": "adc",
+    "damage_type": "strength",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Hou_Yi/Default/t_GodPortrait_Hou_Yi.png"
+  },
+  {
+    "id": "hua_mulan",
+    "name": "Hua Mulan",
+    "pantheon": "Chinese",
+    "primary_role": "solo",
+    "damage_type": "strength",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Mulan/Default/t_GodPortrait_Mulan.png"
+  },
+  {
+    "id": "hun_batz",
+    "name": "Hun Batz",
+    "pantheon": "Maya",
+    "primary_role": "jungle",
+    "damage_type": "strength",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Hun_Batz/Default/t_GodPortrait_Hun_Batz.png"
+  },
+  {
+    "id": "ishtar",
+    "name": "Ishtar",
+    "pantheon": "Babylonian",
+    "primary_role": "adc",
+    "damage_type": "strength",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Ishtar/Default/t_GodPortrait_Ishtar.png"
+  },
+  {
+    "id": "izanami",
+    "name": "Izanami",
+    "pantheon": "Japanese",
+    "primary_role": "adc",
+    "damage_type": "strength",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Izanami/Default/t_GodPortrait_Izanami.png"
+  },
+  {
+    "id": "janus",
+    "name": "Janus",
+    "pantheon": "Roman",
+    "primary_role": "mid",
+    "damage_type": "intelligence",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Janus/Default/t_GodPortrait_Janus.png"
+  },
+  {
+    "id": "jing_wei",
+    "name": "Jing Wei",
+    "pantheon": "Chinese",
+    "primary_role": "adc",
+    "damage_type": "strength",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/JingWei/Default/t_GodPortrait_JingWei.png"
+  },
+  {
+    "id": "jormungandr",
+    "name": "Jormungandr",
+    "pantheon": "Norse",
+    "primary_role": "solo",
+    "damage_type": "intelligence",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Jormungandr/Default/t_GodPortrait_Jormungandr.png"
+  },
+  {
+    "id": "kali",
+    "name": "Kali",
+    "pantheon": "Hindu",
+    "primary_role": "jungle",
+    "damage_type": "strength",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Kali/Default/t_GodPortrait_Kali.png"
+  },
+  {
+    "id": "khepri",
+    "name": "Khepri",
+    "pantheon": "Egyptian",
+    "primary_role": "support",
+    "damage_type": "intelligence",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Khepri/Default/t_GodPortrait_Khepri.png"
+  },
+  {
+    "id": "kukulkan",
+    "name": "Kukulkan",
+    "pantheon": "Maya",
+    "primary_role": "mid",
+    "damage_type": "intelligence",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Kukulkan/Default/t_GodPortrait_Kukulkan.png"
+  },
+  {
+    "id": "loki",
+    "name": "Loki",
+    "pantheon": "Norse",
+    "primary_role": "jungle",
+    "damage_type": "strength",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Loki/Default/t_GodPortrait_Loki.png"
+  },
+  {
+    "id": "medusa",
+    "name": "Medusa",
+    "pantheon": "Greek",
+    "primary_role": "adc",
+    "damage_type": "strength",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Medusa/Default/t_GodPortrait_Medusa.png"
+  },
+  {
+    "id": "mercury",
+    "name": "Mercury",
+    "pantheon": "Roman",
+    "primary_role": "jungle",
+    "damage_type": "strength",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Mercury/Default/t_GodPortrait_Mercury.png"
+  },
+  {
+    "id": "merlin",
+    "name": "Merlin",
+    "pantheon": "Arthurian",
+    "primary_role": "mid",
+    "damage_type": "intelligence",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Merlin/Default/t_GodPortrait_Merlin.png"
+  },
+  {
+    "id": "mordred",
+    "name": "Mordred",
+    "pantheon": "Arthurian",
+    "primary_role": "solo",
+    "damage_type": "strength",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Mordred/Default/t_GodPortrait_Mordred.png"
+  },
+  {
+    "id": "morgan_le_fay",
+    "name": "Morgan Le Fay",
+    "pantheon": "Arthurian",
+    "primary_role": "mid",
+    "damage_type": "intelligence",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/MorganLeFay/Default/t_GodPortrait_MorganLeFay.png"
+  },
+  {
+    "id": "ne_zha",
+    "name": "Ne Zha",
+    "pantheon": "Chinese",
+    "primary_role": "jungle",
+    "damage_type": "strength",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Ne_Zha/Default/t_GodPortrait_Ne_Zha.png"
+  },
+  {
+    "id": "neith",
+    "name": "Neith",
+    "pantheon": "Egyptian",
+    "primary_role": "adc",
+    "damage_type": "strength",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Neith/Default/t_GodPortrait_Neith.png"
+  },
+  {
+    "id": "nemesis",
+    "name": "Nemesis",
+    "pantheon": "Greek",
+    "primary_role": "jungle",
+    "damage_type": "strength",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Nemesis/Default/t_GodPortrait_Nemesis.png"
+  },
+  {
+    "id": "nu_wa",
+    "name": "Nu Wa",
+    "pantheon": "Chinese",
+    "primary_role": "mid",
+    "damage_type": "intelligence",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/NuWa/Default/t_GodPortrait_NuWa.png"
+  },
+  {
+    "id": "nut",
+    "name": "Nut",
+    "pantheon": "Egyptian",
+    "primary_role": "adc",
+    "damage_type": "intelligence",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Nut/Default/t_GodPortrait_Nut.png"
+  },
+  {
+    "id": "odin",
+    "name": "Odin",
+    "pantheon": "Norse",
+    "primary_role": "solo",
+    "damage_type": "strength",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Odin/Default/t_GodPortrait_Odin.png"
+  },
+  {
+    "id": "osiris",
+    "name": "Osiris",
+    "pantheon": "Egyptian",
+    "primary_role": "solo",
+    "damage_type": "strength",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Osiris/Default/t_GodPortrait_Osiris.png"
+  },
+  {
+    "id": "pele",
+    "name": "Pele",
+    "pantheon": "Polynesian",
+    "primary_role": "jungle",
+    "damage_type": "strength",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Pele/Default/t_GodPortrait_Pele.png"
+  },
+  {
+    "id": "poseidon",
+    "name": "Poseidon",
+    "pantheon": "Greek",
+    "primary_role": "mid",
+    "damage_type": "intelligence",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Poseidon/Default/t_GodPortrait_Poseidon.png"
+  },
+  {
+    "id": "princess_bari",
+    "name": "Princess Bari",
+    "pantheon": "Korean",
+    "primary_role": "adc",
+    "damage_type": "intelligence",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Bari/Default/t_GodPortrait_Bari.png"
+  },
+  {
+    "id": "ra",
+    "name": "Ra",
+    "pantheon": "Egyptian",
+    "primary_role": "mid",
+    "damage_type": "intelligence",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Ra/Default/t_GodPortrait_Ra.png"
+  },
+  {
+    "id": "rama",
+    "name": "Rama",
+    "pantheon": "Hindu",
+    "primary_role": "adc",
+    "damage_type": "strength",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Rama/Default/t_GodPortrait_Rama.png"
+  },
+  {
+    "id": "ratatoskr",
+    "name": "Ratatoskr",
+    "pantheon": "Norse",
+    "primary_role": "jungle",
+    "damage_type": "strength",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Ratatoskr/Default/t_GodPortrait_Ratatoskr.png"
+  },
+  {
+    "id": "scylla",
+    "name": "Scylla",
+    "pantheon": "Greek",
+    "primary_role": "mid",
+    "damage_type": "intelligence",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Scylla/Default/t_GodPortrait_Scylla.png"
+  },
+  {
+    "id": "sobek",
+    "name": "Sobek",
+    "pantheon": "Egyptian",
+    "primary_role": "support",
+    "damage_type": "intelligence",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Sobek/Default/t_GodPortrait_Sobek.png"
+  },
+  {
+    "id": "sol",
+    "name": "Sol",
+    "pantheon": "Norse",
+    "primary_role": "mid",
+    "damage_type": "intelligence",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Sol/Default/t_GodPortrait_Sol.png"
+  },
+  {
+    "id": "sun_wukong",
+    "name": "Sun Wukong",
+    "pantheon": "Chinese",
+    "primary_role": "solo",
+    "damage_type": "strength",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Sun_Wukong/Default/t_GodPortrait_Sun_Wukong.png"
+  },
+  {
+    "id": "susano",
+    "name": "Susano",
+    "pantheon": "Japanese",
+    "primary_role": "jungle",
+    "damage_type": "strength",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Susano/Default/t_GodPortrait_Susano.png"
+  },
+  {
+    "id": "sylvanus",
+    "name": "Sylvanus",
+    "pantheon": "Roman",
+    "primary_role": "support",
+    "damage_type": "intelligence",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Sylvanus/Default/t_GodPortrait_Sylvanus.png"
+  },
+  {
+    "id": "thanatos",
+    "name": "Thanatos",
+    "pantheon": "Greek",
+    "primary_role": "jungle",
+    "damage_type": "strength",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Thanatos/Default/t_GodPortrait_Thanatos.png"
+  },
+  {
+    "id": "the_morrigan",
+    "name": "The Morrigan",
+    "pantheon": "Celtic",
+    "primary_role": "mid",
+    "damage_type": "intelligence",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/TheMorrigan/Default/t_GodPortrait_TheMorrigan.png"
+  },
+  {
+    "id": "thor",
+    "name": "Thor",
+    "pantheon": "Norse",
+    "primary_role": "jungle",
+    "damage_type": "strength",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Thor/Default/t_GodPortrait_Thor.png"
+  },
+  {
+    "id": "tsukuyomi",
+    "name": "Tsukuyomi",
+    "pantheon": "Japanese",
+    "primary_role": "jungle",
+    "damage_type": "strength",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Tsukuyomi/Default/t_GodPortrait_Tsukuyomi.png"
+  },
+  {
+    "id": "ullr",
+    "name": "Ullr",
+    "pantheon": "Norse",
+    "primary_role": "adc",
+    "damage_type": "strength",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Ullr/Default/t_GodPortrait_Ullr.png"
+  },
+  {
+    "id": "vulcan",
+    "name": "Vulcan",
+    "pantheon": "Roman",
+    "primary_role": "mid",
+    "damage_type": "intelligence",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Vulcan/Default/t_GodPortrait_Vulcan.png"
+  },
+  {
+    "id": "xbalanque",
+    "name": "Xbalanque",
+    "pantheon": "Maya",
+    "primary_role": "adc",
+    "damage_type": "strength",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Xbalanque/Default/t_GodPortrait_Xbalanque.png"
+  },
+  {
+    "id": "xing_tian",
+    "name": "Xing Tian",
+    "pantheon": "Chinese",
+    "primary_role": "support",
+    "damage_type": "intelligence",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/XingTian/Default/t_GodPortrait_XingTian.png"
+  },
+  {
+    "id": "yemoja",
+    "name": "Yemoja",
+    "pantheon": "Yoruba",
+    "primary_role": "support",
+    "damage_type": "intelligence",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Yemoja/Default/t_GodPortrait_Yemoja.png"
+  },
+  {
+    "id": "ymir",
+    "name": "Ymir",
+    "pantheon": "Norse",
+    "primary_role": "support",
+    "damage_type": "intelligence",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Ymir/Default/t_GodPortrait_Ymir.png"
+  },
+  {
+    "id": "zeus",
+    "name": "Zeus",
+    "pantheon": "Greek",
+    "primary_role": "mid",
+    "damage_type": "intelligence",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Zeus/Default/t_GodPortrait_Zeus.png"
+  }
+]

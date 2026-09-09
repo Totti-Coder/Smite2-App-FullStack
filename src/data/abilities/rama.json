@@ -1,0 +1,113 @@
+[
+  {
+    "name": "Astral Quiver",
+    "abilityCode": null,
+    "slot": 0,
+    "description": "Your Astral Quiver generates an Astral Arrow every 12s.\n\n• The first time your Basic Attack hits reduce the time to generate an Astral Arrow by 3s.\n• The first time a fired Astral Arrow hits an enemy, it has a chance to drop to the ground.\n• Dropped Astral Arrows last for 10s, and picking one up restores 10 Mana.",
+    "imgPath": "Gods/Rama/Abilities/t_rama_PSV.png",
+    "levelStats": { "BuffMaxStacks": [3], "Duration": [1] },
+    "namedFormulas": {},
+    "namedValueScalings": {},
+    "notes": []
+  },
+  {
+    "name": "Astral Strike",
+    "abilityCode": null,
+    "slot": 1,
+    "description": "Switch to a more powerful arrow that deals bonus Physical Damage, pierces, and Slows enemies.\n\n• While this ability is active, each Basic Attack consumes 1 Astral Arrow and Mana.",
+    "imgPath": "Gods/Rama/Abilities/t_rama_A01.png",
+    "levelStats": {
+      "BonusDamage": [10, 20, 30, 40, 50],
+      "Slow": [10, 10, 10, 10, 10],
+      "SlowStacks": [3],
+      "SlowDuration": [1.5, 1.5, 1.5, 1.5, 1.5],
+      "Range": [8.8],
+      "Radius": [0.48],
+      "Cost": [15, 15, 15, 15, 15],
+      "Cooldown": [12, 12, 12, 12, 12],
+      "SlowPercent": [10],
+      "SlowMaxStacks": [3],
+      "Duration": [1]
+    },
+    "namedFormulas": {},
+    "namedValueScalings": {
+      "BonusDamageScaling": [{ "values": [0.2, 0.2, 0.2, 0.2, 0.2], "statTag": "Character.Stat.PhysicalPower" }]
+    },
+    "notes": []
+  },
+  {
+    "name": "Infinite Arrows",
+    "abilityCode": null,
+    "slot": 2,
+    "description": "Focus your mind and gain increased Attack Speed.\n\n• When activating this ability, if there are any dropped Astral Arrows within 8.8m of you, automatically collect them.\n• While this buff is active, every third successful Basic Attack on an enemy god will immediately generate an Astral Arrow.",
+    "imgPath": "Gods/Rama/Abilities/t_rama_A02.png",
+    "levelStats": {
+      "AttackSpeed": [40, 45, 50, 55, 60],
+      "Duration": [6],
+      "Radius": [8.8],
+      "Cooldown": [15, 14, 13, 12, 11],
+      "Cost": [40, 45, 50, 55, 60]
+    },
+    "namedFormulas": {},
+    "namedValueScalings": {},
+    "notes": []
+  },
+  {
+    "name": "Rolling Assault",
+    "abilityCode": null,
+    "slot": 3,
+    "description": "Roll in the direction you are currently traveling.\n\n• For the next 5s after rolling, your next Basic Attack will have Haste and consume an Astral Arrow, Crippling all enemies hit and dealing bonus Physical Damage.",
+    "imgPath": "Gods/Rama/Abilities/t_rama_A03.png",
+    "levelStats": {
+      "Cripple": [1, 1.25, 1.5, 1.75, 2],
+      "Range": [7.2],
+      "Radius": [0.48],
+      "Cooldown": [11, 11, 11, 11, 11],
+      "Cost": [50, 55, 60, 65, 70],
+      "BuffDuration": [5],
+      "Duration": [1, 1.25, 1.5, 1.75, 2],
+      "Damage": [50, 70, 90, 110, 130]
+    },
+    "namedFormulas": { "Damage_Formula": "{Damage} + {Damage_Scaling}" },
+    "namedValueScalings": {
+      "DamageScaling": [{ "values": [0.55, 0.55, 0.55, 0.55, 0.55], "statTag": "Character.Stat.PhysicalPower" }]
+    },
+    "notes": []
+  },
+  {
+    "name": "Astral Barrage",
+    "abilityCode": null,
+    "slot": 4,
+    "description": "Launch yourself into the air for up to 5s and shoot 3 powerful arrows at the ground, with each successive shot dealing increasing Physical Damage while decreasing in size.",
+    "imgPath": "Gods/Rama/Abilities/t_rama_A04.png",
+    "levelStats": {
+      "Damage": [250, 330, 410, 490, 570],
+      "Range": [32],
+      "Radius": [2.4, 1.6, 1.2],
+      "Cooldown": [90, 90, 90, 90, 90],
+      "Cost": [80, 80, 80, 80, 80]
+    },
+    "namedFormulas": { "Damage_Formula": "{Damage} + {Damage_Scaling}" },
+    "namedValueScalings": {
+      "DamageScalingScaling": [{ "values": [0.75, 0.75, 0.75, 0.75, 0.75], "statTag": "Character.Stat.PhysicalPower" }]
+    },
+    "notes": []
+  },
+  {
+    "name": "Rama Basic Attack",
+    "abilityCode": null,
+    "slot": 100,
+    "description": "Fire a projectile that deals Physical Damage to the first enemy hit.",
+    "imgPath": "Attack_Types/Icon_BasicAttack_Physical.png",
+    "levelStats": { "Duration": [12], "Range": [8.8], "Radius": [0.48] },
+    "namedFormulas": { "Damage_Formula": "{Damage} + {Damage_Scaling}" },
+    "namedValueScalings": {
+      "DamageScaling": [
+        { "values": [1], "statTag": "Character.Stat.PhysicalPower" },
+        { "values": [0.2], "statTag": "Character.Stat.MagicalPower" },
+        { "values": [1], "statTag": "Character.Stat.InhandPower" }
+      ]
+    },
+    "notes": []
+  }
+]

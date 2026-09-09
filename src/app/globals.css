@@ -1,0 +1,279 @@
+@import "tailwindcss";
+
+/*
+ * Palette/type lifted from smitesource.com's computed styles (dark navy
+ * base, emerald win / rose loss, cyan+violet accents; Space Grotesk display
+ * + DM Sans body) - matched deliberately per request, not a generic dark theme.
+ */
+:root {
+  --ss-bg: #0a0d15;
+  --ss-bg-raised: #0e121b;
+  --ss-card: #11161f;
+  --ss-line: #212631;
+  --ss-text: #e8edf4;
+  --ss-text-secondary: #cdd6e3;
+  --ss-text-muted: #8b97a8;
+  --ss-win: #34d399;
+  --ss-loss: #fb3b5c;
+  --ss-cyan: #16c8d4;
+  --ss-purple: #a78bfa;
+  --ss-orange: #fb923c;
+  --ss-blue: #60a5fa;
+}
+
+@theme inline {
+  --color-ss-bg: var(--ss-bg);
+  --color-ss-bg-raised: var(--ss-bg-raised);
+  --color-ss-card: var(--ss-card);
+  --color-ss-line: var(--ss-line);
+  --color-ss-text: var(--ss-text);
+  --color-ss-text-secondary: var(--ss-text-secondary);
+  --color-ss-text-muted: var(--ss-text-muted);
+  --color-ss-win: var(--ss-win);
+  --color-ss-loss: var(--ss-loss);
+  --color-ss-cyan: var(--ss-cyan);
+  --color-ss-purple: var(--ss-purple);
+  --color-ss-orange: var(--ss-orange);
+  --color-ss-blue: var(--ss-blue);
+  --font-display: var(--font-space-grotesk);
+  --font-sans: var(--font-dm-sans);
+}
+
+body {
+  background: var(--ss-bg);
+  color: var(--ss-text);
+}
+
+/* Ambient background: god portraits cross-fade behind the whole app.
+   6 images share a 36s cycle, each staggered 6s apart so exactly one is
+   ever visible - see components/BackgroundGods.tsx for the delay values. */
+@keyframes bg-god-fade {
+  0%, 100% { opacity: 0; }
+  1.4% { opacity: 0.4; }
+  15.3% { opacity: 0.4; }
+  16.7% { opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root:not([data-motion='on']) .bg-god-portrait {
+    animation: none !important;
+    opacity: 0 !important;
+  }
+  /* Sitewide catch-all: collapses every CSS transition/animation to
+     effectively instant for anyone with "reduce motion" on at the OS level.
+     Motion (the JS lib) already respects this via MotionRoot; this covers
+     the plain Tailwind hover/transition classes it doesn't touch.
+     Skipped when the visitor has explicitly opted into animations for this
+     site (MotionRoot sets data-motion="on" on <html>) - an OS setting is a
+     default, not a veto the person can't lift on a site they chose to
+     visit. */
+  :root:not([data-motion='on']) *,
+  :root:not([data-motion='on']) *::before,
+  :root:not([data-motion='on']) *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Cinematic atmosphere layer, sits above everything (fixed, pointer-events:none
+   in the component that uses these) - subtle enough to read as "film grain +
+   vignette", never enough to fight with the data underneath it. Self-hosted
+   noise via inline SVG turbulence, no external texture asset. */
+.grain-overlay {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  opacity: 0.035;
+  mix-blend-mode: overlay;
+}
+
+.vignette-overlay {
+  background: radial-gradient(ellipse at center, transparent 45%, rgba(3, 4, 8, 0.5) 100%);
+}
+
+/* Loading-state shimmer (src/app/(app)/loading.tsx) - a moving gradient
+   band instead of a static gray block, reads as "actively loading" rather
+   than "broken". Respects the reduced-motion catch-all above automatically
+   since it's a plain CSS animation. */
+@keyframes skeleton-shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+.skeleton {
+  background-image: linear-gradient(90deg, var(--ss-card) 25%, var(--ss-bg-raised) 50%, var(--ss-card) 75%);
+  background-size: 200% 100%;
+  animation: skeleton-shimmer 1.6s ease-in-out infinite;
+}
+
+/* Dot grid + drifting neon orbs - used behind the login "hero" (see
+   components/DotGridOrbs.tsx). Purely decorative/absolute, masked to fade
+   out at the edges so it reads as atmosphere, not a texture with hard
+   borders. Orb drift is caught by the sitewide reduced-motion rule above. */
+.dot-grid {
+  background-image: radial-gradient(circle, rgba(232, 237, 244, 0.09) 1px, transparent 1px);
+  background-size: 26px 26px;
+  mask-image: radial-gradient(ellipse 80% 65% at 50% 40%, black 0%, transparent 75%);
+  -webkit-mask-image: radial-gradient(ellipse 80% 65% at 50% 40%, black 0%, transparent 75%);
+}
+
+.orb {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(90px);
+  opacity: 0.32;
+  animation: orb-drift 20s ease-in-out infinite;
+}
+.orb-purple {
+  width: 30rem;
+  height: 30rem;
+  background: var(--ss-purple);
+  top: -8rem;
+  left: -6rem;
+}
+.orb-cyan {
+  width: 26rem;
+  height: 26rem;
+  background: var(--ss-cyan);
+  bottom: -9rem;
+  right: -6rem;
+  animation-delay: -10s;
+}
+@keyframes orb-drift {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(2rem, -1.5rem) scale(1.08); }
+}
+
+/* The "activar animaciones" control only matters to visitors whose OS is
+   asking for reduced motion - for anyone else the animations already run
+   and the button would just be clutter. Doing the visibility test in CSS
+   (rather than a JS media-query check) keeps it correct on the very first
+   paint, with no flash of a button that shouldn't be there. */
+.motion-toggle {
+  display: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .motion-toggle {
+    display: inline-flex;
+  }
+}
+
+/* Staggered entrance for the auth screen. Deliberately CSS, not a JS
+   variant/staggerChildren orchestration: an entrance animation is what
+   makes the content VISIBLE, so it must not be able to stall. `both` fill
+   mode plus the reduced-motion rule above means anyone with "reduce
+   motion" on lands on the final state instantly instead of watching
+   anything move - and if JS never runs at all, the content still appears.
+   Callers stagger by setting animation-delay inline. */
+@keyframes fade-up-in {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: none; }
+}
+.fade-up-in {
+  animation: fade-up-in 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+/* Glassmorphism + dark neumorphism, layered together deliberately: glass
+   (translucent + blurred) reads best when there's something worth seeing
+   through it - on the dashboard that's the ambient video/god-portrait
+   background already behind every panel (see BackgroundGods.tsx), on the
+   login hero it's the dot-grid+orbs. Neumorphism (paired light/dark
+   shadows faking extrusion) adds the physical, "pressable" quality on top -
+   the two effects are complementary, not competing: glass for the surface
+   material, neumorphism for how it catches light. Reusable classes instead
+   of repeating long shadow strings in every component that wants this look.
+
+   .glass-panel  - the translucent+blurred card surface (Panel, Section)
+   .neu-raised   - button chrome: rests lifted, visibly sinks on :active
+   .neu-inset    - input chrome: reads as pressed INTO the surface already */
+.glass-panel {
+  background: rgba(17, 22, 31, 0.66);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  box-shadow:
+    8px 8px 20px rgba(0, 0, 0, 0.45),
+    -6px -6px 18px rgba(255, 255, 255, 0.02),
+    inset 0 1px 0 rgba(255, 255, 255, 0.035);
+}
+
+/* Skip link (see app/(app)/layout.tsx). Written out rather than composed
+   from `sr-only focus:not-sr-only` utilities because Tailwind v4 does not
+   emit `not-sr-only` - the utility silently produced nothing and the link
+   stayed 1x1px even when focused, which is exactly the bug a skip link is
+   supposed to not have. Off-screen until focused, fully visible after. */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 100;
+}
+.skip-link:focus {
+  left: 0.75rem;
+  top: 0.75rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  background: var(--ss-cyan);
+  color: var(--ss-bg);
+  font-size: 0.875rem;
+  font-weight: 600;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+/* Same material as .glass-panel but nearly opaque - the mobile nav drawer
+   sits directly on top of page content, and at .glass-panel's 0.66 alpha the
+   headings and filter chips underneath bled through the menu links badly
+   enough to be unreadable. Glass reads as depth when there's atmosphere
+   behind it; over live text it just reads as broken. */
+.glass-drawer {
+  background: rgba(14, 18, 27, 0.97);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.6);
+}
+
+.neu-raised {
+  box-shadow:
+    5px 5px 12px rgba(0, 0, 0, 0.45),
+    -3px -3px 10px rgba(255, 255, 255, 0.025);
+  transition:
+    box-shadow 150ms ease,
+    transform 150ms ease;
+}
+.neu-raised:hover {
+  box-shadow:
+    6px 6px 16px rgba(0, 0, 0, 0.5),
+    -4px -4px 12px rgba(255, 255, 255, 0.03);
+}
+.neu-raised:active {
+  box-shadow:
+    inset 3px 3px 8px rgba(0, 0, 0, 0.4),
+    inset -2px -2px 6px rgba(255, 255, 255, 0.02);
+  transform: translateY(1px) scale(0.98);
+}
+
+.neu-inset {
+  box-shadow:
+    inset 3px 3px 8px rgba(0, 0, 0, 0.45),
+    inset -2px -2px 6px rgba(255, 255, 255, 0.02);
+}
+
+/* Accessibility baseline: a visible, high-contrast focus ring everywhere in
+   the app, not just this page - dark theme's default browser outline is
+   easy to lose against --ss-bg. Only shows for keyboard/AT navigation
+   (:focus-visible), never on mouse click. */
+:focus-visible {
+  outline: 2px solid var(--ss-cyan);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Bumps borders/muted text when the OS "increase contrast" setting is on -
+   helps low-vision users without needing a separate theme. */
+@media (prefers-contrast: more) {
+  :root {
+    --ss-line: #3a4252;
+    --ss-text-muted: #a7b2c2;
+    --ss-text-secondary: #e2e8f2;
+  }
+}
