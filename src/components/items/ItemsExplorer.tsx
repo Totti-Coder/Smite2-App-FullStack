@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useMemo, useRef, useState } from 'react';
+import { ItemArt } from '@/components/ItemArt';
 import { AnimatePresence, motion } from 'motion/react';
 import { Reveal } from '@/components/motion/Reveal';
 import { SwordIcon, OrbIcon, ShieldIcon, SparkleIcon, SearchIcon, CloseIcon, CoinIcon } from '@/components/icons';
@@ -111,8 +112,7 @@ function ItemDetailModal({ item, onClose }: { item: Item; onClose: () => void })
             className="flex h-16 w-16 shrink-0 items-center justify-center rounded-xl border"
             style={{ borderColor: `${tierColor}66`, background: `radial-gradient(circle, ${tierColor}22, transparent 70%)` }}
           >
-            {/* eslint-disable-next-line @next/next/no-img-element -- external CDN icon */}
-            <img src={item.icon_url} alt="" className="h-12 w-12 rounded" />
+            <ItemArt iconUrl={item.icon_url} name={item.name} size={48} />
           </div>
           <div className="min-w-0">
             <h2 id="item-modal-title" className="font-display text-base font-bold leading-tight text-ss-text">
@@ -291,8 +291,7 @@ export function ItemsExplorer({ items, initialQuery }: { items: Item[]; initialQ
                       className="mt-2 flex h-12 w-12 items-center justify-center rounded-lg transition-transform duration-200 group-hover:scale-105"
                       style={{ background: `radial-gradient(circle, ${tierColor}26, transparent 72%)` }}
                     >
-                      {/* eslint-disable-next-line @next/next/no-img-element -- external CDN icon */}
-                      <img src={item.icon_url} alt="" className="h-10 w-10 rounded border border-ss-line/60" />
+                      <ItemArt iconUrl={item.icon_url} name={item.name} size={40} className="border border-ss-line/60" />
                     </div>
                     <p className="line-clamp-2 text-[11px] leading-tight text-ss-text-secondary">{item.name}</p>
                   </motion.button>

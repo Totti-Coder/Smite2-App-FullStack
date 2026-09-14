@@ -19,11 +19,14 @@ import { matchGodByName, rememberGodName } from '@/lib/god-name-match';
 import { recognizeText } from '@/lib/ocr-engine';
 import { ROLE_LABEL } from '@/lib/god-assets';
 import type { Role } from '@/lib/supabase/database.types';
+import { ItemArt } from '@/components/ItemArt';
 
 type Rect = { x: number; y: number; w: number; h: number }; // displayed CSS px
 
 type GodInfo = { id: string; name: string; primary_role: string; icon_url: string | null };
-type ItemInfo = { id: string; name: string; icon_url: string; tier: string };
+// icon_url is nullable, matching the catalog: an item can ship before its
+// CDN asset name is known (see components/ItemArt.tsx).
+type ItemInfo = { id: string; name: string; icon_url: string | null; tier: string };
 
 // Ally/enemy items always empty - items are only ever detected for the
 // player's OWN row (see `selfItems` below), never for the other 9 players.
@@ -632,8 +635,12 @@ export function ScoreboardScanner({
                       const it = itemById.current.get(id);
                       return (
                         <button key={j} type="button" onClick={() => removeSelfItem(id)} title={`Quitar ${it?.name ?? id}`} className="group relative">
-                          {/* eslint-disable-next-line @next/next/no-img-element -- external CDN icon */}
-                          <img src={it?.icon_url} alt={it?.name ?? id} className="h-9 w-9 rounded border border-ss-line transition group-hover:border-ss-loss group-hover:opacity-50" />
+                          <ItemArt
+                            iconUrl={it?.icon_url ?? null}
+                            name={it?.name ?? id}
+                            size={36}
+                            className="border border-ss-line transition group-hover:border-ss-loss group-hover:opacity-50"
+                          />
                         </button>
                       );
                     })}

@@ -1,16 +1,9 @@
 'use client';
 
 import { useMemo, useState } from 'react';
-import { MAX_BUILD_ITEMS } from '@/lib/item-types';
+import { MAX_BUILD_ITEMS, type Item } from '@/lib/item-types';
+import { ItemArt } from '@/components/ItemArt';
 
-type Item = {
-  id: string;
-  name: string;
-  icon_url: string;
-  tier: string;
-  passive?: string | null;
-  active?: string | null;
-};
 
 // Smite 2 builds have 7 item slots (not 6, that was Smite 1) - plus the
 // active relic, which isn't part of this build picker at all. Imported rather
@@ -82,8 +75,7 @@ export function ItemSelectGrid({
               className="flex items-center gap-1.5 rounded-md border border-ss-cyan bg-ss-bg-raised py-1 pl-1 pr-2"
               title="Quitar"
             >
-              {/* eslint-disable-next-line @next/next/no-img-element -- external CDN icon */}
-              <img src={item.icon_url} alt="" className="h-6 w-6 rounded" />
+              <ItemArt iconUrl={item.icon_url} name={item.name} size={24} />
               <span className="text-xs text-ss-text">{item.name}</span>
               <span className="text-ss-text-muted">×</span>
             </button>
@@ -126,8 +118,7 @@ export function ItemSelectGrid({
                 className="flex flex-col items-center gap-1 rounded-md p-1 text-center hover:bg-ss-card"
                 title={[item.name, item.passive, item.active].filter(Boolean).join('\n')}
               >
-                {/* eslint-disable-next-line @next/next/no-img-element -- external CDN icon */}
-                <img src={item.icon_url} alt={item.name} className="h-9 w-9 rounded border border-ss-line" />
+                <ItemArt iconUrl={item.icon_url} name={item.name} size={36} className="border border-ss-line" />
                 <span className="line-clamp-1 text-[10px] text-ss-text-secondary">{item.name}</span>
               </button>
             ))}

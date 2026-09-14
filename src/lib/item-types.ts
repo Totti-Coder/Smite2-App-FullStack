@@ -10,7 +10,7 @@ export const MAX_BUILD_ITEMS = 7;
 export type Item = {
   id: string;
   name: string;
-  icon_url: string;
+  icon_url: string | null;
   tier: string;
   cost: number;
   stats: Record<string, number> | null;

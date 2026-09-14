@@ -50,7 +50,9 @@ async function main() {
   }
 
   console.log(`Hashing ${items.length} item icons...`);
-  for (const it of items as { id: string; icon_url: string }[]) {
+  for (const it of items as { id: string; icon_url: string | null }[]) {
+    // Items with no known CDN asset yet simply have nothing to hash.
+    if (!it.icon_url) continue;
     const h = await hashUrl(it.icon_url);
     if (h) itemHashes[it.id] = h;
   }

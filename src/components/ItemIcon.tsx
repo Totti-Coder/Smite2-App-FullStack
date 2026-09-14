@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import type { Item } from '@/lib/item-types';
+import { ItemArt } from '@/components/ItemArt';
 import itemsCatalog from '@/data/items.json';
 
 // Matches (and the aggregate item stats) are keyed by item NAME, not
@@ -43,13 +44,7 @@ export function ItemIcon({
 
   return (
     <Link href={`/items?q=${encodeURIComponent(item.name)}`} className="group relative block shrink-0">
-      {/* eslint-disable-next-line @next/next/no-img-element -- external CDN icon */}
-      <img
-        src={item.icon_url}
-        alt={item.name}
-        style={{ height: px, width: px }}
-        className="rounded border border-ss-line transition group-hover:border-ss-cyan"
-      />
+      <ItemArt iconUrl={item.icon_url} name={item.name} size={size} className="border border-ss-line transition group-hover:border-ss-cyan" />
 
       <div className="pointer-events-none absolute bottom-full left-1/2 z-20 mb-2 w-56 -translate-x-1/2 rounded-lg border border-ss-line bg-ss-card p-3 text-left opacity-0 shadow-xl shadow-black/50 transition-opacity duration-150 group-hover:opacity-100">
         <p className="font-display text-xs font-bold text-ss-text">{item.name}</p>

@@ -421,6 +421,17 @@
     "owner_god": null
   },
   {
+    "id": "book_of_thoth_evolved",
+    "name": "Book of Thoth (Evolved)",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_BookofThroth_Evolved.png",
+    "tier": "T3",
+    "cost": 2300,
+    "stats": {},
+    "passive": "Forma evolucionada de Book of Thoth. Stats pendientes de completar.",
+    "active": null,
+    "owner_god": null
+  },
+  {
     "id": "bow",
     "name": "Bow",
     "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T1/Icon_T1_Bow.png",
@@ -728,6 +739,17 @@
     "owner_god": null
   },
   {
+    "id": "crystalline_egg",
+    "name": "Crystalline Egg",
+    "icon_url": null,
+    "tier": "Starter",
+    "cost": 850,
+    "stats": {},
+    "passive": null,
+    "active": null,
+    "owner_god": null
+  },
+  {
     "id": "cursed_sickle",
     "name": "Cursed Sickle",
     "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T2/Icon_T2_CursedSickle.png",
@@ -864,6 +886,17 @@
       "LifeStealPercent": 5
     },
     "passive": "Kill Minion or Jungle Monsters: +1 Stack.\n\nEach Stack grants:\n• +.4 Strength\n• +0.05% Lifesteal\n\nAt 75 Stacks, gain:\n• +10 Strength\n• +3% Lifesteal\n• Continue to stack more Slowly; 10 Minion Kills: +1 Stack, Jungle Boss Kill or Assist: +4 Stacks",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "devourers_gauntlet_evolved",
+    "name": "Devourer's Gauntlet (Evolved)",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_DevoursGloves.png",
+    "tier": "T3",
+    "cost": 2500,
+    "stats": {},
+    "passive": "Forma evolucionada de Devourer's Gauntlet. Stats pendientes de completar.",
     "active": null,
     "owner_god": null
   },
@@ -1146,6 +1179,28 @@
     "owner_god": null
   },
   {
+    "id": "eyes_of_the_jungle",
+    "name": "Eyes of the Jungle",
+    "icon_url": null,
+    "tier": "Relic",
+    "cost": 0,
+    "stats": {},
+    "passive": null,
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "fencers_buckler",
+    "name": "Fencer's Buckler",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T2/Icon_T2_FencersBuckler.png",
+    "tier": "T2",
+    "cost": 800,
+    "stats": {},
+    "passive": null,
+    "active": null,
+    "owner_god": null
+  },
+  {
     "id": "flaming_pearl",
     "name": "Flaming Pearl",
     "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T2/Icon_T2_FlamingPearl.png",
@@ -1185,6 +1240,17 @@
       "MaxMana": 150
     },
     "passive": "Assist a Minion: +1 Stack.\n\nGod Kill or Assist: +5 Stacks.\n\nStacks grants +15 Max Health (max 40 Stacks).\n\nAt 40 Stacks, Item evolves and gains:\n• +100 Max Health\n• +10 Physical and Magical Protection",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "gauntlet_of_thebes_evolved",
+    "name": "Gauntlet of Thebes (Evolved)",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_GauntletOfThebes_Evolved.png",
+    "tier": "T3",
+    "cost": 2200,
+    "stats": {},
+    "passive": "Forma evolucionada de Gauntlet of Thebes. Stats pendientes de completar.",
     "active": null,
     "owner_god": null
   },
@@ -2236,6 +2302,17 @@
     "owner_god": null
   },
   {
+    "id": "prophetic_cloak_evolved",
+    "name": "Prophetic Cloak (Evolved)",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_Prophetic_Cloak_Evolution.png",
+    "tier": "T3",
+    "cost": 2400,
+    "stats": {},
+    "passive": "Forma evolucionada de Prophetic Cloak. Stats pendientes de completar.",
+    "active": null,
+    "owner_god": null
+  },
+  {
     "id": "purification_beads",
     "name": "Purification Beads",
     "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/Utility/T_Icon_Utility_PurificationBeads.png",
@@ -2397,6 +2474,28 @@
       "AttackSpeedPercent": 20
     },
     "passive": "While Above 50% Health: +10% Attack Damage\n\nWhile Below 50% Health:\n• +25% Attack Damage\n• +7.5% Lifesteal",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "ritual_of_star_strike",
+    "name": "Ritual of Star Strike",
+    "icon_url": null,
+    "tier": "Relic",
+    "cost": 0,
+    "stats": {},
+    "passive": null,
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "ritual_of_the_full_moon",
+    "name": "Ritual of the Full Moon",
+    "icon_url": null,
+    "tier": "Relic",
+    "cost": 0,
+    "stats": {},
+    "passive": null,
     "active": null,
     "owner_god": null
   },
@@ -3255,6 +3354,17 @@
     "owner_god": null
   },
   {
+    "id": "training_grounds",
+    "name": "Training Grounds",
+    "icon_url": null,
+    "tier": "Consumable",
+    "cost": 0,
+    "stats": {},
+    "passive": null,
+    "active": null,
+    "owner_god": null
+  },
+  {
     "id": "transcendence",
     "name": "Transcendence",
     "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_Transcendence.png",
@@ -3266,6 +3376,17 @@
       "ManaPerTime": 4
     },
     "passive": "+Strength equal to 3% of Mana from Items.\n\nDeal 700 Damage to Minions or Jungle Monsters:\n+1 Evolve Stack\n+1 Mana Infusion Stack (Max 50 Stacks)\n• Damage dealt to Gods counts double\n\nPer Mana Infusion Stack: +10 Mana.\n\nAt 50 Evolve Stacks, item evolves and gains:\n• +10 Penetration\n• +100 Mana",
+    "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "transcendence_evolved",
+    "name": "Transcendence (Evolved)",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_Transcendence.png",
+    "tier": "T3",
+    "cost": 2400,
+    "stats": {},
+    "passive": "Forma evolucionada de Transcendence. Stats pendientes de completar.",
     "active": null,
     "owner_god": null
   },

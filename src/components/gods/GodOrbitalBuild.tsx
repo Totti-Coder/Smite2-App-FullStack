@@ -8,6 +8,7 @@ import { useMotionPref } from '@/components/motion/MotionRoot';
 import { CoinIcon, LockIcon, SparkleIcon } from '@/components/icons';
 import type { Item } from '@/lib/item-types';
 import itemsCatalog from '@/data/items.json';
+import { ItemArt } from '@/components/ItemArt';
 
 // Loaded only when the section scrolls into view (see `armed` below), so the
 // multi-megabyte .glb and the three.js/r3f bundle are never fetched by
@@ -234,14 +235,34 @@ export function GodOrbitalBuild({
                 style={{ borderColor: isOpen ? accent : node.item ? `${accent}66` : 'var(--ss-line)' }}
               >
                 {node.item ? (
-                  // eslint-disable-next-line @next/next/no-img-element -- external CDN icon
-                  <img src={node.item.icon_url} alt="" className="h-9 w-9 rounded-full object-cover" />
+                  <ItemArt
+                    iconUrl={node.item.icon_url}
+                    name={node.item.name}
+                    size={36}
+                    rounded="rounded-full"
+                    className="object-cover"
+                  />
                 ) : (
                   <span className="text-ss-text-muted">
                     <LockIcon size={16} />
                   </span>
                 )}
               </span>
+
+              {/* The name under each node. An icon alone identifies an item
+                  only to someone who already recognises all 265 of them -
+                  and the hover card can't help on a touch screen. Centred on
+                  the node and allowed to wrap to two lines, since item names
+                  run long ("Hide of the Nemean Lion"). */}
+              {mounted && (
+                <span
+                  className={`pointer-events-none absolute top-14 left-1/2 w-28 -translate-x-1/2 text-center text-[10px] leading-tight font-semibold tracking-wide transition-colors duration-300 ${
+                    isOpen ? 'text-ss-text' : node.item ? 'text-ss-text-secondary' : 'text-ss-text-muted'
+                  }`}
+                >
+                  {node.item ? node.item.name : 'Vacío'}
+                </span>
+              )}
             </button>
           );
         })}
@@ -253,11 +274,11 @@ export function GodOrbitalBuild({
       <div className="min-h-[104px] border-t border-ss-line pt-4">
         {open?.item ? (
           <div className="flex items-start gap-3">
-            {/* eslint-disable-next-line @next/next/no-img-element -- external CDN icon */}
-            <img
-              src={open.item.icon_url}
-              alt=""
-              className="h-12 w-12 shrink-0 rounded border border-ss-line"
+            <ItemArt
+              iconUrl={open.item.icon_url}
+              name={open.item.name}
+              size={48}
+              className="border border-ss-line"
             />
             <div className="min-w-0">
               <div className="flex flex-wrap items-center gap-2">

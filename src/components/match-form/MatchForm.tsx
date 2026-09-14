@@ -9,9 +9,18 @@ import { StatsScanner } from './StatsScanner';
 import { ROLE_LABEL } from '@/lib/god-assets';
 import type { Role } from '@/lib/supabase/database.types';
 import itemsCatalog from '@/data/items.json';
+import type { Item as CatalogItem } from '@/lib/item-types';
+
+// The JSON module's inferred type is a union of every distinct object shape
+// in the array (stats keys vary per item), not a single Item - the same cast
+// the /items page makes, for the same reason.
+const itemsForPicker = itemsCatalog as unknown as CatalogItem[];
 
 type God = { id: string; name: string; primary_role: string; icon_url: string | null };
-type Item = { id: string; name: string; icon_url: string; tier: string };
+// One shared Item shape, not a narrower local copy: the local one declared
+// icon_url as a non-null string, which silently diverged from the catalog
+// the moment items without a known icon became representable.
+type Item = CatalogItem;
 
 const roles = ['solo', 'jungle', 'mid', 'adc', 'support'] as const;
 const gameModes = [
@@ -68,7 +77,7 @@ export function MatchForm({ gods }: { gods: God[] }) {
   const [selectedItems, setSelectedItems] = useState<Item[]>([]);
   const [participants, setParticipants] = useState<Participant[]>([]);
 
-  const itemById = useMemo(() => new Map((itemsCatalog as Item[]).map((i) => [i.id, i])), []);
+  const itemById = useMemo(() => new Map(itemsForPicker.map((i) => [i.id, i])), []);
 
   // The scanner reports who else played (dioses+roles de aliados/enemigos,
   // para las estadísticas de matchup) AND the player's own detected build.
@@ -211,7 +220,7 @@ export function MatchForm({ gods }: { gods: God[] }) {
       </div>
 
       <Section title="Build (items, opcional)" accent="#fb923c">
-        <ItemSelectGrid items={itemsCatalog} value={selectedItems} onChange={setSelectedItems} />
+        <ItemSelectGrid items={itemsForPicker} value={selectedItems} onChange={setSelectedItems} />
       </Section>
 
       <Section title="Notas">
