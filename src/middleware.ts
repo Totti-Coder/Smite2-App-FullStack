@@ -19,7 +19,13 @@ export async function middleware(request: NextRequest) {
     // browser hands the file to <img> as a blob: object URL, not a real request.
     "img-src 'self' data: blob: https:",
     "font-src 'self' data:",
-    `connect-src 'self' https://*.supabase.co${isDev ? ' ws:' : ''}`,
+    // blob: is required by three's GLTFLoader: textures embedded in a .glb
+    // are extracted into Blobs and then read back with fetch(), so without
+    // this the model loads with its geometry intact and NO textures at all -
+    // a flat white silhouette, reported only as a CSP violation in the
+    // console and a material whose `map` is null. It permits reading blobs
+    // this page created itself, not any remote origin.
+    `connect-src 'self' blob: https://*.supabase.co${isDev ? ' ws:' : ''}`,
     // Tesseract.js loads its actual recognizer as a nested worker spawned
     // from a blob: URL (a wrapper it builds itself, not our worker.min.js
     // directly) - 'self' alone blocks that inner spawn with a silent
@@ -42,6 +48,11 @@ export const config = {
     // the auth redirect below sends every crawler to /login instead, which
     // is invalid robots.txt syntax and some crawlers then fall back to
     // "no rules" (crawl everything) instead of respecting the disallow.
-    '/((?!_next/static|_next/image|favicon.ico|robots.txt|tesseract/|.*\\.(?:svg|png|jpg|jpeg|gif|webp|wasm|gz)$).*)',
+    // 3D models are excluded for the same reason as the Tesseract WASM above:
+    // they're static binaries fetched by the page itself, and routing them
+    // through the auth gate makes a signed-out request answer with the /login
+    // HTML instead of the file - which surfaces as the loader choking on
+    // "Unexpected token '<'" rather than as anything resembling a redirect.
+    '/((?!_next/static|_next/image|favicon.ico|robots.txt|tesseract/|assets/|.*\\.(?:svg|png|jpg|jpeg|gif|webp|wasm|gz|glb|gltf)$).*)',
   ],
 };

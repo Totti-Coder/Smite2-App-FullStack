@@ -8,6 +8,8 @@ import { GodAvatar } from '@/components/GodAvatar';
 import { GodPicker } from '@/components/GodPicker';
 import { RoleMixBar } from '@/components/RoleMixBar';
 import { AbilitiesList } from '@/components/AbilitiesList';
+import { GodOrbitalBuild } from '@/components/gods/GodOrbitalBuild';
+import { godModelPath } from '@/lib/god-models';
 import { DAMAGE_TYPE_COLOR, DAMAGE_TYPE_LABEL, ROLE_LABEL } from '@/lib/god-assets';
 import type { GodAbility, Role } from '@/lib/supabase/database.types';
 import godsCatalog from '@/data/gods.json';
@@ -55,6 +57,15 @@ export default async function GodDetailPage({ params }: { params: Promise<{ godI
   const trend = kdaTrend([...matches].reverse());
   const accent = DAMAGE_TYPE_COLOR[god.damage_type as DamageType];
   const abilities = (abilitiesData ?? []) as GodAbility[];
+
+  // The orbital view shows the build from the most recent match with this god.
+  // `matches` is already ordered played_at desc, and is an empty array for a
+  // signed-out visitor - so this is null for them and the orbit falls back to
+  // empty slots, which is the same thing it does for a signed-in player who
+  // simply hasn't recorded a game yet.
+  const modelSrc = godModelPath(god.id);
+  const lastMatch = matches[0] ?? null;
+  const lastBuild = lastMatch?.items ?? null;
 
   return (
     <main id="contenido" tabIndex={-1} className="mx-auto max-w-7xl px-4 py-10">
@@ -109,6 +120,21 @@ export default async function GodDetailPage({ params }: { params: Promise<{ godI
       <div className="mb-6 flex justify-end">
         <GodPicker gods={allGods ?? []} currentGodId={god.id} />
       </div>
+
+      {/* Only for gods that actually ship a model (see lib/god-models.ts) -
+          every other god page renders exactly as before and downloads none of
+          the three.js/r3f bundle. */}
+      {modelSrc && (
+        <div className="mb-8">
+          <GodOrbitalBuild
+            godName={god.name}
+            accent={accent}
+            modelSrc={modelSrc}
+            buildItems={lastBuild}
+            playedAt={lastMatch?.played_at ?? null}
+          />
+        </div>
+      )}
 
       <div className="mb-8 rounded-xl border border-ss-line bg-ss-card p-5">
         <h2 className="mb-1 font-display text-sm font-semibold uppercase tracking-wide text-ss-text-secondary">Habilidades</h2>
