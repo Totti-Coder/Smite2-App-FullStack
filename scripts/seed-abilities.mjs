@@ -52,7 +52,13 @@ const allRows = raw.map((a) => {
     name: a.name,
     ability_type: ABILITY_CODE_LABEL[code] ?? code ?? 'Ability',
     description: a.description,
-    icon_url: `https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/${a.imgPath}`,
+    // Guarded: an unconditional template turns a missing imgPath into the
+    // literal string "null" inside the URL, which renders as a broken image.
+    // AbilitiesList already draws a clean placeholder for a null icon, so
+    // pass null through and let it do that.
+    icon_url: a.imgPath
+      ? `https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/${a.imgPath}`
+      : null,
     stats: { levelStats: a.levelStats, namedFormulas: a.namedFormulas, namedValueScalings: a.namedValueScalings },
     notes: (a.notes ?? []).join('\n') || null,
   };

@@ -798,6 +798,20 @@
     "owner_god": null
   },
   {
+    "id": "deathbringer",
+    "name": "Deathbringer",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_Deathbringer.png",
+    "tier": "T3",
+    "cost": 2900,
+    "stats": {
+      "PhysicalPower": 45,
+      "CritChance": 20
+    },
+    "passive": "+35% Critical Strike Damage.",
+    "active": null,
+    "owner_god": null
+  },
+  {
     "id": "deaths_embrace",
     "name": "Death's Embrace",
     "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/AspectsInfluences/Icon_Starter_DeathsTollUpgrade.png",
@@ -821,20 +835,6 @@
       "MaxHealth": 100
     },
     "passive": "Adaptive Stat: +15 Strength or +25 Intelligence (based on highest item stat).\n\nAttack Hit:\n• +2 (+0.3% Max Health) Heal\n• +1 (+0.1% Max Mana) Restore\n\nRequires Level 20 to upgrade.",
-    "active": null,
-    "owner_god": null
-  },
-  {
-    "id": "deathbringer",
-    "name": "Deathbringer",
-    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_Deathbringer.png",
-    "tier": "T3",
-    "cost": 2900,
-    "stats": {
-      "PhysicalPower": 45,
-      "CritChance": 20
-    },
-    "passive": "+35% Critical Strike Damage.",
     "active": null,
     "owner_god": null
   },
@@ -1728,6 +1728,22 @@
     "owner_god": "Ratatoskr"
   },
   {
+    "id": "lotus_sickle",
+    "name": "Lotus Sickle",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_LotusSickle.png",
+    "tier": "T3",
+    "cost": 2150,
+    "stats": {
+      "MagicalPower": 40,
+      "MaxMana": 250,
+      "ManaPerTime": 3,
+      "CooldownReductionPercent": 15
+    },
+    "passive": "Potenciar, curar o escudar a un dios aliado con una habilidad otorga una carga de loto (máx. 3). Cuando un aliado golpea a un enemigo con un ataque, se consume una carga para infligir 30 (+20% de Fuerza y +10% de Inteligencia) de daño mágico adicional.\n• Se construye desde Ring of Dispel + Mana Tome",
+    "active": null,
+    "owner_god": null
+  },
+  {
     "id": "lucerne_hammer",
     "name": "Lucerne Hammer",
     "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T2/Icon_T2_LucerneHammer.png",
@@ -1737,20 +1753,6 @@
       "PhysicalPower": 20
     },
     "passive": null,
-    "active": null,
-    "owner_god": null
-  },
-  {
-    "id": "magis_cloak",
-    "name": "Magi's Cloak",
-    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/magisshelter.png",
-    "tier": "T3",
-    "cost": 2400,
-    "stats": {
-      "PhysicalProtection": 35,
-      "MagicalProtection": 35
-    },
-    "passive": "Every 90s: Gain a Hard Crowd Control protective bubble.\n• When triggered, gain Crowd Control Immunity for 1.5s.",
     "active": null,
     "owner_god": null
   },
@@ -1766,6 +1768,20 @@
     "passive": "Non-Aspect:\n+5 Strength\n\nAspect:\n+50 Health",
     "active": null,
     "owner_god": "Ratatoskr"
+  },
+  {
+    "id": "magis_cloak",
+    "name": "Magi's Cloak",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/magisshelter.png",
+    "tier": "T3",
+    "cost": 2400,
+    "stats": {
+      "PhysicalProtection": 35,
+      "MagicalProtection": 35
+    },
+    "passive": "Every 90s: Gain a Hard Crowd Control protective bubble.\n• When triggered, gain Crowd Control Immunity for 1.5s.",
+    "active": null,
+    "owner_god": null
   },
   {
     "id": "mana_potion",
@@ -2781,6 +2797,21 @@
     },
     "passive": "Ability Hit: +1 Stack.\n\nThree Stacks: Next Ability Hit:\n• Deals Bonus Damage (40% Intelligence)\n• +20(+6 per Level) Heal you and allies within 3.2m\n• Removes the Stacks",
     "active": null,
+    "owner_god": null
+  },
+  {
+    "id": "soul_locket",
+    "name": "Soul Locket",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=96,format=auto,quality=75/Items/T3/Icon_T3_SoulLocket.png",
+    "tier": "T3",
+    "cost": 2450,
+    "stats": {
+      "MagicalPower": 50,
+      "MaxHealth": 200,
+      "ManaPerTime": 5
+    },
+    "passive": "+10% de curación y escudos otorgados.\nPotenciar, curar o escudar a un dios aliado con una habilidad otorga una carga de Alma (máx. 70).\n• Se construye desde Soul Reliquary + Flaming Pearl",
+    "active": "Al usarlo: obtienes Paso Espiritual durante 2,5 s, consumiendo tus cargas de Alma y otorgando 1% de reducción de daño por cada carga consumida y +20% de velocidad de movimiento.",
     "owner_god": null
   },
   {

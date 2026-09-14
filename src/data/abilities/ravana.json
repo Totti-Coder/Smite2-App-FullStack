@@ -1,0 +1,57 @@
+[
+  {
+    "name": "Chain of Blows",
+    "abilityCode": "PSV",
+    "slot": 0,
+    "description": "Successful Attacks and abilities against enemies add to your Combo. Each time Combo reaches 8, you gain a Shield as well as Movement Speed and Strength.",
+    "imgPath": "Gods/Ravana/Abilities/Icons_Ravana_Passive.png",
+    "levelStats": {},
+    "namedFormulas": {},
+    "namedValueScalings": {},
+    "notes": []
+  },
+  {
+    "name": "Prana Onslaught",
+    "abilityCode": "A01",
+    "slot": 1,
+    "description": "Throw a powerful punch, projecting your prana to deal Physical Damage and Slow enemies in front of you.",
+    "imgPath": "Gods/Ravana/Abilities/Icons_Ravana_A01.png",
+    "levelStats": {},
+    "namedFormulas": {},
+    "namedValueScalings": {},
+    "notes": []
+  },
+  {
+    "name": "Overhead Kick",
+    "abilityCode": "A02",
+    "slot": 2,
+    "description": "Kick high, sending a shockwave forward that deals Physical Damage to all enemies in a line. Gain Movement Speed and become CC Immune and Damage Immune for the duration.",
+    "imgPath": "Gods/Ravana/Abilities/Icons_Ravana_A02.png",
+    "levelStats": {},
+    "namedFormulas": {},
+    "namedValueScalings": {},
+    "notes": []
+  },
+  {
+    "name": "10-Hand Shadow Fist",
+    "abilityCode": "A03",
+    "slot": 3,
+    "description": "Fire your fists forward, dealing Physical Damage as they pass through enemies. The first enemy god hit is Rooted. Heal from the first enemy god and the first 3 minions hit.",
+    "imgPath": "Gods/Ravana/Abilities/Icons_Ravana_A03.png",
+    "levelStats": {},
+    "namedFormulas": {},
+    "namedValueScalings": {},
+    "notes": []
+  },
+  {
+    "name": "Mystic Rush",
+    "abilityCode": "A04",
+    "slot": 4,
+    "description": "Become CC Immune and Leap to a target location, dealing Physical Damage to enemies in the area. Enemy gods hit take increased Damage from all sources. After landing, you gain Damage Mitigation for a duration.",
+    "imgPath": "Gods/Ravana/Abilities/Icons_Ravana_A04.png",
+    "levelStats": {},
+    "namedFormulas": {},
+    "namedValueScalings": {},
+    "notes": []
+  }
+]

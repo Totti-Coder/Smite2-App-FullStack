@@ -20,6 +20,7 @@ export const PATCHES: Patch[] = [
   { id: 'OB40', label: 'OB40', startDate: '2026-07-28' },
   { id: 'OB41', label: 'OB41', startDate: '2026-08-11' },
   { id: 'OB42', label: 'OB42', startDate: '2026-08-25' },
+  { id: 'OB43', label: 'OB43', startDate: '2026-09-08' },
 ];
 
 /** The patch active on a given date/timestamp - null if before the earliest entry above. */

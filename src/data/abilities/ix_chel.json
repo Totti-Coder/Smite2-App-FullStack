@@ -1,0 +1,57 @@
+[
+  {
+    "name": "Rainbow Weaver",
+    "abilityCode": "PSV",
+    "slot": 0,
+    "description": "Gain a Rainbow Weaver stack whenever your Abilities hit an enemy God or grant a beneficial effect to an allied God. At 6 stacks, your next Attack has no movement penalty, is larger, travels farther, and deals Bonus Damage.",
+    "imgPath": null,
+    "levelStats": {},
+    "namedFormulas": {},
+    "namedValueScalings": {},
+    "notes": []
+  },
+  {
+    "name": "Gleaming Blast / Threads of Light",
+    "abilityCode": "A01",
+    "slot": 1,
+    "description": "Fire a blast of gleaming light that deals Magical Damage, stopping on the first enemy god hit and transforming this ability into Threads of Light. Illuminate strands in a cone to deal Magical Damage. Enemies facing the strands as they illuminate are Blinded. Enemies hit by the tip of the cone take additional damage.",
+    "imgPath": null,
+    "levelStats": {},
+    "namedFormulas": {},
+    "namedValueScalings": {},
+    "notes": []
+  },
+  {
+    "name": "Lunar Invocation",
+    "abilityCode": "A02",
+    "slot": 2,
+    "description": "Invoke lunar energy at an area. After a brief delay, it explodes, dealing Magical Damage and Knocking Up enemies while Healing allies.",
+    "imgPath": null,
+    "levelStats": {},
+    "namedFormulas": {},
+    "namedValueScalings": {},
+    "notes": []
+  },
+  {
+    "name": "Rainbow Crash",
+    "abilityCode": "A03",
+    "slot": 3,
+    "description": "Fire an arcing rainbow and gain Movement Speed. When it lands, deal Magical Damage and Root enemies. The rainbow splits into orbs that you and allied gods can pick up to gain Movement Speed.",
+    "imgPath": null,
+    "levelStats": {},
+    "namedFormulas": {},
+    "namedValueScalings": {},
+    "notes": []
+  },
+  {
+    "name": "Great End",
+    "abilityCode": "A04",
+    "slot": 4,
+    "description": "Become CC Immune and channel a rainbow beam. Enemies repeatedly take Magical Damage and allied gods repeatedly Heal. Damaging an enemy god or Healing an allied god also Heals you.",
+    "imgPath": null,
+    "levelStats": {},
+    "namedFormulas": {},
+    "namedValueScalings": {},
+    "notes": []
+  }
+]

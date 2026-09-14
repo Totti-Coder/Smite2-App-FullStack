@@ -1,0 +1,68 @@
+[
+  {
+    "name": "Master of Arms",
+    "abilityCode": "PSV",
+    "slot": 0,
+    "description": "Hit enemies with your Attacks to gain a stack of Attack Speed and Mana Regen.",
+    "imgPath": "Gods/Hachiman/Abilities/Icons_Hachiman_Passive.png",
+    "levelStats": {},
+    "namedFormulas": {},
+    "namedValueScalings": {},
+    "notes": []
+  },
+  {
+    "name": "Eagle Eye",
+    "abilityCode": "A01",
+    "slot": 1,
+    "description": "Replace your next 4 Attacks with empowered arrows that travel further and deal bonus Physical Damage based on your Basic Attack Damage. These Attacks can Critically Strike and trigger item effects.",
+    "imgPath": "Gods/Hachiman/Abilities/Icons_Hachiman_A01.png",
+    "levelStats": {},
+    "namedFormulas": {},
+    "namedValueScalings": {},
+    "notes": []
+  },
+  {
+    "name": "Heavenly Banner",
+    "abilityCode": "A02",
+    "slot": 2,
+    "description": "Call down a sacred banner that deals Physical Damage to enemies in the area and grant you Attack Speed for a duration. Leave a banner that grants you and allies Attack Speed while nearby.",
+    "imgPath": "Gods/Hachiman/Abilities/Icons_Hachiman_A02.png",
+    "levelStats": {},
+    "namedFormulas": {},
+    "namedValueScalings": {},
+    "notes": []
+  },
+  {
+    "name": "Iaijutsu",
+    "abilityCode": "A03",
+    "slot": 3,
+    "description": "Dash forward, dealing Physical Damage and passing through enemies. At the end of the dash, swing your blade in a circle, dealing Physical Damage again. Enemy gods hit by both attacks are Stunned.",
+    "imgPath": "Gods/Hachiman/Abilities/Icons_Hachiman_A03.png",
+    "levelStats": {},
+    "namedFormulas": {},
+    "namedValueScalings": {},
+    "notes": []
+  },
+  {
+    "name": "Mounted Archery",
+    "abilityCode": "A04",
+    "slot": 4,
+    "description": "Leap onto your horse and charge forward. While mounted, you are CC Immune and can aim separately from your horse. Fire to launch an arrow at every enemy god in a cone, dealing Physical Damage and Slowing them.",
+    "imgPath": "Gods/Hachiman/Abilities/Icons_Hachiman_A04.png",
+    "levelStats": {},
+    "namedFormulas": {},
+    "namedValueScalings": {},
+    "notes": []
+  },
+  {
+    "name": "Hachiman Basic Attack",
+    "abilityCode": "Inhand",
+    "slot": 100,
+    "description": "Fire a projectile that deals Physical Damage to the first enemy hit.",
+    "imgPath": "Attack_Types/Icon_BasicAttack_Physical.png",
+    "levelStats": {},
+    "namedFormulas": {},
+    "namedValueScalings": {},
+    "notes": []
+  }
+]

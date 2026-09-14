@@ -296,6 +296,14 @@
     "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Guan_Yu/Default/t_GodPortrait_Guan_Yu.png"
   },
   {
+    "id": "hachiman",
+    "name": "Hachiman",
+    "pantheon": "Japanese",
+    "primary_role": "adc",
+    "damage_type": "strength",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Hachiman/Default/t_GodPortrait_Hachiman.png"
+  },
+  {
     "id": "hades",
     "name": "Hades",
     "pantheon": "Greek",
@@ -358,6 +366,14 @@
     "primary_role": "adc",
     "damage_type": "strength",
     "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Ishtar/Default/t_GodPortrait_Ishtar.png"
+  },
+  {
+    "id": "ix_chel",
+    "name": "Ix Chel",
+    "pantheon": "Maya",
+    "primary_role": "mid",
+    "damage_type": "intelligence",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/IxChel/Default/t_GodPortrait_IxChel.png"
   },
   {
     "id": "izanami",
@@ -566,6 +582,14 @@
     "primary_role": "jungle",
     "damage_type": "strength",
     "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Ratatoskr/Default/t_GodPortrait_Ratatoskr.png"
+  },
+  {
+    "id": "ravana",
+    "name": "Ravana",
+    "pantheon": "Hindu",
+    "primary_role": "jungle",
+    "damage_type": "strength",
+    "icon_url": "https://cdn.smitesource.com/cdn-cgi/image/width=480,format=auto,quality=75/Gods/Ravana/Default/t_GodPortrait_Ravana.png"
   },
   {
     "id": "scylla",
