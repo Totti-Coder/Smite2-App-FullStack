@@ -186,9 +186,22 @@ export default function LoginPage() {
                 >
                   <p className="font-semibold text-ss-orange">Ese enlace ya no sirve.</p>
                   <p className="text-xs text-ss-text-secondary">
-                    Los enlaces caducan en una hora y solo valen para un uso. Pide otro desde &ldquo;¿Olvidaste tu
-                    contraseña?&rdquo;.
+                    Caducan en una hora y solo valen para un uso.
                   </p>
+                  {/* The action belongs HERE, not as the faint text link at the
+                      bottom of the card: someone arriving from a dead recovery
+                      link has exactly one thing they need to do next, and
+                      making them hunt for it is the whole failure. */}
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setLinkError(false);
+                      switchMode('reset');
+                    }}
+                    className="neu-raised mt-2 self-start rounded-md bg-ss-orange px-3 py-1.5 text-xs font-semibold text-ss-bg transition hover:brightness-110"
+                  >
+                    Pedir un enlace nuevo →
+                  </button>
                 </div>
               )}
 
