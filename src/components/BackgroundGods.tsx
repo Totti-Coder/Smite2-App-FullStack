@@ -3,41 +3,46 @@
 import gods from '@/data/gods.json';
 
 // A visually striking, fixed rotation - not random, so it's the same calm
-// set every load instead of picking oddball portraits. Rendered underneath
-// the video as a graceful fallback (ad-blockers, offline, embed disabled).
+// set every load instead of picking oddball portraits.
 const FEATURED_IDS = ['hades', 'zeus', 'athena', 'thor', 'kali', 'susano'];
 
-// "SMITE 2 - Official Reveal Trailer" - youtube-nocookie.com embed, nothing
-// downloaded or re-hosted. autoplay+mute+loop(via playlist=self)+no controls
-// so it just reads as ambient motion behind the dashboard.
-const YT_VIDEO_ID = 'o1PHxmPq5o4';
-const YT_EMBED_SRC = `https://www.youtube-nocookie.com/embed/${YT_VIDEO_ID}?autoplay=1&mute=1&loop=1&playlist=${YT_VIDEO_ID}&controls=0&showinfo=0&modestbranding=1&rel=0&iv_load_policy=3&disablekb=1&playsinline=1`;
-
+/**
+ * Ambient background behind every page: slowly cross-fading god portraits
+ * under a dark gradient.
+ *
+ * This used to also autoplay the official reveal trailer in a YouTube iframe.
+ * It was removed on purpose:
+ *  - It loaded YouTube's player (third-party JS, on the order of a megabyte)
+ *    on EVERY page, for something purely decorative.
+ *  - It hurt legibility: gameplay HUD text, the "PRE-ALPHA FOOTAGE" caption,
+ *    YouTube's play button and huge promo lettering showed straight through
+ *    the translucent panels, the orbital build view and the mobile menu.
+ *  - On /login - the one page where ambient motion suits the design - it was
+ *    never visible anyway: that page paints an opaque background and its own
+ *    WebGL nebula on top.
+ *
+ * The portraits stay, but dimmer (see `bg-god-fade` in globals.css) and under
+ * a heavier gradient, so they read as atmosphere rather than content.
+ */
 export function BackgroundGods() {
   const featured = FEATURED_IDS.map((id) => gods.find((g) => g.id === id)).filter(Boolean) as typeof gods;
 
   return (
-    <div className="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
+    <div className="pointer-events-none fixed inset-0 -z-10 overflow-hidden" aria-hidden="true">
       {featured.map((god, i) => (
         // eslint-disable-next-line @next/next/no-img-element -- external CDN portrait, decorative background
         <img
           key={god.id}
           src={god.icon_url ?? undefined}
           alt=""
-          className="bg-god-portrait absolute inset-0 h-full w-full object-cover object-top opacity-0 blur-sm"
+          loading="lazy"
+          decoding="async"
+          className="bg-god-portrait absolute inset-0 h-full w-full object-cover object-top opacity-0 blur-md"
           style={{ animation: 'bg-god-fade 36s infinite', animationDelay: `${i * 6}s` }}
         />
       ))}
 
-      <iframe
-        src={YT_EMBED_SRC}
-        title=""
-        allow="autoplay; encrypted-media"
-        className="absolute top-1/2 left-1/2 min-h-full min-w-full -translate-x-1/2 -translate-y-1/2"
-        style={{ width: '100vw', height: '56.25vw', minHeight: '100vh', minWidth: '177.78vh' }}
-      />
-
-      <div className="absolute inset-0 bg-gradient-to-b from-ss-bg/40 via-ss-bg/55 to-ss-bg/85" />
+      <div className="absolute inset-0 bg-gradient-to-b from-ss-bg/70 via-ss-bg/80 to-ss-bg/95" />
     </div>
   );
 }

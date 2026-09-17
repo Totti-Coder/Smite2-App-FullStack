@@ -47,10 +47,13 @@ body {
 /* Ambient background: god portraits cross-fade behind the whole app.
    6 images share a 36s cycle, each staggered 6s apart so exactly one is
    ever visible - see components/BackgroundGods.tsx for the delay values. */
+/* Peak 0.22 (was 0.4): with the trailer gone the portraits are the only
+   thing behind the panels, and at 0.4 a bright splash art still competed
+   with the text on top of it. */
 @keyframes bg-god-fade {
   0%, 100% { opacity: 0; }
-  1.4% { opacity: 0.4; }
-  15.3% { opacity: 0.4; }
+  1.4% { opacity: 0.22; }
+  15.3% { opacity: 0.22; }
   16.7% { opacity: 0; }
 }
 
@@ -185,8 +188,12 @@ body {
    .glass-panel  - the translucent+blurred card surface (Panel, Section)
    .neu-raised   - button chrome: rests lifted, visibly sinks on :active
    .neu-inset    - input chrome: reads as pressed INTO the surface already */
+/* Background alpha 0.82 (was 0.66). Glass only works when what's behind it
+   is quiet; at 0.66 the ambient layer showed through strongly enough to
+   compete with stats and labels. 0.82 still reads as translucent over the
+   dimmed portraits while keeping text contrast steady. */
 .glass-panel {
-  background: rgba(17, 22, 31, 0.66);
+  background: rgba(17, 22, 31, 0.82);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.07);

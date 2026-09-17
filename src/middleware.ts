@@ -32,8 +32,10 @@ export async function middleware(request: NextRequest) {
     // "OCR error: undefined" (confirmed via devtools: "Creating a worker
     // from 'blob:...' violates ... worker-src 'self'").
     "worker-src 'self' blob:",
-    // Ambient background: embedded YouTube trailer (official embed, nothing downloaded/hosted by us).
-    "frame-src https://www.youtube-nocookie.com",
+    // No page embeds anything any more (the ambient YouTube trailer was
+    // removed - see components/BackgroundGods.tsx), so frames are refused
+    // outright rather than left open to an origin nothing uses.
+    "frame-src 'none'",
     "frame-ancestors 'none'",
     "base-uri 'self'",
     "form-action 'self'",
