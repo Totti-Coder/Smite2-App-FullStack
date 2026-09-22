@@ -45,6 +45,10 @@ export function ItemArt({
     <img
       src={iconUrl}
       alt=""
+      // The build picker renders the whole catalog at once (265 icons), so
+      // these must not all be requested up front.
+      loading="lazy"
+      decoding="async"
       className={`shrink-0 ${rounded} ${className}`}
       style={{ width: size, height: size }}
     />

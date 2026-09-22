@@ -109,8 +109,23 @@ export function ItemSelectGrid({
               </button>
             ))}
           </div>
+
+          {/* Makes it obvious that the list is complete - the previous silent
+              64-item cut-off was invisible precisely because nothing said how
+              many items the filter actually matched. */}
+          <p aria-live="polite" className="text-[11px] text-ss-text-muted">
+            {filtered.length} {filtered.length === 1 ? 'item disponible' : 'items disponibles'}
+            {tier !== 'All' ? ` en ${TIER_LABEL[tier] ?? tier}` : ''}
+          </p>
+
           <div className="grid max-h-72 grid-cols-5 gap-2 overflow-y-auto rounded-md border border-ss-line bg-ss-bg-raised p-2 sm:grid-cols-8 lg:grid-cols-10 xl:grid-cols-12">
-            {filtered.slice(0, 64).map((item) => (
+            {/* No cap. This used to render `filtered.slice(0, 64)`, which
+                silently hid most of the catalog: 265 items exist and T3 alone
+                has 143, so anything past the 64th was unreachable unless you
+                guessed its name in the search box. The grid already scrolls
+                (max-h-72 + overflow-y-auto) and the icons load lazily, so
+                showing everything costs nothing. */}
+            {filtered.map((item) => (
               <button
                 type="button"
                 key={item.id}
