@@ -38,7 +38,7 @@ export function isMobileRequest(request: NextRequest): boolean {
 /**
  * The same test, in the browser. Used only for cosmetic decisions (hiding a
  * control that the mobile rule would make a dead end), never for access -
- * access is decided in middleware, on the server.
+ * access is decided in proxy.ts, on the server.
  *
  * `navigator.userAgentData.mobile` is the client-side twin of the
  * Sec-CH-UA-Mobile hint, so Chromium agrees with the server by construction;

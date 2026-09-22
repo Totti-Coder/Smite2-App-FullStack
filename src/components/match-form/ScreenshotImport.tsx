@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import { OCR_FIELDS, loadCalibration, saveCalibration, clearCalibration, parseOcrText, type CalibrationBox } from '@/lib/ocr-fields';
 import { recognizeRegion } from '@/lib/ocr-engine';
 
@@ -40,7 +40,10 @@ export function ScreenshotImport({ onFileReady }: { onFileReady?: (file: File | 
   // 'idle' on success, which would otherwise re-satisfy its own trigger).
   const autoRunDoneRef = useRef(false);
 
-  function loadImageFile(file: File) {
+  // useCallback, not a plain function: the paste listener below captures it,
+  // and a listener registered on one render would otherwise keep calling that
+  // render's closure - including its copy of the onFileReady prop.
+  const loadImageFile = useCallback((file: File) => {
     const url = URL.createObjectURL(file);
     setImgSrc(url);
     setReview(null);
@@ -51,7 +54,7 @@ export function ScreenshotImport({ onFileReady }: { onFileReady?: (file: File | 
     // resets imgSrc back to null (applyToForm), only when the user
     // explicitly discards/replaces the capture.
     onFileReady?.(file);
-  }
+  }, [onFileReady]);
 
   function handleFile(e: React.ChangeEvent<HTMLInputElement>) {
     const file = e.target.files?.[0];
@@ -79,7 +82,7 @@ export function ScreenshotImport({ onFileReady }: { onFileReady?: (file: File | 
     }
     window.addEventListener('paste', onWindowPaste);
     return () => window.removeEventListener('paste', onWindowPaste);
-  }, [imgSrc]);
+  }, [imgSrc, loadImageFile]);
 
   function onImgLoad() {
     const img = imgRef.current;

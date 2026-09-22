@@ -1,7 +1,7 @@
 import type { MetadataRoute } from 'next';
 
 // This app is 100% authenticated - every route sits behind the login gate
-// in src/middleware.ts, and layout.tsx already sends `robots: noindex` on
+// in src/proxy.ts, and layout.tsx already sends `robots: noindex` on
 // every response. This file is the OTHER half of that: the crawler-facing
 // /robots.txt itself.
 //

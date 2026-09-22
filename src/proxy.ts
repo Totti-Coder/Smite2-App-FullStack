@@ -3,7 +3,7 @@ import { updateSession } from '@/lib/supabase/middleware';
 
 const isDev = process.env.NODE_ENV !== 'production';
 
-export async function middleware(request: NextRequest) {
+export async function proxy(request: NextRequest) {
   // Fresh nonce per request. Next.js auto-applies it to the inline
   // bootstrap/RSC-payload scripts it injects, once it sees the nonce in the
   // response's own CSP header - that's what makes 'unsafe-inline' avoidable.
