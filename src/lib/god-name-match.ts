@@ -42,6 +42,12 @@ const NAME_ALIASES: Record<string, string> = {
   SILVANO: 'sylvanus',
   ALADINO: 'aladdin',
   LAMORRIGAN: 'the_morrigan',
+  // Smite shortens her to just "BARI" in the Spanish stats screen, while the
+  // catalog keeps her full name - too far apart for the fuzzy pass to reach.
+  BARI: 'princess_bari',
+  // Resolved by fuzzy at distance 1 (the Spanish spelling adds a leading I),
+  // but pinned here so a future catalog addition can't steal the match.
+  IXBALANQUE: 'xbalanque',
 };
 
 type LearnedNames = Record<string, string>; // normalized OCR text -> god id
@@ -106,7 +112,7 @@ export function matchGodByName(
   gods: { id: string; name: string }[]
 ): GodNameMatch | null {
   const key = normalizeGodName(rawText);
-  if (key.length < 3) return null;
+  if (!key) return null;
 
   const learned = loadLearnedGodNames()[key];
   if (learned) return { id: learned, distance: 0, source: 'learned' };
@@ -122,6 +128,14 @@ export function matchGodByName(
     if (!best || d < best.distance) best = { id: god.id, distance: d };
   }
   if (!best) return null;
+
+  // The short-name guard applies to FUZZY matching only. It used to sit at the
+  // top and reject anything under 3 characters outright, which silently threw
+  // away Ra - a real god whose whole name is two letters - before the exact
+  // comparison above ever ran. An exact hit on a two-letter name is safe
+  // precisely because it equals a catalog entry; a fuzzy one is not, since at
+  // that length almost any OCR fragment is within one edit of something.
+  if (key.length < 3) return null;
 
   // Tolerance scales with name length: "RA" can't afford a typo, "CU
   // CHULAINN" can afford a few. Beyond this the guess is worse than

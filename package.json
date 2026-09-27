@@ -10,7 +10,7 @@
     "seed:gods": "tsx --env-file=.env.local scripts/seed-gods.ts",
     "seed:abilities": "node --env-file=.env.local scripts/seed-abilities.mjs",
     "build:icon-hashes": "tsx scripts/build-icon-hashes.ts",
-    "check": "tsx scripts/check-sanitize.ts && tsx scripts/check-image-sniff.ts && tsx scripts/check-auth-errors.ts && tsx scripts/check-password-policy.ts && tsx scripts/check-safe-next.ts",
+    "check": "tsx scripts/check-sanitize.ts && tsx scripts/check-image-sniff.ts && tsx scripts/check-auth-errors.ts && tsx scripts/check-password-policy.ts && tsx scripts/check-safe-next.ts && tsx scripts/check-ocr-parsing.ts",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
