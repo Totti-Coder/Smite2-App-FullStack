@@ -7,6 +7,13 @@ const SMITE2_APPID = 2437170;
 // How stale the latest snapshot has to be before the dashboard bothers
 // taking a fresh one. Not a rate-limit dodge (Valve doesn't document one
 // for this endpoint) - just no reason to hit it on every single reload.
+//
+// This check is ADVISORY only. It runs with the visitor's own credentials, so
+// it is worth exactly as much as the browser's good behaviour - its real job
+// is to skip a pointless HTTP call to Valve. The window that is actually
+// ENFORCED lives inside record_steam_player_sample (migration 0012), which is
+// the only thing that can write the table. Keep the two numbers in step, but
+// don't collapse them into one: they protect different things.
 const SNAPSHOT_STALE_MS = 15 * 60 * 1000;
 
 /** Live count straight from Valve's own public API - no key, no scraping. */
@@ -52,7 +59,12 @@ export async function getPlayerCountHistory(supabase: SupabaseClient<Database>, 
   if (isStale) {
     const count = await fetchCurrentPlayerCount();
     if (count != null) {
-      await supabase.from('steam_player_snapshots').insert({ player_count: count });
+      // Goes through the function rather than inserting the row, because the
+      // client role no longer has INSERT on this table at all (migration 0012
+      // explains why a policy couldn't tell our write apart from a forged one).
+      // A `false` return means another request already sampled inside the
+      // window - expected under concurrency, not an error.
+      await supabase.rpc('record_steam_player_sample', { p_player_count: count });
     }
   }
 

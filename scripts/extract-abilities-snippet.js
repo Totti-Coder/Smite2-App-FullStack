@@ -3,6 +3,12 @@
 // straight out of the page's own Next.js RSC payload (self.__next_f).
 // Copy the printed JSON into src/data/abilities/<god-id>.json, then run
 // `npm run seed:abilities -- <god-id>`.
+//
+// If the console hands back a JSON *string* instead of an array (it often
+// does - the payload is nested, sometimes inside a {"text": ...} envelope),
+// save the paste to a scratch file and run it through the other half of this
+// pipeline first, which unwraps those layers:
+//   node scripts/format-abilities.mjs <pasted.json> src/data/abilities/<god-id>.json
 (function () {
   const scripts = Array.from(document.querySelectorAll('script'));
   const pieces = [];

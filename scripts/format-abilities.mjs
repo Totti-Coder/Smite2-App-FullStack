@@ -1,5 +1,22 @@
-const fs = require('fs');
+// Second half of the ability-import pipeline: takes whatever
+// extract-abilities-snippet.js printed into the clipboard and writes a clean
+// one-ability-per-line JSON file for `npm run seed:abilities`.
+//
+// It exists because the devtools console doesn't always hand back a bare JSON
+// array - copying out of an RSC payload often yields a JSON *string* holding
+// the array, sometimes nested twice, sometimes wrapped in a {"text": ...}
+// envelope. `unwrap` peels those layers until it reaches the real array.
+//
+// Usage: node scripts/format-abilities.mjs <pasted.json> <src/data/abilities/<god-id>.json>
+import fs from 'node:fs';
+
 const [, , inFile, outFile] = process.argv;
+
+if (!inFile || !outFile) {
+  console.error('Usage: node scripts/format-abilities.mjs <in.json> <out.json>');
+  process.exit(1);
+}
+
 const content = fs.readFileSync(inFile, 'utf8');
 
 function extractJSONStringLiteral(s, start) {

@@ -133,10 +133,10 @@ El OCR corre **íntegramente en el navegador** (WASM autoalojado, sin CDN): las 
 
 **1. Crear el proyecto en Supabase** ([supabase.com](https://supabase.com), el plan gratuito basta).
 
-**2. Ejecutar las migraciones** en el SQL Editor, **en orden**, de `0001` a `0011`:
+**2. Ejecutar las migraciones** en el SQL Editor, **en orden**, de `0001` a `0012`:
 
 ```bash
-supabase/migrations/0001_init.sql → 0011_gods_anon_grants.sql
+supabase/migrations/0001_init.sql → 0012_steam_snapshots_write_path.sql
 ```
 
 **3. Configurar el entorno** — copia `.env.example` a `.env.local`:
@@ -217,8 +217,8 @@ src/
 │   ├── validation/     # Esquemas Zod, saneado, política de contraseñas
 │   ├── supabase/       # Clientes servidor/navegador/middleware
 │   └── god-name-match  # OCR + Levenshtein + alias en castellano
-└── data/               # Catálogos: 88 dioses · 252 items
-supabase/migrations/    # 11 migraciones SQL versionadas
+└── data/               # Catálogos: 91 dioses · 265 items
+supabase/migrations/    # 12 migraciones SQL versionadas
 scripts/                # Sembrado y verificación
 ```
 
@@ -252,6 +252,26 @@ La causa de fondo resultó ser otra: el worker de OCR tenía una **lista blanca 
 <br>
 
 Postgres evalúa **dos capas independientes**: los privilegios (`GRANT`) y luego las políticas de fila (RLS). El privilegio se comprueba primero. Una tabla con políticas impecables pero sin `GRANT` rechaza a todo el mundo, incluido el dueño de las filas — y como el error viaja dentro de la respuesta, la página renderiza cero resultados en lugar de fallar de forma visible. Las migraciones `0008` y `0011` existen precisamente para reparar esa omisión.
+
+</details>
+
+<details>
+<summary><b>Por qué RLS tampoco basta para los datos compartidos</b></summary>
+
+<br>
+
+RLS resuelve *«¿es tuya esta fila?»*. No resuelve *«¿quién puede crear una fila que no es de nadie?»*.
+
+La tabla `steam_player_snapshots` guarda el histórico de jugadores concurrentes en Steam: es dato compartido por toda la aplicación, sin columna `user_id` por la que acotarlo. La migración `0009` tradujo esa falta de dueño a `with check (true)` — y ahí está el error de razonamiento, porque la pregunta no es quién **posee** una muestra, sino quién puede **escribirla**, y la respuesta es: solo el servidor, que es el único que habló con Valve.
+
+El problema es que **ninguna política puede expresar eso**. El servidor de Next escribe con la clave anónima más la sesión del visitante, exactamente las mismas credenciales que tiene el navegador. Para Postgres, un `insert` desde nuestro render y uno desde `curl` son indistinguibles: mismo rol, mismo tipo de JWT. Cualquier política que permita el primero permite el segundo. En la práctica, cualquier titular de una cuenta podía fijar el valor que quisiera, fabricar historia hacia atrás (el `default now()` rellena el valor que no se envía, no impide enviarlo) e insertar filas sin límite.
+
+La migración `0012` quita el privilegio `INSERT` al rol del cliente y deja la única escritura legítima detrás de una función `security definer`, que pasa a ser la única puerta: la **función** decide la marca de tiempo, acota el valor y aplica el intervalo de muestreo bajo un *advisory lock*, de modo que quien llama ya no elige ninguna de las tres cosas. Se descartó usar la clave `service_role` en el runtime: salta RLS en todas las tablas y habría que tenerla en el entorno de despliegue — demasiado poder para un único `insert`.
+
+Dos detalles que convierten una función `security definer` en un agujero si se olvidan, y que `scripts/check-steam-write-path.ts` verifica en **todas** las migraciones, no solo en esta:
+
+- Postgres concede `EXECUTE` a `PUBLIC` por defecto, lo que entregaría a `anon` los privilegios del dueño de la función.
+- Sin `search_path` fijado, quien llama controla la resolución de nombres dentro de una función que corre como su dueño.
 
 </details>
 

@@ -135,6 +135,11 @@ export type Database = {
       };
       steam_player_snapshots: {
         Row: SteamPlayerSnapshot;
+        // Describes the TABLE, which service_role and the seed scripts can
+        // still write. The app cannot: migration 0012 revoked INSERT from the
+        // client role, so a `.from('steam_player_snapshots').insert(...)` here
+        // type-checks and then fails at runtime. Call
+        // record_steam_player_sample instead (see Functions below).
         Insert: Omit<SteamPlayerSnapshot, 'id' | 'sampled_at'> & { id?: string; sampled_at?: string };
         Update: Partial<Omit<SteamPlayerSnapshot, 'id'>>;
         Relationships: [];
@@ -152,7 +157,17 @@ export type Database = {
       };
     };
     Views: Record<string, never>;
-    Functions: Record<string, never>;
+    Functions: {
+      // The only write path into steam_player_snapshots - the client role has
+      // no INSERT privilege on the table itself (see migration 0012). The
+      // function decides the timestamp and enforces the sampling interval, so
+      // there is deliberately no sampled_at argument here.
+      record_steam_player_sample: {
+        Args: { p_player_count: number };
+        // true when the sample was stored, false when a recent one already existed.
+        Returns: boolean;
+      };
+    };
     Enums: Record<string, never>;
     CompositeTypes: Record<string, never>;
   };
