@@ -17,6 +17,12 @@ Sin API oficial: el marcador se lee por OCR y se convierte en winrate, builds y 
 [![Recharts](https://img.shields.io/badge/Recharts-3-FF6384?style=flat-square)](https://recharts.org)
 [![Motion](https://img.shields.io/badge/Motion-13-FFE01B?style=flat-square)](https://motion.dev)
 
+<br>
+
+<img src="docs/demo.webp" width="100%" alt="Recorrido por la aplicación: inicio de sesión, dashboard con winrate y tendencia de KDA, registro de partida, catálogo de dioses, vista orbital 3D de la build y tier lists." />
+
+<sub>Recorrido completo · 24 s · los datos son de una cuenta de demostración sembrada, no de un jugador real</sub>
+
 </div>
 
 ---
@@ -39,7 +45,7 @@ El reconocimiento de dioses combina **OCR de texto** con **distancia de Levensht
 |---|---|---|
 | 📊 | **Dashboard** | Winrate global, por dios y por rol · KDA medio y tendencia · racha actual |
 | 📸 | **Escáner de partidas** | Calibración por arrastre + OCR de los 10 jugadores (dios, rol) y de tu build |
-| 🧙 | **Catálogo** | 88 dioses con habilidades y escalados · 252 items con estadísticas y pasivas |
+| 🧙 | **Catálogo** | 91 dioses con habilidades y escalados · 265 items con estadísticas y pasivas |
 | 🛠️ | **Builds** | Items más usados **con su winrate**, agrupados por parche de juego |
 | 🏆 | **Tier lists** | Editor arrastrable, publicación pública, visible sin cuenta |
 | 📈 | **Steam** | Jugadores concurrentes de las últimas 24 h, agregados por hora |
@@ -77,7 +83,7 @@ El OCR corre **íntegramente en el navegador** (WASM autoalojado, sin CDN): las 
 
 <br>
 
-**Inyección SQL.** Todo el acceso pasa por supabase-js/PostgREST, que envía los valores como parámetros vinculados. **Cero SQL concatenado, cero `.rpc()`.** No se filtran comillas a propósito: sería inútil como defensa y corrompería datos legítimos (`Chang'e`, `O'Brien`).
+**Inyección SQL.** Todo el acceso pasa por supabase-js/PostgREST, que envía los valores como parámetros vinculados. **Cero SQL concatenado.** La única llamada `.rpc()` de la aplicación invoca una función `security definer` con un argumento tipado (`integer`) y `search_path` fijado, así que tampoco ahí se construye SQL con texto del cliente. No se filtran comillas a propósito: sería inútil como defensa y corrompería datos legítimos (`Chang'e`, `O'Brien`).
 
 **XSS.** React escapa toda interpolación y el proyecto no usa `dangerouslySetInnerHTML` en ningún punto. El único valor que llega a un `style` en línea de una página pública (el color de un tier) está restringido a hexadecimal por expresión regular.
 
@@ -156,12 +162,12 @@ cp .env.example .env.local
 
 ```bash
 npm install
-npm run seed:gods                  # los 88 dioses de una vez
+npm run seed:gods                  # los 91 dioses de una vez
 npm run seed:abilities -- apollo   # habilidades, un dios por invocación
 npm run dev
 ```
 
-> Las habilidades se siembran **bajo demanda, dios a dios**: raspar los 88 por adelantado no compensa para los que nadie consulta. Una ficha sin habilidades sembradas se renderiza igual, solo que sin esa sección.
+> Las habilidades se siembran **bajo demanda, dios a dios**: raspar los 91 por adelantado no compensa para los que nadie consulta. Una ficha sin habilidades sembradas se renderiza igual, solo que sin esa sección.
 
 </details>
 
@@ -185,7 +191,7 @@ El flujo PKCE guarda su verificador en una cookie del dispositivo que **inició*
 ## 🧪 Verificación
 
 ```bash
-npm run check       # 60 comprobaciones automatizadas
+npm run check       # 95 comprobaciones automatizadas
 npm run typecheck   # tsc --noEmit
 npm run lint
 ```
@@ -197,6 +203,9 @@ npm run lint
 | `check-auth-errors` | 13 | Mapeo de errores, garantía de no enumeración |
 | `check-password-policy` | 17 | Política OWASP, límite de 72 **bytes**, medidor |
 | `check-safe-next` | 16 | Redirección abierta en el enlace de correo |
+| `check-ocr-parsing` | 23 | Nombres de dios y celdas numéricas de una captura real |
+| `check-steam-write-path` | 8 | Que nadie reabra la escritura cerrada en `0012` |
+| `check-catalog-copy` | 4 | Que las cifras escritas a mano coincidan con los catálogos |
 
 ---
 
@@ -219,7 +228,7 @@ src/
 │   └── god-name-match  # OCR + Levenshtein + alias en castellano
 └── data/               # Catálogos: 91 dioses · 265 items
 supabase/migrations/    # 12 migraciones SQL versionadas
-scripts/                # Sembrado y verificación
+scripts/                # Sembrado, verificación y grabación de la demo
 ```
 
 ---

@@ -10,7 +10,11 @@
     "seed:gods": "tsx --env-file=.env.local scripts/seed-gods.ts",
     "seed:abilities": "node --env-file=.env.local scripts/seed-abilities.mjs",
     "build:icon-hashes": "tsx scripts/build-icon-hashes.ts",
-    "check": "tsx scripts/check-sanitize.ts && tsx scripts/check-image-sniff.ts && tsx scripts/check-auth-errors.ts && tsx scripts/check-password-policy.ts && tsx scripts/check-safe-next.ts && tsx scripts/check-ocr-parsing.ts && tsx scripts/check-steam-write-path.ts",
+    "demo:seed": "tsx --env-file=.env.local scripts/seed-demo.ts",
+    "demo:clean": "tsx --env-file=.env.local scripts/seed-demo.ts --clean",
+    "demo:capture": "tsx --env-file=.env.local scripts/capture-demo.ts",
+    "demo:gif": "node --max-old-space-size=6144 ./node_modules/tsx/dist/cli.mjs scripts/build-gif.ts",
+    "check": "tsx scripts/check-sanitize.ts && tsx scripts/check-image-sniff.ts && tsx scripts/check-auth-errors.ts && tsx scripts/check-password-policy.ts && tsx scripts/check-safe-next.ts && tsx scripts/check-ocr-parsing.ts && tsx scripts/check-steam-write-path.ts && tsx scripts/check-catalog-copy.ts",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
@@ -35,6 +39,7 @@
     "@types/three": "^0.185.4",
     "eslint": "^9",
     "eslint-config-next": "^16.3.5",
+    "playwright-core": "^1.65.1",
     "sharp": "^0.35.4",
     "tailwindcss": "^4",
     "tsx": "^4.23.5",

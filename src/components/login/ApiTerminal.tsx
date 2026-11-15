@@ -14,7 +14,13 @@ const LINES: LogLine[] = [
   { text: 'smite2-tracker --status', tone: 'prompt' },
   { text: 'conectado a Supabase', tone: 'ok' },
   { text: 'calibración de escaneo cargada (v4)', tone: 'info' },
-  { text: 'hash perceptual: 88 dioses · 252 items · 5 roles', tone: 'info' },
+  // These counts are written out rather than derived from the catalogs,
+  // because importing gods.json + items.json here would drag 160 KB of JSON
+  // into the LOGIN page's client bundle to render two numbers. The tradeoff
+  // is that they can drift, and they did - they still said 88/252 long after
+  // the catalogs reached 91/265, on the first screen a visitor ever sees.
+  // scripts/check-catalog-copy.ts now fails the build if they drift again.
+  { text: 'hash perceptual: 91 dioses · 265 items · 5 roles', tone: 'info' },
   { text: 'API pública de Steam: jugadores activos consultados', tone: 'ok' },
   { text: 'esperando próxima captura...', tone: 'info' },
 ];

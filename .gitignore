@@ -49,3 +49,13 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Frames intermedios de la grabacion de la demo (scripts/capture-demo.ts).
+.demo-frames/
+
+# El GIF que genera scripts/build-gif.ts se queda en local: pesa 6,6 MB y el
+# README embebe solo docs/demo.webp, que es mas pequeno y de mejor calidad.
+# Los binarios no se borran del historial de git, asi que solo entra el que
+# se usa. El GIF sigue existiendo como respaldo para pegarlo donde no se
+# renderice WebP animado.
+docs/demo.gif
